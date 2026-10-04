@@ -8,10 +8,11 @@ import { TableOfContents } from "./table-of-contents";
  *   [ Top bar                                 ]
  *   [ Sidebar ][ Page content ][ On this page ]
  * On small screens the sidebar is in the top bar's phone menu.
+ * `overflow-x-clip` stops sideways page scrolling on phones (see site-layout.tsx).
  */
 export function DocsLayout() {
   return (
-    <div className="min-h-screen bg-canvas">
+    <div className="min-h-screen overflow-x-clip bg-canvas">
       <SiteHeader />
 
       <div className="mx-auto flex max-w-screen-2xl">

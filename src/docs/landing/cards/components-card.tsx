@@ -52,7 +52,7 @@ export function ComponentsCard() {
         </InputGroup>
         <Textarea placeholder="Pesan untuk petugas" aria-label="Pesan untuk petugas" />
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Badge variant="success">Buka</Badge>
           <Badge variant="warning">Ramai</Badge>
           <div className="ml-auto flex items-center gap-3">
