@@ -376,7 +376,8 @@ function SidebarSeparator({ className, ...props }: React.ComponentProps<typeof S
   return (
     <Separator
       data-slot="sidebar-separator"
-      className={cn("mx-3 w-auto bg-sidebar-border", className)}
+      // `data-[orientation=horizontal]:` is needed to replace the full width set by <Separator>.
+      className={cn("mx-3 bg-sidebar-border data-[orientation=horizontal]:w-auto", className)}
       {...props}
     />
   );

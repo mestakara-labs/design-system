@@ -111,7 +111,7 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <Separator className="mx-6 mt-4 w-auto" />
+          <Separator className="mx-6 mt-4 data-[orientation=horizontal]:w-auto" />
           <Sidebar onNavigate={() => setMenuOpen(false)} />
         </SheetContent>
       </Sheet>

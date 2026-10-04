@@ -35,12 +35,13 @@ export function BlocksPreview() {
         </TabsList>
         {PREVIEW_BLOCKS.map((block) => (
           <TabsContent key={block.name} value={block.name} className="w-full">
-            {/* The block runs on its own page inside the frame, just like on /blocks. */}
+            {/* The block runs on its own page inside the frame, just like on /blocks.
+                `w-px min-w-full`: iOS Safari otherwise widens an iframe to fit its content. */}
             <iframe
               src={blockViewPath(block.name)}
               title={t(block.labelKey)}
               loading="lazy"
-              className="h-[720px] w-full rounded-lg border border-border bg-canvas shadow-md"
+              className="h-[720px] w-px min-w-full rounded-lg border border-border bg-canvas shadow-md"
             />
           </TabsContent>
         ))}

@@ -87,8 +87,9 @@ export function BlockDisplay({ block }: { block: BlockEntry }) {
             src={blockViewPath(block.name)}
             title={t(`items.${block.name}`)}
             loading="lazy"
-            className="mx-auto block max-w-full bg-canvas transition-[width] duration-300"
-            style={{ width: SCREEN_SIZES[screenSize].width, height: block.height }}
+            className="mx-auto block bg-canvas transition-[min-width] duration-300"
+            // width 1px + min-width: iOS Safari otherwise widens an iframe to fit its content.
+            style={{ width: 1, minWidth: SCREEN_SIZES[screenSize].width, height: block.height }}
           />
         </div>
       </TabsContent>
