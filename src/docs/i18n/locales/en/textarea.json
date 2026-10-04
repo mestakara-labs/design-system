@@ -1,0 +1,22 @@
+{
+  "description": "A multi-line text field for notes, reviews or special requests. It grows with its content.",
+  "examples": {
+    "withLabel": {
+      "title": "With Label",
+      "description": "Combine with Field, FieldLabel and FieldDescription."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "A red border and a message that explains how to fix the value."
+    },
+    "disabled": {
+      "title": "Disabled",
+      "description": "A value that cannot be changed."
+    }
+  },
+  "props": {
+    "ariaInvalid": "Shows the error state (red border).",
+    "disabled": "Disables the field.",
+    "native": "Textarea also accepts every native <textarea> attribute, such as rows and maxLength."
+  }
+}

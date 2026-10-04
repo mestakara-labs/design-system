@@ -1,0 +1,22 @@
+{
+  "description": "Kolom pencarian dengan daftar saran: ketik untuk menyaring, lalu pilih satu atau beberapa item.",
+  "examples": {
+    "clear": {
+      "title": "Tombol Hapus",
+      "description": "showClear menambahkan tombol × untuk mengosongkan pilihan."
+    },
+    "multiple": {
+      "title": "Banyak Pilihan",
+      "description": "multiple + ComboboxChips menampilkan setiap pilihan sebagai chip yang bisa dihapus."
+    }
+  },
+  "props": {
+    "items": "Seluruh daftar item yang bisa dipilih.",
+    "value": "Item yang dipilih (terkontrol). Berupa array bila multiple.",
+    "onValueChange": "Dipanggil saat pilihan berubah.",
+    "multiple": "Izinkan memilih lebih dari satu item.",
+    "showTrigger": "Tampilkan tombol panah untuk membuka daftar.",
+    "showClear": "Tampilkan tombol × untuk mengosongkan pilihan.",
+    "baseUi": "Combobox dibangun di atas Base UI. Semua props Base UI Combobox dapat dipakai — lihat base-ui.com."
+  }
+}

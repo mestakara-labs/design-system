@@ -1,0 +1,31 @@
+{
+  "description": "A single-line text field for names, emails, phone numbers and other short data.",
+  "guidelines": {
+    "label": "Always put a label above the field (use Field + FieldLabel). A placeholder is not a label.",
+    "error": "On error, add aria-invalid and a red helper text that explains how to fix it."
+  },
+  "examples": {
+    "withLabel": {
+      "title": "With Label",
+      "description": "Combine with Field, FieldLabel and FieldDescription."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "A 2px red border and a message that explains how to fix the value."
+    },
+    "disabled": {
+      "title": "Disabled",
+      "description": "A value that cannot be changed."
+    },
+    "file": {
+      "title": "File Upload",
+      "description": "An input with type=\"file\"."
+    }
+  },
+  "props": {
+    "type": "Kind of value: text, email, tel, password, number, file and more.",
+    "ariaInvalid": "Shows the error state (red border).",
+    "disabled": "Disables the field.",
+    "native": "Input also accepts every native <input> attribute."
+  }
+}

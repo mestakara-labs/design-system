@@ -1,0 +1,26 @@
+{
+  "description": "Sekumpulan toggle. Pilih satu (type=\"single\") seperti filter kategori, atau beberapa sekaligus (type=\"multiple\").",
+  "examples": {
+    "multiple": {
+      "title": "Banyak Pilihan",
+      "description": "type=\"multiple\": beberapa item boleh aktif bersamaan."
+    },
+    "spacing": {
+      "title": "Dengan Jarak",
+      "description": "spacing memberi jarak antar item (1 = 4px). spacing=0 menyatukan item menjadi satu bar."
+    },
+    "disabled": {
+      "title": "Item Non-aktif",
+      "description": "Nonaktifkan item tertentu, misalnya sesi yang penuh."
+    }
+  },
+  "props": {
+    "type": "single = satu pilihan, multiple = banyak pilihan.",
+    "value": "Item yang aktif (terkontrol). Array bila multiple.",
+    "onValueChange": "Dipanggil saat pilihan berubah.",
+    "variant": "Gaya semua item.",
+    "size": "Ukuran semua item.",
+    "spacing": "Jarak antar item dalam unit Tailwind (1 = 4px).",
+    "itemValue": "Nilai unik setiap item."
+  }
+}

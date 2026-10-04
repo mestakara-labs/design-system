@@ -1,0 +1,26 @@
+{
+  "description": "Menyatukan beberapa tombol (atau input dan select) yang saling berkaitan menjadi satu bar.",
+  "examples": {
+    "withInput": {
+      "title": "Dengan Input",
+      "description": "Input dan tombol dalam satu bar, misalnya kode promo."
+    },
+    "quantity": {
+      "title": "Penghitung Jumlah",
+      "description": "ButtonGroupText menampilkan teks yang tidak bisa diklik di antara tombol."
+    },
+    "separator": {
+      "title": "Dengan Pemisah",
+      "description": "Tombol solid tidak punya border, jadi beri ButtonGroupSeparator di antaranya."
+    },
+    "vertical": {
+      "title": "Vertikal",
+      "description": "orientation=\"vertical\" menyusun tombol ke bawah."
+    }
+  },
+  "props": {
+    "orientation": "Arah susunan tombol.",
+    "asChild": "Terapkan gaya ke elemen anak (misalnya <label>).",
+    "separatorOrientation": "Arah garis pemisah."
+  }
+}

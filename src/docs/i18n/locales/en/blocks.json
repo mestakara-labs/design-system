@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Building Blocks for the Web",
+    "description": "Clean, modern page blocks built from Mestakara UI components. Copy and paste them into your app, then adapt. Works with every React framework.",
+    "browse": "Browse Blocks",
+    "viewComponents": "View Components"
+  },
+  "categories": {
+    "featured": "Featured",
+    "sidebar": "Sidebar",
+    "login": "Login",
+    "signup": "Signup"
+  },
+  "toolbar": {
+    "preview": "Preview",
+    "code": "Code",
+    "desktop": "Desktop screen",
+    "tablet": "Tablet screen",
+    "mobile": "Phone screen",
+    "openInNewTab": "Open in a new tab"
+  },
+  "items": {
+    "dashboard-01": "A dashboard with sidebar, charts and data table.",
+    "login-01": "A simple login form.",
+    "login-02": "A two column login page with a cover image.",
+    "login-03": "A login page with a muted background color.",
+    "login-04": "A login page with form and image.",
+    "login-05": "A simple email-only login page.",
+    "sidebar-01": "A simple sidebar with navigation grouped by section.",
+    "sidebar-02": "A sidebar with collapsible sections.",
+    "sidebar-03": "A sidebar with submenus.",
+    "sidebar-04": "A floating sidebar with submenus.",
+    "sidebar-05": "A sidebar with collapsible submenus.",
+    "sidebar-06": "A sidebar with submenus as dropdowns.",
+    "sidebar-07": "A sidebar that collapses to icons.",
+    "sidebar-08": "An inset sidebar with secondary navigation.",
+    "sidebar-09": "Collapsible nested sidebars.",
+    "sidebar-10": "A sidebar in a popover.",
+    "sidebar-11": "A sidebar with a collapsible file tree.",
+    "sidebar-12": "A sidebar with a calendar.",
+    "sidebar-13": "A sidebar in a dialog.",
+    "sidebar-14": "A sidebar on the right.",
+    "sidebar-15": "A left and right sidebar.",
+    "sidebar-16": "A sidebar with a sticky site header.",
+    "signup-01": "A simple signup form.",
+    "signup-02": "A two column signup page with a cover image.",
+    "signup-03": "A signup page with a muted background color.",
+    "signup-04": "A signup page with form and image.",
+    "signup-05": "A simple signup form with social providers."
+  }
+}

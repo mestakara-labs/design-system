@@ -1,0 +1,20 @@
+{
+  "description": "Daftar perintah atau halaman yang bisa dicari: ketik untuk menyaring, lalu pilih dengan tombol panah + Enter. Pencarian di header situs ini (Ctrl+K) juga memakai Command.",
+  "examples": {
+    "dialog": {
+      "title": "Sebagai Dialog",
+      "description": "CommandDialog menampilkan Command sebagai popup. Coba tekan Ctrl+J."
+    }
+  },
+  "parts": {
+    "command": "Kotak perintah (input + daftar).",
+    "dialog": "Command di dalam dialog.",
+    "input": "Kolom pencarian.",
+    "list": "Daftar hasil yang bisa digulir.",
+    "empty": "Ditampilkan bila tidak ada hasil.",
+    "group": "Kelompok hasil dengan judul (heading).",
+    "item": "Satu hasil; onSelect dipanggil saat diklik atau Enter.",
+    "shortcut": "Pintasan keyboard di kanan item.",
+    "separator": "Garis pemisah antar grup."
+  }
+}

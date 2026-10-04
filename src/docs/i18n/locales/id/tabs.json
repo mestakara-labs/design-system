@@ -1,0 +1,31 @@
+{
+  "description": "Berpindah antar tampilan yang berbagi satu tempat di layar, misalnya Deskripsi · Fasilitas · Ulasan. Tersedia dua gaya: pil putih di atas trek abu-abu, atau garis bawah hijau.",
+  "tip": "Gunakan Tabs untuk konten setara yang dibaca bergantian. Untuk berpindah halaman, gunakan tautan atau Navigation Menu.",
+  "examples": {
+    "line": {
+      "title": "Garis bawah",
+      "description": "variant=\"line\" pada TabsList: tab aktif diberi garis hijau. Cocok untuk daftar pesanan atau filter status."
+    },
+    "icons": {
+      "title": "Dengan ikon & non-aktif",
+      "description": "Ikon diletakkan sebelum teks. Tab dengan prop disabled tidak bisa dipilih."
+    },
+    "vertical": {
+      "title": "Vertikal",
+      "description": "orientation=\"vertical\" menyusun tab dari atas ke bawah, misalnya untuk halaman pengaturan."
+    }
+  },
+  "parts": {
+    "root": "Pembungkus; menyimpan tab yang aktif.",
+    "list": "Baris tombol tab. Prop variant mengatur gayanya.",
+    "trigger": "Satu tombol tab; value harus sama dengan TabsContent pasangannya.",
+    "content": "Isi yang tampil saat tab-nya aktif."
+  },
+  "props": {
+    "defaultValue": "Tab yang aktif di awal (tidak terkontrol).",
+    "value": "Tab yang aktif (terkontrol), dipakai bersama onValueChange.",
+    "orientation": "Arah susunan tab. Panah kiri/kanan atau atas/bawah berpindah tab.",
+    "variant": "Gaya daftar tab: pil di atas trek abu-abu atau garis bawah.",
+    "disabled": "Tab tidak bisa dipilih."
+  }
+}

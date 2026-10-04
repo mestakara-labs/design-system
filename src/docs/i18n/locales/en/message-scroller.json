@@ -1,0 +1,21 @@
+{
+  "description": "The scrolling area of a chat. Starts at the newest message, follows new messages while the user is at the bottom, and shows a ↓ button when they scroll up.",
+  "tip": "Give the wrapper a fixed height. Call useMessageScroller() inside MessageScrollerProvider to scroll from code, e.g. scrollToEnd() after sending a message.",
+  "parts": {
+    "provider": "Keeps the scroll state. Also place it around components that use the hooks.",
+    "root": "Wrapper of the scrolling area.",
+    "viewport": "The part that actually scrolls.",
+    "content": "Column of messages.",
+    "item": "Wraps one message. Give it a messageId.",
+    "button": "Round button to the newest (or oldest) message; only shown when needed.",
+    "hooks": "Hooks: scroll from code, read whether it can scroll, and which messages are visible."
+  },
+  "props": {
+    "autoScroll": "Follow new messages while the user is at the bottom.",
+    "defaultScrollPosition": "Starting position: first message, last, or the last anchor.",
+    "messageId": "Message ID for scrollToMessage(id).",
+    "scrollAnchor": "When this message arrives, scroll so it sits at the top.",
+    "direction": "Button direction: to the newest or the first message.",
+    "label": "Screen-reader text of the button."
+  }
+}

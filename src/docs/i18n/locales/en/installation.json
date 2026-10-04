@@ -1,0 +1,38 @@
+{
+  "description": "How to add @mestakara/ui to a React, Next.js, or any other React-based app.",
+  "requirements": {
+    "title": "Requirements",
+    "frameworks": "Next.js (App Router / Pages Router), Vite + React, Remix, or any other React-based framework"
+  },
+  "registry": {
+    "title": "1. Connect the registry",
+    "description": "This package lives in a private npm registry. Add the line below to the .npmrc file of your app. Replace <URL_REGISTRY> with your team's registry address."
+  },
+  "install": {
+    "title": "2. Install the package"
+  },
+  "styles": {
+    "title": "3. Import the stylesheet",
+    "description": "Import Tailwind first, then the design system stylesheet. Every color, typography, radius and shadow token becomes available as a Tailwind class."
+  },
+  "fonts": {
+    "title": "4. Install the fonts",
+    "description": "The design system uses Fraunces and Plus Jakarta Sans. Easiest way: install the Fontsource packages and import them once in your app entry."
+  },
+  "use": {
+    "title": "5. Use a component"
+  },
+  "nextjs": {
+    "title": "Next.js note",
+    "description": "Every component file already starts with \"use client\", so components work directly in Server Components (e.g. app/page.tsx) without a wrapper. Event handlers such as onClick still belong in your own Client Components."
+  },
+  "optional": {
+    "title": "6. Optional",
+    "form": "Form uses react-hook-form. Install it only if you need Form, and import it from @mestakara/ui/form (it is not in @mestakara/ui).",
+    "toaster": "For toast notifications, place <Toaster /> once at the app root, then call toast() from anywhere."
+  },
+  "local": {
+    "title": "Trying it without a registry",
+    "description": "Until the registry exists, pack the package into a .tgz file in the design system repo, then install that file in your app."
+  }
+}

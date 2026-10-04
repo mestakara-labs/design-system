@@ -1,0 +1,11 @@
+{
+  "description": "Tabel data lengkap dengan pencarian, pengurutan, pemilihan baris, dan halaman. Coba cari \"Rancabali\" atau klik judul kolom Pengunjung.",
+  "installation": "Data Table bukan komponen tersendiri, melainkan pola gabungan komponen Table dengan library @tanstack/react-table versi 8.",
+  "howItWorks": {
+    "title": "Cara Kerja",
+    "columns": "Definisikan kolom (ColumnDef): data mana yang ditampilkan dan bagaimana tampilannya.",
+    "table": "Buat tabel dengan useReactTable(): data, kolom, dan fitur yang diinginkan (sorting, filter, paging).",
+    "render": "Tampilkan dengan komponen Table: TableHeader dari getHeaderGroups(), TableBody dari getRowModel()."
+  },
+  "docs": "Dokumentasi lengkap fitur TanStack Table ada di tanstack.com/table/v8."
+}

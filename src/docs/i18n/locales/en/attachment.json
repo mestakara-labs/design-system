@@ -1,0 +1,31 @@
+{
+  "description": "A file attached to a message or form, such as a transfer receipt photo, a PDF e-ticket, or an ID card. Shows a thumbnail or icon, the file name, details and actions.",
+  "tip": "Set the state prop to follow the upload: idle (empty slot), uploading/processing (shimmering name), error (red), done.",
+  "examples": {
+    "images": {
+      "title": "Photos & clickable",
+      "description": "orientation=\"vertical\" with thumbnails. AttachmentTrigger makes the whole card clickable, and AttachmentGroup scrolls sideways."
+    },
+    "sizes": {
+      "title": "Sizes",
+      "description": "md, sm and xs."
+    }
+  },
+  "parts": {
+    "attachment": "The attachment card; sets the state, size and orientation.",
+    "media": "Thumbnail or file icon.",
+    "content": "Column with the title and description.",
+    "title": "File name; cut off with \"…\" when too long.",
+    "description": "Size, type, progress or error message.",
+    "actions": "Holds the action buttons.",
+    "action": "Small icon button (remove, download). Needs an aria-label.",
+    "trigger": "Invisible button that makes the whole card clickable.",
+    "group": "Row of attachments that scrolls sideways."
+  },
+  "props": {
+    "state": "Upload stage of the file.",
+    "size": "Card size.",
+    "orientation": "\"vertical\" for a large thumbnail on top.",
+    "mediaVariant": "\"image\" for photos (faded while uploading)."
+  }
+}

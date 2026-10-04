@@ -1,0 +1,17 @@
+{
+  "description": "A small floating panel that opens next to its trigger, for extra info or quick settings.",
+  "examples": {
+    "form": {
+      "title": "With Form",
+      "description": "A popover can also hold fields, such as the number of visitors."
+    }
+  },
+  "props": {
+    "open": "Open state (controlled).",
+    "onOpenChange": "Called when the popover opens or closes.",
+    "asChild": "Use the child element (e.g. a Button) as the trigger.",
+    "side": "Side where the popover appears.",
+    "align": "Alignment relative to the trigger.",
+    "sideOffset": "Distance from the trigger (px)."
+  }
+}

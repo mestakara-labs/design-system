@@ -1,0 +1,46 @@
+/*
+ * MESTAKARA DESIGN SYSTEM — STYLESHEET
+ * ---------------------------------------------------------------------------
+ * This is the CSS that apps import (published as `@mestakara/ui/styles.css`).
+ * The app must import Tailwind first:
+ *
+ *   @import "tailwindcss";
+ *   @import "@mestakara/ui/styles.css";
+ *
+ * Files, in the order they build on each other:
+ *   primitives.css  → raw colors
+ *   semantic.css    → what each color is for
+ *   theme.css       → Tailwind classes, fonts, radius, shadows
+ *   typography.css  → `typo-*` text styles
+ */
+
+@import "tw-animate-css"; /* enter/exit animations used by overlays (dialog, popover …) */
+
+@import "./primitives.css";
+@import "./semantic.css";
+@import "./theme.css";
+@import "./typography.css";
+
+/*
+ * Tell Tailwind to look for class names inside the components and their shared styles,
+ * so the app does not need any extra setup. In the published package these point to
+ * `dist/components` and `dist/lib` (the built files).
+ */
+@source "../components";
+@source "../lib";
+
+@layer base {
+  /* Default border color, so `border` alone uses the design system color. */
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border-default);
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}

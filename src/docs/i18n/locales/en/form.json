@@ -1,0 +1,21 @@
+{
+  "description": "Connects form fields to react-hook-form. Labels, error messages and accessibility attributes are wired automatically. Try clicking \"Pesan Tiket\" without filling in the form.",
+  "dependencies": "Form needs react-hook-form in your app. For validation, use zod with its resolver.",
+  "howItWorks": {
+    "title": "How It Works",
+    "schema": "Describe valid data with zod. Error messages explain how to fix the problem.",
+    "useForm": "Create the form with useForm() and zodResolver(schema).",
+    "field": "Each field: FormField → FormItem → FormLabel + FormControl (wrapping Input/Select/…) + FormMessage.",
+    "submit": "form.handleSubmit(onSubmit) only calls onSubmit when every field is valid."
+  },
+  "parts": {
+    "form": "Wraps your <form>; pass everything returned by useForm().",
+    "formField": "One field connected to react-hook-form (via the name prop).",
+    "formItem": "Groups the label, control, description and message of one field.",
+    "formLabel": "Field label, linked to its control automatically.",
+    "formControl": "Wraps the control and sets its id, aria-describedby and aria-invalid.",
+    "formDescription": "Helper text under the control.",
+    "formMessage": "Validation error message.",
+    "useFormField": "Reads the current field's ids and error (for your own components)."
+  }
+}

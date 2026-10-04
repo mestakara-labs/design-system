@@ -1,0 +1,19 @@
+{
+  "description": "Slide yang bisa digeser atau dipindah dengan panah, misalnya foto lanskap destinasi. Panah keyboard kiri/kanan juga berfungsi.",
+  "examples": {
+    "multiple": {
+      "title": "Beberapa Slide Sekaligus",
+      "description": "className=\"basis-1/2\" pada CarouselItem menampilkan dua slide."
+    },
+    "dots": {
+      "title": "Dengan Indikator Titik",
+      "description": "setApi memberi akses ke carousel untuk membuat kontrol sendiri, misalnya titik."
+    }
+  },
+  "props": {
+    "opts": "Opsi Embla, misalnya { loop: true, align: \"start\" }.",
+    "plugins": "Plugin Embla, misalnya autoplay.",
+    "orientation": "Arah geser.",
+    "setApi": "Menerima API Embla untuk mengontrol carousel dari luar."
+  }
+}

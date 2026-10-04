@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "overline": "PTPN I Regional 2 · Agrowisata Unit",
+    "title": "One design system for every Agrowisata app",
+    "description": "Ready-to-use React components based on shadcn/ui, with the colors, typography and style of West Java's highland tea gardens.",
+    "getStarted": "Get Started",
+    "browseComponents": "Browse Components"
+  },
+  "principles": {
+    "title": "Design Principles",
+    "warm": {
+      "title": "Warm & Friendly",
+      "description": "Welcomes visitors like a host in the garden."
+    },
+    "natural": {
+      "title": "Natural & Fresh",
+      "description": "Generous space, tea-leaf colors, real landscape photos; minimal ornament."
+    },
+    "trusted": {
+      "title": "Trusted & Tidy",
+      "description": "Prices, schedules and statuses are always clear; one component, one behavior in every app."
+    }
+  },
+  "inside": {
+    "title": "What's Inside",
+    "foundations": {
+      "title": "Foundations",
+      "description": "colors, typography, spacing, radius and elevation."
+    },
+    "components": {
+      "title": "Components",
+      "description": "every shadcn/ui component in the Mestakara style, with examples and all states."
+    },
+    "installation": {
+      "title": "Installation",
+      "description": "how to add @mestakara/ui to a React or Next.js app."
+    }
+  },
+  "source": {
+    "title": "Design Source",
+    "description": "All tokens and styles follow the Figma file \"Agrowisata Regional 2 — Design System\" (summarised in DESIGN.md)."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Building Blocks untuk Web",
+    "description": "Blok halaman yang rapi dan modern, disusun dari komponen Mestakara UI. Salin dan tempel ke aplikasi Anda, lalu sesuaikan. Bisa dipakai di semua framework React.",
+    "browse": "Telusuri Blocks",
+    "viewComponents": "Lihat Komponen"
+  },
+  "categories": {
+    "featured": "Unggulan",
+    "sidebar": "Sidebar",
+    "login": "Login",
+    "signup": "Daftar"
+  },
+  "toolbar": {
+    "preview": "Preview",
+    "code": "Kode",
+    "desktop": "Layar desktop",
+    "tablet": "Layar tablet",
+    "mobile": "Layar ponsel",
+    "openInNewTab": "Buka di tab baru"
+  },
+  "items": {
+    "dashboard-01": "Dasbor dengan sidebar, grafik, dan tabel data.",
+    "login-01": "Form login sederhana.",
+    "login-02": "Halaman login dua kolom dengan gambar sampul.",
+    "login-03": "Halaman login dengan latar abu-abu muda.",
+    "login-04": "Halaman login dengan form dan gambar.",
+    "login-05": "Halaman login sederhana dengan email saja.",
+    "sidebar-01": "Sidebar sederhana dengan menu yang dikelompokkan per bagian.",
+    "sidebar-02": "Sidebar dengan bagian yang bisa dibuka-tutup.",
+    "sidebar-03": "Sidebar dengan submenu.",
+    "sidebar-04": "Sidebar mengambang dengan submenu.",
+    "sidebar-05": "Sidebar dengan submenu yang bisa dibuka-tutup.",
+    "sidebar-06": "Sidebar dengan submenu berupa dropdown.",
+    "sidebar-07": "Sidebar yang terlipat menjadi ikon.",
+    "sidebar-08": "Sidebar inset dengan navigasi sekunder.",
+    "sidebar-09": "Sidebar bertingkat yang bisa dilipat.",
+    "sidebar-10": "Sidebar di dalam popover.",
+    "sidebar-11": "Sidebar dengan pohon berkas yang bisa dibuka-tutup.",
+    "sidebar-12": "Sidebar dengan kalender.",
+    "sidebar-13": "Sidebar di dalam dialog.",
+    "sidebar-14": "Sidebar di sisi kanan.",
+    "sidebar-15": "Sidebar kiri dan kanan.",
+    "sidebar-16": "Sidebar dengan header situs yang menempel.",
+    "signup-01": "Form pendaftaran sederhana.",
+    "signup-02": "Halaman daftar dua kolom dengan gambar sampul.",
+    "signup-03": "Halaman daftar dengan latar abu-abu muda.",
+    "signup-04": "Halaman daftar dengan form dan gambar.",
+    "signup-05": "Form daftar sederhana dengan akun media sosial."
+  }
+}

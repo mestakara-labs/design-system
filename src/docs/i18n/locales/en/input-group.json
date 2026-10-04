@@ -1,0 +1,34 @@
+{
+  "description": "An input or textarea with icons, text or buttons attached, all inside one field.",
+  "examples": {
+    "text": {
+      "title": "With Text",
+      "description": "A text prefix or suffix, such as \"Rp\" or an email domain."
+    },
+    "button": {
+      "title": "With Button",
+      "description": "A small button inside the field, such as copy code or show password."
+    },
+    "textarea": {
+      "title": "Textarea",
+      "description": "An addon below the textarea, such as a character counter."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "aria-invalid on the input turns the whole group red."
+    }
+  },
+  "parts": {
+    "group": "Wrapper that draws the border, focus and error states.",
+    "input": "The input inside the group (no border of its own).",
+    "textarea": "The textarea inside the group (no border of its own).",
+    "addon": "Extra content: icon, text or button.",
+    "text": "Plain text inside an addon.",
+    "button": "A small button inside an addon."
+  },
+  "props": {
+    "align": "Addon position: left, right, above or below the input.",
+    "size": "Size of the button inside the group.",
+    "variant": "Button style (same as Button)."
+  }
+}

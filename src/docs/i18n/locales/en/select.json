@@ -1,0 +1,23 @@
+{
+  "description": "Pick one option from a dropdown list styled with the design system.",
+  "tip": "For long simple lists on mobile devices, Native Select can be the more comfortable choice.",
+  "examples": {
+    "groups": {
+      "title": "With Groups",
+      "description": "Group options with SelectGroup, SelectLabel and SelectSeparator."
+    },
+    "withField": {
+      "title": "In a Form (Error)",
+      "description": "Combine with Field. position=\"popper\" shows the list right below the field."
+    }
+  },
+  "props": {
+    "value": "Selected value (controlled).",
+    "defaultValue": "Initial value (uncontrolled).",
+    "onValueChange": "Called when the selection changes.",
+    "disabled": "Disables the select.",
+    "size": "Field height: md 48px, sm 40px.",
+    "position": "item-aligned = the list covers the field (native style). popper = the list opens below the field.",
+    "itemDisabled": "Disables one option."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Label kecil berbentuk pil untuk menunjukkan status atau kategori: \"Lunas\", \"Menunggu Bayar\", \"Premium\".",
+  "guidelines": {
+    "text": "Selalu berisi teks — jangan hanya mengandalkan warna.",
+    "contrast": "Teks status memakai warna yang lebih gelap dari warna titik agar kontrasnya memenuhi WCAG AA."
+  },
+  "examples": {
+    "variants": {
+      "title": "Varian",
+      "description": "Tujuh tone dari DESIGN.md (success, warning, danger, info, neutral, brand, premium) ditambah outline."
+    },
+    "withoutDot": {
+      "title": "Tanpa Titik / Dengan Ikon",
+      "description": "dot={false} menghilangkan titik, misalnya bila badge berisi ikon."
+    },
+    "asLink": {
+      "title": "Sebagai Tautan",
+      "description": "asChild menerapkan gaya badge ke elemen anak, misalnya <a>."
+    }
+  },
+  "props": {
+    "variant": "Tone warna badge.",
+    "dot": "Tampilkan titik 6px sebelum teks.",
+    "asChild": "Terapkan gaya ke elemen anak (titik tidak ditambahkan)."
+  }
+}

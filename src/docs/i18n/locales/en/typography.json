@@ -1,0 +1,18 @@
+{
+  "description": "Examples of composing text with the typo-* classes: headings, paragraphs, lists, quotes and code.",
+  "usage": "There is no Typography component — combine a typo-* class (size) with a text-fg-* class (color). The full list of text styles is in",
+  "examples": {
+    "headings": {
+      "title": "Headings in Apps",
+      "description": "Screen and section titles use Plus Jakarta Sans in navy (text-fg-heading)."
+    },
+    "body": {
+      "title": "Paragraphs, Code & Links",
+      "description": "Body/L for main text, Body/M for supporting text, Body/S for meta."
+    },
+    "listQuote": {
+      "title": "Lists & Quotes",
+      "description": "A facility list and a visitor review quote."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Turns an option on or off. It can also be \"partially\" checked (indeterminate).",
+  "examples": {
+    "withDescription": {
+      "title": "With Description",
+      "description": "Use a horizontal Field + FieldContent for the label and an explanation."
+    },
+    "indeterminate": {
+      "title": "Indeterminate",
+      "description": "A \"Select all\" checkbox shows a dash when only some items are selected."
+    },
+    "disabled": {
+      "title": "Disabled",
+      "description": "An option that cannot be changed, checked or not."
+    }
+  },
+  "props": {
+    "checked": "Checked state (controlled).",
+    "defaultChecked": "Initial state (uncontrolled).",
+    "onCheckedChange": "Called when the state changes.",
+    "disabled": "Disables the checkbox.",
+    "required": "Must be checked before the form is submitted."
+  }
+}

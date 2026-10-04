@@ -1,0 +1,19 @@
+{
+  "description": "Meminta konfirmasi untuk tindakan penting, misalnya membatalkan pesanan. Tidak tertutup saat klik di luar — pengguna harus memilih.",
+  "guidelines": {
+    "verbs": "Tulis tombol dengan kata kerja yang jelas (\"Ya, Batalkan\"), bukan \"OK\". Untuk tindakan berbahaya pakai variant=\"destructive\".",
+    "outside": "Jelaskan akibatnya di deskripsi, misalnya kapan dana dikembalikan."
+  },
+  "examples": {
+    "small": {
+      "title": "Ukuran Kecil",
+      "description": "size=\"sm\": sempit dan rata tengah dengan dua tombol sama besar — cocok untuk ponsel."
+    }
+  },
+  "props": {
+    "size": "md = lebar dengan ikon di kiri (layar besar), sm = sempit dan rata tengah.",
+    "actionVariant": "Gaya tombol konfirmasi.",
+    "cancelVariant": "Gaya tombol batal.",
+    "open": "Status terbuka (terkontrol)."
+  }
+}

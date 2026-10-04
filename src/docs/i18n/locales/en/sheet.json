@@ -1,0 +1,15 @@
+{
+  "description": "A panel that slides in from an edge of the screen, such as a mobile menu, filters or a cart. A bottom panel has rounded top corners (24px radius).",
+  "examples": {
+    "sides": {
+      "title": "Sides",
+      "description": "Top, right, bottom or left. For a bottom sheet you can drag down, use Drawer."
+    }
+  },
+  "props": {
+    "side": "Edge of the screen the panel comes from.",
+    "showCloseButton": "Show the × button in the top-right corner.",
+    "closeLabel": "Screen-reader label of the × button.",
+    "open": "Open state (controlled)."
+  }
+}

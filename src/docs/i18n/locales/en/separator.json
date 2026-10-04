@@ -1,0 +1,13 @@
+{
+  "description": "A thin line that separates content, horizontally or vertically.",
+  "examples": {
+    "vertical": {
+      "title": "Vertical",
+      "description": "A vertical separator needs a parent element with a height."
+    }
+  },
+  "props": {
+    "orientation": "Direction of the line.",
+    "decorative": "true = decoration only (ignored by screen readers). false = a meaningful separator."
+  }
+}

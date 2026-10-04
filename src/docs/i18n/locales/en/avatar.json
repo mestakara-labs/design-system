@@ -1,0 +1,23 @@
+{
+  "description": "A round profile photo, with initials as a fallback while the photo loads or when there is none.",
+  "examples": {
+    "sizes": {
+      "title": "Sizes",
+      "description": "Small (32px), Medium (40px, default) and Large (56px)."
+    },
+    "badge": {
+      "title": "With Badge",
+      "description": "A small dot in the bottom-right corner, such as an online or verified status."
+    },
+    "group": {
+      "title": "Group",
+      "description": "Several overlapping avatars, with the remaining count at the end."
+    }
+  },
+  "props": {
+    "size": "Size of the avatar.",
+    "src": "Image URL.",
+    "alt": "Alternative text for screen readers.",
+    "delayMs": "Delay before the fallback shows (ms), to avoid a flash when the image loads fast."
+  }
+}

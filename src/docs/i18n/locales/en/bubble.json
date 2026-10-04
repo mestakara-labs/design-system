@@ -1,0 +1,26 @@
+{
+  "description": "The balloon around one chat message. The user's own messages are green on the right, replies are light on the left. 16px radius.",
+  "examples": {
+    "variants": {
+      "title": "Variants",
+      "description": "Seven variants for different senders and situations, including ghost (no balloon) and destructive (failed to send)."
+    },
+    "actions": {
+      "title": "Reactions & clickable suggestions",
+      "description": "BubbleReactions sits on the balloon's corner. With asChild, BubbleContent becomes a button, e.g. for suggested questions."
+    }
+  },
+  "parts": {
+    "group": "Stacks several balloons from the same sender.",
+    "bubble": "Wrapper; sets the variant and side (left/right).",
+    "content": "Text inside the balloon. Supports asChild.",
+    "reactions": "Emoji reactions on the balloon's corner."
+  },
+  "props": {
+    "variant": "Balloon color.",
+    "align": "\"end\" = right side (the user's own messages). Inside Message it follows the message.",
+    "asChild": "Render the child element (button or a) with balloon styles.",
+    "side": "Reaction position: above or below the balloon.",
+    "reactionsAlign": "Reaction position: left or right."
+  }
+}

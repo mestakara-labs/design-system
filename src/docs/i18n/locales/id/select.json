@@ -1,0 +1,23 @@
+{
+  "description": "Memilih satu opsi dari daftar dropdown bergaya design system.",
+  "tip": "Untuk daftar panjang yang sederhana di perangkat mobile, Native Select bisa menjadi pilihan yang lebih nyaman.",
+  "examples": {
+    "groups": {
+      "title": "Dengan Grup",
+      "description": "Kelompokkan opsi dengan SelectGroup, SelectLabel, dan SelectSeparator."
+    },
+    "withField": {
+      "title": "Dalam Form (Error)",
+      "description": "Gabungkan dengan Field. position=\"popper\" menampilkan daftar tepat di bawah kolom."
+    }
+  },
+  "props": {
+    "value": "Nilai yang dipilih (terkontrol).",
+    "defaultValue": "Nilai awal (tidak terkontrol).",
+    "onValueChange": "Dipanggil saat pilihan berubah.",
+    "disabled": "Menonaktifkan select.",
+    "size": "Tinggi kolom: md 48px, sm 40px.",
+    "position": "item-aligned = daftar menutupi kolom (gaya native). popper = daftar muncul di bawah kolom.",
+    "itemDisabled": "Menonaktifkan satu opsi."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Memberi tahu semua komponen di dalamnya apakah teks berjalan dari kiri ke kanan (ltr, misalnya bahasa Indonesia) atau kanan ke kiri (rtl, misalnya bahasa Arab). Menu, slider, dan carousel akan menyesuaikan arahnya.",
+  "tip": "Pasang juga atribut dir pada <html> atau pembungkus agar browser ikut membalik tata letak.",
+  "parts": {
+    "provider": "Menyebarkan arah ke semua komponen di dalamnya.",
+    "hook": "Membaca arah saat ini di komponen Anda sendiri."
+  },
+  "props": {
+    "dir": "Arah teks.",
+    "direction": "Sama dengan dir."
+  }
+}

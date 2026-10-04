@@ -1,0 +1,42 @@
+{
+  "description": "Menu samping dasbor: logo, grup menu, akun pengguna, dan tombol untuk melipatnya. Lebar 240px dengan latar hijau tua; item aktif memakai warna brand. Di ponsel, menu muncul sebagai Sheet.",
+  "structure": "Susunan halaman: SidebarProvider membungkus Sidebar (menu) dan SidebarInset (isi halaman). SidebarTrigger di header membuka/menutup menu, begitu juga Ctrl+B (⌘B di Mac).",
+  "colors": "Warna sidebar diambil dari token --sidebar-* di semantic.css. Ubah token itu untuk tampilan lain (misalnya sidebar terang) tanpa menyentuh komponen.",
+  "hook": "useSidebar() membaca dan mengubah status menu dari komponen mana pun di dalam SidebarProvider.",
+  "examples": {
+    "variants": {
+      "title": "Varian",
+      "description": "sidebar menempel di tepi layar, floating berupa kotak membulat, dan inset membuat isi halaman menjadi kartu di samping menu."
+    },
+    "loading": {
+      "title": "Memuat",
+      "description": "SidebarMenuSkeleton sebagai pengganti item selama menu dimuat. collapsible=\"none\" membuat menu selalu terbuka."
+    }
+  },
+  "parts": {
+    "provider": "Menyimpan status terbuka/terlipat. Membungkus menu dan isi halaman.",
+    "sidebar": "Menu itu sendiri. Di ponsel berubah menjadi Sheet.",
+    "trigger": "Tombol buka/tutup menu, biasanya di header halaman.",
+    "rail": "Strip tipis di tepi menu; klik untuk melipat/membuka.",
+    "inset": "Isi halaman di samping menu (elemen main).",
+    "header": "Bagian atas: logo atau pemilih unit.",
+    "content": "Bagian tengah yang bisa digulir, berisi grup menu.",
+    "footer": "Bagian bawah: akun pengguna.",
+    "group": "Grup menu dengan label dan aksi opsional.",
+    "menu": "Daftar item menu (ul/li).",
+    "menuButton": "Tombol atau tautan menu. Mendukung isActive, tooltip, dan asChild.",
+    "menuExtras": "Tambahan di kanan item: tombol aksi kecil atau angka (badge).",
+    "menuSub": "Daftar sub-item yang menjorok ke dalam.",
+    "skeleton": "Baris abu-abu pengganti saat memuat."
+  },
+  "props": {
+    "defaultOpen": "Terbuka di awal (tidak terkontrol).",
+    "open": "Status terbuka (terkontrol), dipakai bersama onOpenChange.",
+    "side": "Sisi layar tempat menu berada.",
+    "variant": "Gaya bingkai: menempel, mengambang, atau inset.",
+    "collapsible": "Saat ditutup: keluar layar, terlipat jadi ikon, atau tidak bisa ditutup.",
+    "isActive": "Menandai halaman yang sedang dibuka.",
+    "tooltip": "Label yang muncul saat hover ketika menu terlipat jadi ikon.",
+    "size": "Tinggi tombol: sm 32px, md 40px, lg 48px."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "colors": {
+    "description": "The palette comes from the Agrowisata unit logos: tea-leaf green, sunrise orange and highland navy. Always use semantic tokens, never raw hex codes.",
+    "semantic": {
+      "title": "Semantic Tokens",
+      "description": "Colors named by what they are for. These are what components and apps use."
+    },
+    "primitives": {
+      "title": "Primitive Palette",
+      "description": "Every raw color scale. Do not use these directly in components — use the semantic tokens above."
+    },
+    "groups": {
+      "background": "Background",
+      "action": "Action",
+      "text": "Text",
+      "border": "Border",
+      "status": "Status"
+    },
+    "usage": {
+      "bg-canvas": "Page background",
+      "bg-surface": "Cards, sheets, inputs",
+      "bg-subtle": "Zebra rows, logo area",
+      "bg-muted": "Inactive background",
+      "bg-brand": "Brand top bar, ticket header, selected chip",
+      "bg-brand-subtle": "Tonal button, active nav indicator",
+      "bg-inverse": "Home hero, dashboard sidebar",
+      "bg-accent-subtle": "Warm info / promo box",
+      "action-primary": "Main button",
+      "action-primary-hover": "Main button on hover",
+      "action-primary-pressed": "Main button when pressed",
+      "action-secondary": "Accent / promo button",
+      "action-tertiary": "Tertiary action",
+      "action-tonal": "Tonal button (secondary action)",
+      "action-danger": "Destructive button",
+      "action-disabled": "Disabled button",
+      "text-primary": "Main text",
+      "text-secondary": "Supporting text",
+      "text-tertiary": "Placeholder, meta",
+      "text-disabled": "Disabled text",
+      "text-brand": "Brand titles (serif), prices",
+      "text-heading": "Section titles inside apps",
+      "text-link": "Links, ghost buttons",
+      "text-on-brand": "Text on green / forest",
+      "text-accent": "Overline / unit label",
+      "border-default": "Card & input outlines",
+      "border-strong": "Outline button",
+      "border-focus": "Input focus (2px)",
+      "status-success": "Paid, active, open",
+      "status-success-bg": "Success background",
+      "status-warning": "Awaiting payment",
+      "status-warning-bg": "Warning background",
+      "status-danger": "Error, cancelled",
+      "status-danger-bg": "Danger background",
+      "status-info": "Info, scheduled",
+      "status-info-bg": "Info background",
+      "status-success-text": "Success text on light green (passes AA)",
+      "status-warning-text": "Warning text on light orange (passes AA)",
+      "status-danger-text": "Danger text on light red (passes AA)",
+      "status-info-text": "Info text on light blue (passes AA)",
+      "accent-gold": "Premium labels, overline on dark backgrounds"
+    }
+  },
+  "typography": {
+    "description": "Two typefaces: Fraunces for brand moments, Plus Jakarta Sans for the whole interface.",
+    "fonts": {
+      "title": "Typefaces",
+      "fraunces": "Soft serif for heroes, destination names and large section titles. Matches the wordmark of the unit logos.",
+      "jakarta": "Sans-serif for the whole interface: screen titles, body text, labels and numbers."
+    },
+    "styles": {
+      "title": "Text Styles",
+      "description": "One typo-* class sets the font, size, line height, weight and letter spacing from Figma."
+    },
+    "rules": {
+      "oneFraunces": "At most one Fraunces text per mobile screen (usually the hero or the unit name).",
+      "overline": "An uppercase overline in text-fg-accent sits above a title to name the unit or category.",
+      "noColor": "typo-* classes do not set a color — combine them with a text-fg-* class."
+    }
+  },
+  "spacing": {
+    "description": "All spacing follows a 4px grid so layouts feel airy and consistent.",
+    "scale": {
+      "title": "Scale",
+      "description": "In Tailwind, 1 unit = 4px. For example: p-4 = 16px, gap-6 = 24px."
+    },
+    "guidelines": {
+      "title": "Guidelines",
+      "screenPadding": "Mobile screen padding is 16px.",
+      "cardGap": "Space between cards is 16px.",
+      "cardPadding": "Padding inside cards is 16–20px."
+    }
+  },
+  "radius": {
+    "description": "Rounded corners inspired by leaves and hills — soft, never rigid. Avoid sharp 0px corners on cards and buttons.",
+    "scale": {
+      "title": "Scale"
+    },
+    "usage": {
+      "xs": "Tags, checkbox",
+      "sm": "Small buttons",
+      "md": "Buttons, inputs",
+      "lg": "Cards",
+      "xl": "Sheets, modals, e-ticket",
+      "full": "Chips, badges, avatars"
+    }
+  },
+  "elevation": {
+    "description": "Shadows are tinted dark green (#0F2921), never pure black.",
+    "levels": {
+      "title": "Elevation Levels"
+    },
+    "usage": {
+      "level1": "Cards, list items",
+      "level2": "Dropdowns, tickets",
+      "level3": "Modals, bottom sheets"
+    },
+    "guidelines": {
+      "title": "Guidelines",
+      "borderOrShadow": "A default card uses a 1px border OR Elevation/1 — never both.",
+      "noHeavy": "Avoid heavy or pure black shadows."
+    }
+  }
+}

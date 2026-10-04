@@ -1,0 +1,9 @@
+{
+  "description": "Kartu pratinjau yang muncul saat kursor diarahkan (atau fokus keyboard) ke sebuah tautan, misalnya info singkat sebuah unit.",
+  "tip": "Ponsel tidak bisa hover, jadi jangan letakkan informasi penting hanya di Hover Card.",
+  "props": {
+    "openDelay": "Jeda sebelum muncul (ms).",
+    "closeDelay": "Jeda sebelum hilang (ms).",
+    "side": "Sisi tempat kartu muncul."
+  }
+}

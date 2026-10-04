@@ -1,0 +1,34 @@
+{
+  "description": "A flexible list row: media (icon/image), title, description and actions. Good for order history, F&B menus and settings.",
+  "examples": {
+    "variants": {
+      "title": "Variants",
+      "description": "default without background, outline with a border, muted with a cream background."
+    },
+    "menu": {
+      "title": "F&B Menu Item",
+      "description": "As in DESIGN.md: thumbnail, name, description, price and a Tonal \"+ Tambah\" button."
+    },
+    "group": {
+      "title": "Group as Links",
+      "description": "ItemGroup + ItemSeparator for a settings list; asChild turns each row into a link."
+    }
+  },
+  "parts": {
+    "group": "A list of Items.",
+    "item": "One row.",
+    "media": "Icon or image on the left.",
+    "content": "Title and description.",
+    "title": "Row title.",
+    "description": "Supporting text (max. 2 lines).",
+    "actions": "Buttons or controls on the right.",
+    "headerFooter": "A full-width row above or below the content.",
+    "separator": "Divider line between Items."
+  },
+  "props": {
+    "variant": "Visual style of the row.",
+    "size": "Padding density.",
+    "asChild": "Use the child element (e.g. an <a>) as the row.",
+    "mediaVariant": "icon = light-green square, image = rounded thumbnail."
+  }
+}

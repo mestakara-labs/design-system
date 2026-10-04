@@ -1,0 +1,7 @@
+{
+  "description": "Shows a keyboard key or shortcut, such as Ctrl + K. Useful in dashboard apps.",
+  "parts": {
+    "kbd": "One keyboard key.",
+    "group": "Several keys pressed together."
+  }
+}

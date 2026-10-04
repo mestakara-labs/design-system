@@ -1,0 +1,27 @@
+{
+  "description": "Panels the user can resize by dragging the line between them, or with the arrow keys after focusing the line. Mostly for dashboards.",
+  "tip": "Numbers are pixels and strings are percentages, e.g. defaultSize={240} or defaultSize=\"30%\".",
+  "examples": {
+    "vertical": {
+      "title": "Vertical",
+      "description": "orientation=\"vertical\" stacks the panels top to bottom."
+    },
+    "handle": {
+      "title": "With handle & size limits",
+      "description": "withHandle shows a small grip. minSize and maxSize limit the panel size."
+    }
+  },
+  "parts": {
+    "group": "Row (or column) of panels.",
+    "panel": "One panel.",
+    "handle": "Draggable line between two panels."
+  },
+  "props": {
+    "orientation": "\"horizontal\" = side by side, \"vertical\" = stacked.",
+    "defaultSize": "Starting size of the panel (px or %).",
+    "minSize": "Smallest size of the panel.",
+    "maxSize": "Largest size of the panel.",
+    "collapsible": "The panel can fold away when dragged past minSize.",
+    "withHandle": "Show a small grip on the line."
+  }
+}

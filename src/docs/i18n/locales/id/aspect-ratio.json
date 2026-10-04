@@ -1,0 +1,6 @@
+{
+  "description": "Menjaga perbandingan lebar dan tinggi konten (biasanya gambar) tetap sama, misalnya foto lanskap 19:10 pada kartu destinasi.",
+  "props": {
+    "ratio": "Perbandingan lebar ÷ tinggi, misalnya 19 / 10 atau 16 / 9."
+  }
+}

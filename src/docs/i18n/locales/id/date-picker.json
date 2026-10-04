@@ -1,0 +1,14 @@
+{
+  "description": "Memilih tanggal dari kalender yang muncul di bawah kolom. Format tanggal mengikuti DESIGN.md, contoh \"Sabtu, 17 Okt 2026\".",
+  "installation": "Date Picker bukan komponen tersendiri, melainkan pola gabungan Popover + Calendar + Button. Format tanggal memakai date-fns.",
+  "examples": {
+    "range": {
+      "title": "Rentang Tanggal",
+      "description": "Untuk tanggal menginap (check-in – check-out)."
+    },
+    "withField": {
+      "title": "Dalam Form",
+      "description": "Dengan label, teks bantuan, dan dropdown tahun untuk tanggal lahir."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "description": "A grey pulsing box shown while content is loading.",
+  "tip": "Set its size and shape with className (h-*, w-*, rounded-*) so it looks like the content that will appear.",
+  "examples": {
+    "card": {
+      "title": "Destination Card",
+      "description": "A skeleton with the same shape as a destination card: photo, title, meta and price."
+    }
+  }
+}

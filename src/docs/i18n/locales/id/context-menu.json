@@ -1,0 +1,7 @@
+{
+  "description": "Menu yang muncul saat klik kanan (atau tekan lama di layar sentuh), misalnya pada baris tabel di dashboard.",
+  "guidelines": {
+    "visible": "Pengguna sering tidak tahu ada klik kanan — sediakan aksi yang sama di tempat yang terlihat juga.",
+    "parts": "Bagian-bagiannya (item, centang, radio, sub-menu, pintasan) sama dengan"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Kolom teks satu baris untuk nama, email, nomor telepon, dan data singkat lainnya.",
+  "guidelines": {
+    "label": "Selalu beri label di atas kolom (gunakan Field + FieldLabel). Placeholder bukan pengganti label.",
+    "error": "Saat error, tambahkan aria-invalid dan teks bantuan merah yang menjelaskan cara memperbaikinya."
+  },
+  "examples": {
+    "withLabel": {
+      "title": "Dengan Label",
+      "description": "Gabungkan dengan Field, FieldLabel, dan FieldDescription."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "Border merah 2px dan pesan yang menjelaskan cara memperbaiki isian."
+    },
+    "disabled": {
+      "title": "Non-aktif",
+      "description": "Isian yang tidak dapat diubah."
+    },
+    "file": {
+      "title": "Unggah File",
+      "description": "Input dengan type=\"file\"."
+    }
+  },
+  "props": {
+    "type": "Jenis isian: text, email, tel, password, number, file, dan lainnya.",
+    "ariaInvalid": "Menampilkan state error (border merah).",
+    "disabled": "Menonaktifkan isian.",
+    "native": "Input juga menerima semua atribut bawaan <input>."
+  }
+}

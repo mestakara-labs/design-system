@@ -1,0 +1,26 @@
+{
+  "description": "A set of toggles. Pick one (type=\"single\") like a category filter, or several at once (type=\"multiple\").",
+  "examples": {
+    "multiple": {
+      "title": "Multiple",
+      "description": "type=\"multiple\": several items can be on at the same time."
+    },
+    "spacing": {
+      "title": "With Spacing",
+      "description": "spacing adds space between items (1 = 4px). spacing=0 joins the items into one bar."
+    },
+    "disabled": {
+      "title": "Disabled Item",
+      "description": "Disable specific items, such as a fully booked session."
+    }
+  },
+  "props": {
+    "type": "single = one choice, multiple = many choices.",
+    "value": "Active items (controlled). An array when multiple.",
+    "onValueChange": "Called when the selection changes.",
+    "variant": "Style of every item.",
+    "size": "Size of every item.",
+    "spacing": "Space between items in Tailwind units (1 = 4px).",
+    "itemValue": "Unique value of each item."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "description": "One row of a conversation: avatar, sender name, message balloons and time. align=\"end\" mirrors the row for the user's own messages.",
+  "examples": {
+    "assistant": {
+      "title": "Assistant",
+      "description": "A ghost balloon without background suits long answers from an assistant. MessageAvatar can hold an icon."
+    }
+  },
+  "parts": {
+    "group": "List of messages with even spacing.",
+    "message": "One message row.",
+    "avatar": "Holds the avatar, lined up with the last balloon.",
+    "content": "Column with the header, balloons and footer.",
+    "header": "Small line above the balloons, e.g. the sender's name.",
+    "footer": "Small line below the balloons, e.g. the time or read status."
+  },
+  "props": {
+    "align": "\"end\" = the user's own message, shown on the right."
+  }
+}

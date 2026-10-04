@@ -1,0 +1,22 @@
+{
+  "description": "A search field with a list of suggestions: type to filter, then pick one or several items.",
+  "examples": {
+    "clear": {
+      "title": "Clear Button",
+      "description": "showClear adds a × button to empty the selection."
+    },
+    "multiple": {
+      "title": "Multiple",
+      "description": "multiple + ComboboxChips shows every selected item as a removable chip."
+    }
+  },
+  "props": {
+    "items": "The full list of selectable items.",
+    "value": "Selected item (controlled). An array when multiple.",
+    "onValueChange": "Called when the selection changes.",
+    "multiple": "Allow selecting more than one item.",
+    "showTrigger": "Show the arrow button that opens the list.",
+    "showClear": "Show a × button to empty the selection.",
+    "baseUi": "Combobox is built on Base UI. Every Base UI Combobox prop can be used — see base-ui.com."
+  }
+}

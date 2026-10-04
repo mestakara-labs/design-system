@@ -1,0 +1,21 @@
+{
+  "description": "Memilih tepat satu pilihan dari sebuah daftar, misalnya metode pembayaran.",
+  "examples": {
+    "choiceCard": {
+      "title": "Kartu Pilihan",
+      "description": "Untuk pilihan dengan keterangan tambahan, gabungkan dengan Field menjadi kartu."
+    },
+    "disabled": {
+      "title": "Item Non-aktif",
+      "description": "Nonaktifkan item yang sedang tidak tersedia, misalnya sesi yang sudah penuh."
+    }
+  },
+  "props": {
+    "value": "Nilai yang dipilih (terkontrol).",
+    "defaultValue": "Nilai awal (tidak terkontrol).",
+    "onValueChange": "Dipanggil saat pilihan berubah.",
+    "orientation": "Arah navigasi keyboard.",
+    "itemValue": "Nilai unik setiap item.",
+    "disabled": "Menonaktifkan item."
+  }
+}

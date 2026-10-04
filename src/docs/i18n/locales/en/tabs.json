@@ -1,0 +1,31 @@
+{
+  "description": "Switches between views that share one place on the screen, such as Description · Facilities · Reviews. Two styles: a white pill on a grey track, or a green underline.",
+  "tip": "Use Tabs for equal pieces of content read one at a time. To move between pages, use links or a Navigation Menu.",
+  "examples": {
+    "line": {
+      "title": "Underline",
+      "description": "variant=\"line\" on TabsList: the active tab gets a green line. Good for order lists or status filters."
+    },
+    "icons": {
+      "title": "With icons & disabled",
+      "description": "Put the icon before the text. A tab with the disabled prop cannot be selected."
+    },
+    "vertical": {
+      "title": "Vertical",
+      "description": "orientation=\"vertical\" stacks the tabs top to bottom, e.g. for a settings page."
+    }
+  },
+  "parts": {
+    "root": "Wrapper; keeps the active tab.",
+    "list": "Row of tab buttons. The variant prop sets its look.",
+    "trigger": "One tab button; its value must match its TabsContent.",
+    "content": "Content shown while its tab is active."
+  },
+  "props": {
+    "defaultValue": "Tab that is active at first (uncontrolled).",
+    "value": "Active tab (controlled), used with onValueChange.",
+    "orientation": "Direction of the tabs. Left/right or up/down arrows move between tabs.",
+    "variant": "Look of the tab list: pill on a grey track, or underline.",
+    "disabled": "The tab cannot be selected."
+  }
+}

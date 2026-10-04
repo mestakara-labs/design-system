@@ -1,0 +1,25 @@
+{
+  "description": "An on/off toggle for settings that apply immediately, such as notifications.",
+  "tip": "Use a Switch for settings that apply right away. For choices that apply after the form is submitted, use a Checkbox.",
+  "examples": {
+    "sizes": {
+      "title": "Sizes",
+      "description": "Small (20px) and Medium (24px, default)."
+    },
+    "withDescription": {
+      "title": "With Description",
+      "description": "Use a horizontal Field for a label and explanation next to the switch."
+    },
+    "disabled": {
+      "title": "Disabled",
+      "description": "A switch that cannot be changed, on or off."
+    }
+  },
+  "props": {
+    "size": "Size of the switch.",
+    "checked": "On/off state (controlled).",
+    "defaultChecked": "Initial state (uncontrolled).",
+    "onCheckedChange": "Called when the state changes.",
+    "disabled": "Disables the switch."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Elemen <select> bawaan browser dengan gaya design system. Paling ringan dan nyaman di perangkat mobile.",
+  "examples": {
+    "groups": {
+      "title": "Dengan Grup",
+      "description": "Kelompokkan opsi dengan NativeSelectOptGroup."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "Tambahkan aria-invalid dan pesan error di bawahnya."
+    }
+  },
+  "props": {
+    "size": "Tinggi kolom: md 48px, sm 40px.",
+    "ariaInvalid": "Menampilkan state error.",
+    "disabled": "Menonaktifkan select.",
+    "native": "NativeSelect juga menerima semua atribut bawaan <select>, seperti value, onChange, dan name."
+  }
+}

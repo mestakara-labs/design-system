@@ -1,0 +1,17 @@
+{
+  "description": "A spinning icon that shows something is loading. It takes the color of the surrounding text.",
+  "examples": {
+    "sizes": {
+      "title": "Sizes & Colors",
+      "description": "Set the size with size-* and the color with text-*."
+    },
+    "button": {
+      "title": "Inside a Button",
+      "description": "Disable the button and put the Spinner before the text while the action runs."
+    }
+  },
+  "props": {
+    "ariaLabel": "Text for screen readers. The default is Indonesian: \"Memuat\" (loading).",
+    "className": "Size (size-*) and color (text-*)."
+  }
+}

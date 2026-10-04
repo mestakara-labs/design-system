@@ -1,0 +1,38 @@
+{
+  "description": "Langkah-langkah memasang @mestakara/ui di aplikasi React, Next.js, atau framework berbasis React lainnya.",
+  "requirements": {
+    "title": "Kebutuhan",
+    "frameworks": "Next.js (App Router / Pages Router), Vite + React, Remix, atau framework berbasis React lainnya"
+  },
+  "registry": {
+    "title": "1. Hubungkan registry",
+    "description": "Paket ini disimpan di registry npm privat. Tambahkan baris berikut ke file .npmrc di aplikasi Anda. Ganti <URL_REGISTRY> dengan alamat registry tim."
+  },
+  "install": {
+    "title": "2. Pasang paket"
+  },
+  "styles": {
+    "title": "3. Impor stylesheet",
+    "description": "Impor Tailwind terlebih dahulu, lalu stylesheet design system. Semua token warna, tipografi, radius, dan bayangan langsung tersedia sebagai kelas Tailwind."
+  },
+  "fonts": {
+    "title": "4. Pasang font",
+    "description": "Design system memakai Fraunces dan Plus Jakarta Sans. Cara termudah: pasang paket Fontsource lalu impor sekali di entry aplikasi."
+  },
+  "use": {
+    "title": "5. Gunakan komponen"
+  },
+  "nextjs": {
+    "title": "Catatan Next.js",
+    "description": "Setiap file komponen sudah diberi \"use client\", jadi komponen bisa langsung dipakai di Server Component (misalnya app/page.tsx) tanpa pembungkus. Event handler seperti onClick tetap harus ditulis di Client Component Anda sendiri."
+  },
+  "optional": {
+    "title": "6. Opsional",
+    "form": "Form memakai react-hook-form. Pasang hanya bila membutuhkan Form, lalu impor dari @mestakara/ui/form (tidak tersedia di @mestakara/ui).",
+    "toaster": "Untuk notifikasi toast, letakkan <Toaster /> sekali di root aplikasi, lalu panggil toast() dari mana saja."
+  },
+  "local": {
+    "title": "Mencoba tanpa registry",
+    "description": "Selama registry belum tersedia, bungkus paket menjadi file .tgz di repo design system, lalu pasang file itu di aplikasi Anda."
+  }
+}

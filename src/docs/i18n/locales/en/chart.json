@@ -1,0 +1,29 @@
+{
+  "description": "Charts built on Recharts with design-system colors, tooltip and legend. Good for operations dashboards.",
+  "guidelines": {
+    "config": "Every key in config becomes a CSS variable --color-<key>, used as fill/stroke.",
+    "recharts": "All chart components (BarChart, LineChart, AreaChart, PieChart, …) are imported directly from recharts."
+  },
+  "colors": {
+    "title": "Series Colors",
+    "description": "Five series colors from the brand palette: green, orange, navy, sky blue and gold."
+  },
+  "examples": {
+    "area": {
+      "title": "Area",
+      "description": "Visitors per day over one week."
+    },
+    "pie": {
+      "title": "Donut",
+      "description": "Ticket sales per unit. Each slice uses a color from config."
+    }
+  },
+  "parts": {
+    "container": "Wraps the chart: responsive and applies the colors from config.",
+    "tooltip": "Recharts tooltip.",
+    "tooltipContent": "Tooltip content in the design-system style (Indonesian number format).",
+    "legend": "Recharts legend.",
+    "legendContent": "Legend content in the design-system style.",
+    "config": "Label, icon and color of every data series."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "announcement": "New: Questionnaire component",
+    "title": "The Foundation of the Agrowisata Design System",
+    "description": "Composable, accessible components that already follow the Agrowisata Regional 2 design. Use them directly in React, Next.js or Vite apps, then adapt them to your needs.",
+    "getStarted": "Get Started",
+    "viewComponents": "View Components"
+  },
+  "blocks": {
+    "title": "Ready-made blocks",
+    "description": "Dashboard, sidebar and login pages built from Mestakara UI components. Copy the code into your app.",
+    "viewAll": "View all blocks",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "sidebar": "Sidebar",
+      "login": "Login"
+    }
+  }
+}

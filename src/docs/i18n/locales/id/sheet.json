@@ -1,0 +1,15 @@
+{
+  "description": "Panel yang muncul dari tepi layar, misalnya menu ponsel, filter, atau keranjang. Panel dari bawah memiliki sudut atas membulat (radius 24px).",
+  "examples": {
+    "sides": {
+      "title": "Arah",
+      "description": "Atas, kanan, bawah, atau kiri. Untuk bottom sheet yang bisa ditarik ke bawah, gunakan Drawer."
+    }
+  },
+  "props": {
+    "side": "Tepi layar tempat panel muncul.",
+    "showCloseButton": "Tampilkan tombol × di pojok kanan atas.",
+    "closeLabel": "Label tombol × untuk screen reader.",
+    "open": "Status terbuka (terkontrol)."
+  }
+}

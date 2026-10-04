@@ -1,0 +1,34 @@
+{
+  "description": "Input atau textarea dengan tambahan ikon, teks, atau tombol yang menyatu dalam satu kolom.",
+  "examples": {
+    "text": {
+      "title": "Dengan Teks",
+      "description": "Awalan atau akhiran teks, misalnya \"Rp\" atau domain email."
+    },
+    "button": {
+      "title": "Dengan Tombol",
+      "description": "Tombol kecil di dalam kolom, misalnya salin kode atau tampilkan kata sandi."
+    },
+    "textarea": {
+      "title": "Textarea",
+      "description": "Addon di bawah textarea, misalnya penghitung karakter."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "aria-invalid pada input membuat seluruh grup berwarna merah."
+    }
+  },
+  "parts": {
+    "group": "Pembungkus yang menggambar border, fokus, dan error.",
+    "input": "Input di dalam grup (tanpa border sendiri).",
+    "textarea": "Textarea di dalam grup (tanpa border sendiri).",
+    "addon": "Konten tambahan: ikon, teks, atau tombol.",
+    "text": "Teks biasa di dalam addon.",
+    "button": "Tombol kecil di dalam addon."
+  },
+  "props": {
+    "align": "Letak addon: kiri, kanan, atas, atau bawah input.",
+    "size": "Ukuran tombol di dalam grup.",
+    "variant": "Gaya tombol (sama seperti Button)."
+  }
+}

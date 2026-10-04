@@ -1,0 +1,31 @@
+{
+  "description": "File yang dilampirkan ke pesan atau formulir, misalnya foto bukti transfer, e-tiket PDF, atau KTP. Menampilkan thumbnail atau ikon, nama file, detail, dan aksi.",
+  "tip": "Atur prop state sesuai proses unggah: idle (slot kosong), uploading/processing (nama berkilau), error (merah), done.",
+  "examples": {
+    "images": {
+      "title": "Foto & bisa diklik",
+      "description": "orientation=\"vertical\" dengan thumbnail. AttachmentTrigger membuat seluruh kartu bisa diklik, dan AttachmentGroup bisa digulir ke samping."
+    },
+    "sizes": {
+      "title": "Ukuran",
+      "description": "md, sm, dan xs."
+    }
+  },
+  "parts": {
+    "attachment": "Kartu lampiran; mengatur state, ukuran, dan orientasi.",
+    "media": "Thumbnail atau ikon file.",
+    "content": "Kolom judul dan keterangan.",
+    "title": "Nama file; dipotong \"…\" bila terlalu panjang.",
+    "description": "Ukuran, jenis, progres, atau pesan error.",
+    "actions": "Tempat tombol aksi.",
+    "action": "Tombol ikon kecil (hapus, unduh). Wajib diberi aria-label.",
+    "trigger": "Tombol tak terlihat yang membuat seluruh kartu bisa diklik.",
+    "group": "Baris lampiran yang bisa digulir ke samping."
+  },
+  "props": {
+    "state": "Tahap unggah file.",
+    "size": "Ukuran kartu.",
+    "orientation": "\"vertical\" untuk thumbnail besar di atas.",
+    "mediaVariant": "\"image\" untuk foto (pudar selama diunggah)."
+  }
+}

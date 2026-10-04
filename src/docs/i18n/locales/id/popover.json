@@ -1,0 +1,17 @@
+{
+  "description": "Panel kecil melayang yang muncul di dekat tombol pemicunya, misalnya info tambahan atau pengaturan singkat.",
+  "examples": {
+    "form": {
+      "title": "Dengan Form",
+      "description": "Popover juga bisa berisi kolom isian, misalnya jumlah pengunjung."
+    }
+  },
+  "props": {
+    "open": "Status terbuka (terkontrol).",
+    "onOpenChange": "Dipanggil saat popover dibuka atau ditutup.",
+    "asChild": "Gunakan elemen anak (misalnya Button) sebagai pemicu.",
+    "side": "Sisi tempat popover muncul.",
+    "align": "Perataan popover terhadap pemicu.",
+    "sideOffset": "Jarak dari pemicu (px)."
+  }
+}

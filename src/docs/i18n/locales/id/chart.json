@@ -1,0 +1,29 @@
+{
+  "description": "Grafik berbasis Recharts dengan warna, tooltip, dan legenda bergaya design system. Cocok untuk dashboard operasional.",
+  "guidelines": {
+    "config": "Setiap kunci di config menjadi variabel CSS --color-<kunci>, lalu dipakai sebagai fill/stroke.",
+    "recharts": "Semua komponen grafik (BarChart, LineChart, AreaChart, PieChart, …) diimpor langsung dari recharts."
+  },
+  "colors": {
+    "title": "Warna Seri",
+    "description": "Lima warna seri dari palet brand: hijau, oranye, navy, biru langit, dan emas."
+  },
+  "examples": {
+    "area": {
+      "title": "Area",
+      "description": "Jumlah pengunjung per hari dalam seminggu."
+    },
+    "pie": {
+      "title": "Donat",
+      "description": "Penjualan tiket per unit. Setiap irisan memakai warna dari config."
+    }
+  },
+  "parts": {
+    "container": "Membungkus grafik: responsif dan menerapkan warna dari config.",
+    "tooltip": "Tooltip Recharts.",
+    "tooltipContent": "Isi tooltip bergaya design system (angka format Indonesia).",
+    "legend": "Legenda Recharts.",
+    "legendContent": "Isi legenda bergaya design system.",
+    "config": "Label, ikon, dan warna setiap seri data."
+  }
+}

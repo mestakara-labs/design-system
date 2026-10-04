@@ -1,0 +1,27 @@
+{
+  "description": "Panel yang ukurannya bisa diubah dengan menyeret garis di antaranya, atau dengan tombol panah setelah garisnya difokuskan. Biasanya untuk dasbor.",
+  "tip": "Ukuran berupa angka dihitung dalam piksel, sedangkan string dalam persen. Contoh: defaultSize={240} atau defaultSize=\"30%\".",
+  "examples": {
+    "vertical": {
+      "title": "Vertikal",
+      "description": "orientation=\"vertical\" menumpuk panel dari atas ke bawah."
+    },
+    "handle": {
+      "title": "Dengan pegangan & batas ukuran",
+      "description": "withHandle menampilkan pegangan kecil. minSize dan maxSize membatasi ukuran panel."
+    }
+  },
+  "parts": {
+    "group": "Baris (atau kolom) panel.",
+    "panel": "Satu panel.",
+    "handle": "Garis di antara dua panel yang bisa diseret."
+  },
+  "props": {
+    "orientation": "\"horizontal\" = berdampingan, \"vertical\" = bertumpuk.",
+    "defaultSize": "Ukuran awal panel (px atau %).",
+    "minSize": "Ukuran terkecil panel.",
+    "maxSize": "Ukuran terbesar panel.",
+    "collapsible": "Panel bisa dilipat habis saat diseret melewati minSize.",
+    "withHandle": "Tampilkan pegangan kecil di garis."
+  }
+}

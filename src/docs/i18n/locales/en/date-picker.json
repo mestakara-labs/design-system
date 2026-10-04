@@ -1,0 +1,14 @@
+{
+  "description": "Pick a date from a calendar that opens below the field. Dates follow the DESIGN.md format, e.g. \"Sabtu, 17 Okt 2026\".",
+  "installation": "Date Picker is not a separate component but a pattern of Popover + Calendar + Button. Dates are formatted with date-fns.",
+  "examples": {
+    "range": {
+      "title": "Date Range",
+      "description": "For a stay (check-in – check-out)."
+    },
+    "withField": {
+      "title": "In a Form",
+      "description": "With a label, helper text and a year dropdown for birth dates."
+    }
+  }
+}

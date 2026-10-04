@@ -1,0 +1,25 @@
+{
+  "description": "Page numbers under a long list or table. The current page uses the light-green pill of the active navigation item.",
+  "tip": "This component is only the look: work out which page numbers to show yourself, and give each link its page URL (e.g. ?page=2).",
+  "examples": {
+    "simple": {
+      "title": "Simple",
+      "description": "Only Previous/Next with a page label. On the first page, Previous is disabled with aria-disabled."
+    }
+  },
+  "parts": {
+    "root": "nav element with the aria-label \"Navigasi halaman\".",
+    "content": "List (ul) of all items.",
+    "item": "Wrapper of one item (li).",
+    "link": "A page number. Mark the current page with isActive.",
+    "previous": "Link to the previous page. On phones only the arrow shows.",
+    "next": "Link to the next page.",
+    "ellipsis": "The … for skipped page numbers."
+  },
+  "props": {
+    "isActive": "Marks the page that is open (aria-current=\"page\").",
+    "size": "\"icon\" = square number; \"md\" = wider.",
+    "text": "Button text. Default: \"Sebelumnya\" / \"Berikutnya\".",
+    "ariaLabel": "Screen-reader label of the nav."
+  }
+}

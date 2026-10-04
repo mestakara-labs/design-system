@@ -1,0 +1,12 @@
+{
+  "description": "Tells every component inside it whether text runs left to right (ltr, e.g. Indonesian) or right to left (rtl, e.g. Arabic). Menus, sliders and carousels then flip their direction.",
+  "tip": "Also set the dir attribute on <html> or a wrapper so the browser flips the layout too.",
+  "parts": {
+    "provider": "Passes the direction to every component inside it.",
+    "hook": "Reads the current direction in your own components."
+  },
+  "props": {
+    "dir": "Text direction.",
+    "direction": "Same as dir."
+  }
+}

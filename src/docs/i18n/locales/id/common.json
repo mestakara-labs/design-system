@@ -1,0 +1,91 @@
+{
+  "site": {
+    "name": "Mestakara UI",
+    "tagline": "Design System Agrowisata Regional 2"
+  },
+  "nav": {
+    "home": "Beranda",
+    "docs": "Dokumentasi",
+    "gettingStarted": "Memulai",
+    "introduction": "Pengantar",
+    "installation": "Instalasi",
+    "foundations": "Fondasi",
+    "colors": "Warna",
+    "typography": "Tipografi",
+    "spacing": "Spasi",
+    "radius": "Radius",
+    "elevation": "Elevasi",
+    "components": "Komponen",
+    "allComponents": "Semua Komponen",
+    "blocks": "Blocks"
+  },
+  "categories": {
+    "form": "Form & Input",
+    "data-display": "Tampilan Data",
+    "overlay": "Overlay",
+    "navigation": "Navigasi & Layout",
+    "chat": "Chat & Percakapan"
+  },
+  "header": {
+    "language": "Bahasa",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "search": {
+    "button": "Cari…",
+    "placeholder": "Ketik nama komponen atau halaman…",
+    "empty": "Tidak ditemukan."
+  },
+  "preview": {
+    "preview": "Preview",
+    "code": "Kode",
+    "copy": "Salin kode",
+    "copied": "Tersalin"
+  },
+  "sections": {
+    "installation": "Instalasi",
+    "usage": "Penggunaan",
+    "examples": "Contoh",
+    "states": "Semua State",
+    "statesDescription": "Setiap varian dalam setiap kondisi (state) — ditampilkan sekaligus tanpa perlu hover atau klik.",
+    "apiReference": "Referensi API",
+    "anatomy": "Anatomi"
+  },
+  "props": {
+    "prop": "Prop",
+    "type": "Tipe",
+    "default": "Default",
+    "description": "Keterangan"
+  },
+  "parts": {
+    "component": "Komponen",
+    "element": "Elemen"
+  },
+  "states": {
+    "default": "Default",
+    "hover": "Hover",
+    "focus": "Focus",
+    "pressed": "Ditekan",
+    "invalid": "Error",
+    "disabled": "Non-aktif"
+  },
+  "toc": {
+    "onThisPage": "Di halaman ini"
+  },
+  "componentsOverview": {
+    "description": "Semua komponen yang tersedia di @mestakara/ui, dikelompokkan berdasarkan fungsinya."
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "description": "Halaman yang Anda cari tidak ada atau sudah dipindahkan.",
+    "backHome": "Kembali ke Beranda"
+  },
+  "pageError": {
+    "title": "Halaman gagal dimuat",
+    "description": "Mungkin ada versi baru situs ini. Muat ulang untuk mencoba lagi.",
+    "reload": "Muat ulang"
+  },
+  "footer": {
+    "text": "Mestakara UI — Design System Agrowisata Regional 2. Dibangun di atas shadcn/ui."
+  }
+}

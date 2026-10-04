@@ -1,0 +1,123 @@
+{
+  "colors": {
+    "description": "Palet warna diambil dari logo unit-unit Agrowisata: hijau daun teh, oranye matahari terbit, dan navy dataran tinggi. Selalu gunakan token semantik, bukan kode hex langsung.",
+    "semantic": {
+      "title": "Token Semantik",
+      "description": "Warna berdasarkan fungsinya. Inilah yang dipakai di komponen dan aplikasi."
+    },
+    "primitives": {
+      "title": "Palet Primitif",
+      "description": "Seluruh skala warna mentah. Jangan dipakai langsung di komponen — gunakan token semantik di atas."
+    },
+    "groups": {
+      "background": "Latar",
+      "action": "Aksi",
+      "text": "Teks",
+      "border": "Garis",
+      "status": "Status"
+    },
+    "usage": {
+      "bg-canvas": "Latar halaman",
+      "bg-surface": "Kartu, sheet, input",
+      "bg-subtle": "Baris selang-seling, area logo",
+      "bg-muted": "Latar non-aktif",
+      "bg-brand": "Top bar brand, header tiket, chip terpilih",
+      "bg-brand-subtle": "Tombol tonal, indikator nav aktif",
+      "bg-inverse": "Hero beranda, sidebar dashboard",
+      "bg-accent-subtle": "Kotak info/promo hangat",
+      "action-primary": "Tombol utama",
+      "action-primary-hover": "Tombol utama saat hover",
+      "action-primary-pressed": "Tombol utama saat ditekan",
+      "action-secondary": "Tombol aksen/promo",
+      "action-tertiary": "Aksi tersier",
+      "action-tonal": "Tombol tonal (aksi sekunder)",
+      "action-danger": "Tombol aksi berbahaya",
+      "action-disabled": "Tombol non-aktif",
+      "text-primary": "Teks utama",
+      "text-secondary": "Teks pendukung",
+      "text-tertiary": "Placeholder, meta",
+      "text-disabled": "Teks non-aktif",
+      "text-brand": "Judul brand (serif), harga",
+      "text-heading": "Judul bagian di dalam aplikasi",
+      "text-link": "Tautan, tombol ghost",
+      "text-on-brand": "Teks di atas hijau/forest",
+      "text-accent": "Overline / label unit",
+      "border-default": "Garis kartu & input",
+      "border-strong": "Tombol outline",
+      "border-focus": "Fokus input (2px)",
+      "status-success": "Lunas, aktif, buka",
+      "status-success-bg": "Latar status sukses",
+      "status-warning": "Menunggu bayar",
+      "status-warning-bg": "Latar status peringatan",
+      "status-danger": "Error, dibatalkan",
+      "status-danger-bg": "Latar status bahaya",
+      "status-info": "Info, dijadwalkan",
+      "status-info-bg": "Latar status info",
+      "status-success-text": "Teks sukses di atas latar hijau muda (lolos AA)",
+      "status-warning-text": "Teks peringatan di atas latar oranye muda (lolos AA)",
+      "status-danger-text": "Teks bahaya di atas latar merah muda (lolos AA)",
+      "status-info-text": "Teks info di atas latar biru muda (lolos AA)",
+      "accent-gold": "Label premium, overline di latar gelap"
+    }
+  },
+  "typography": {
+    "description": "Dua keluarga huruf: Fraunces untuk momen brand, Plus Jakarta Sans untuk seluruh antarmuka.",
+    "fonts": {
+      "title": "Keluarga Huruf",
+      "fraunces": "Serif lembut untuk hero, nama destinasi, dan judul seksi besar. Selaras dengan wordmark pada logo unit.",
+      "jakarta": "Sans-serif untuk seluruh antarmuka: judul layar, isi, label, dan angka."
+    },
+    "styles": {
+      "title": "Gaya Teks",
+      "description": "Satu kelas typo-* berisi font, ukuran, tinggi baris, ketebalan, dan jarak huruf sesuai Figma."
+    },
+    "rules": {
+      "oneFraunces": "Maksimal satu teks Fraunces per layar ponsel (biasanya hero atau nama unit).",
+      "overline": "Overline huruf kapital berwarna text-fg-accent dipakai di atas judul untuk menyebut nama unit atau kategori.",
+      "noColor": "Kelas typo-* tidak mengatur warna — gabungkan dengan kelas text-fg-*."
+    }
+  },
+  "spacing": {
+    "description": "Semua jarak mengikuti grid 4px agar tata letak terasa lapang dan konsisten.",
+    "scale": {
+      "title": "Skala",
+      "description": "Di Tailwind, 1 unit = 4px. Contoh: p-4 = 16px, gap-6 = 24px."
+    },
+    "guidelines": {
+      "title": "Panduan",
+      "screenPadding": "Padding layar ponsel 16px.",
+      "cardGap": "Jarak antar kartu 16px.",
+      "cardPadding": "Padding dalam kartu 16–20px."
+    }
+  },
+  "radius": {
+    "description": "Sudut membulat terinspirasi bentuk daun dan bukit — lembut, tidak kaku. Hindari sudut tajam 0px pada kartu dan tombol.",
+    "scale": {
+      "title": "Skala"
+    },
+    "usage": {
+      "xs": "Tag, checkbox",
+      "sm": "Tombol kecil",
+      "md": "Tombol, input",
+      "lg": "Kartu",
+      "xl": "Sheet, modal, e-ticket",
+      "full": "Chip, badge, avatar"
+    }
+  },
+  "elevation": {
+    "description": "Bayangan bernuansa hijau gelap (#0F2921), tidak pernah hitam pekat.",
+    "levels": {
+      "title": "Tingkat Elevasi"
+    },
+    "usage": {
+      "level1": "Kartu, list item",
+      "level2": "Dropdown, tiket",
+      "level3": "Modal, bottom sheet"
+    },
+    "guidelines": {
+      "title": "Panduan",
+      "borderOrShadow": "Kartu default memakai border 1px ATAU Elevation/1 — tidak keduanya.",
+      "noHeavy": "Hindari bayangan tebal atau hitam pekat."
+    }
+  }
+}

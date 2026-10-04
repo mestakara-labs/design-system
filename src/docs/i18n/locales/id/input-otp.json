@@ -1,0 +1,22 @@
+{
+  "description": "Satu kotak per karakter untuk kode sekali pakai, misalnya kode verifikasi 6 digit dari SMS atau WhatsApp.",
+  "examples": {
+    "separator": {
+      "title": "Dengan Pemisah",
+      "description": "Bagi kotak menjadi dua grup. pattern membatasi isian hanya angka."
+    },
+    "states": {
+      "title": "Error & Non-aktif",
+      "description": "Tambahkan aria-invalid pada setiap kotak untuk error, atau disabled pada InputOTP."
+    }
+  },
+  "props": {
+    "maxLength": "Jumlah karakter (= jumlah kotak).",
+    "value": "Nilai saat ini (terkontrol).",
+    "onChange": "Dipanggil setiap kali isian berubah.",
+    "onComplete": "Dipanggil saat semua kotak terisi.",
+    "pattern": "Regex karakter yang diizinkan, misalnya REGEXP_ONLY_DIGITS.",
+    "disabled": "Menonaktifkan isian.",
+    "index": "Posisi kotak (0 = pertama)."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Tombol geser on/off untuk pengaturan yang langsung berlaku, misalnya notifikasi.",
+  "tip": "Gunakan Switch untuk pengaturan yang langsung aktif. Untuk pilihan yang baru berlaku setelah form dikirim, gunakan Checkbox.",
+  "examples": {
+    "sizes": {
+      "title": "Ukuran",
+      "description": "Small (20px) dan Medium (24px, default)."
+    },
+    "withDescription": {
+      "title": "Dengan Deskripsi",
+      "description": "Gunakan Field horizontal untuk label dan penjelasan di samping switch."
+    },
+    "disabled": {
+      "title": "Non-aktif",
+      "description": "Switch yang tidak dapat diubah, dalam keadaan on maupun off."
+    }
+  },
+  "props": {
+    "size": "Ukuran switch.",
+    "checked": "Status on/off (terkontrol).",
+    "defaultChecked": "Status awal (tidak terkontrol).",
+    "onCheckedChange": "Dipanggil saat status berubah.",
+    "disabled": "Menonaktifkan switch."
+  }
+}

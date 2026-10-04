@@ -1,0 +1,160 @@
+/**
+ * Makes TypeScript aware of every translation key: autocomplete in the editor,
+ * and an error from `npm run typecheck` if a key does not exist.
+ *
+ * The Indonesian files are the reference. When you add a namespace (a new JSON file),
+ * add one import and one line in `resources` below.
+ */
+import "i18next";
+
+import type accordion from "./locales/id/accordion.json";
+import type alert from "./locales/id/alert.json";
+import type alertDialog from "./locales/id/alert-dialog.json";
+import type aspectRatio from "./locales/id/aspect-ratio.json";
+import type attachment from "./locales/id/attachment.json";
+import type avatar from "./locales/id/avatar.json";
+import type badge from "./locales/id/badge.json";
+import type breadcrumb from "./locales/id/breadcrumb.json";
+import type blocks from "./locales/id/blocks.json";
+import type bubble from "./locales/id/bubble.json";
+import type button from "./locales/id/button.json";
+import type buttonGroup from "./locales/id/button-group.json";
+import type calendar from "./locales/id/calendar.json";
+import type card from "./locales/id/card.json";
+import type carousel from "./locales/id/carousel.json";
+import type chart from "./locales/id/chart.json";
+import type checkbox from "./locales/id/checkbox.json";
+import type collapsible from "./locales/id/collapsible.json";
+import type combobox from "./locales/id/combobox.json";
+import type command from "./locales/id/command.json";
+import type common from "./locales/id/common.json";
+import type contextMenu from "./locales/id/context-menu.json";
+import type dataTable from "./locales/id/data-table.json";
+import type datePicker from "./locales/id/date-picker.json";
+import type dialog from "./locales/id/dialog.json";
+import type direction from "./locales/id/direction.json";
+import type drawer from "./locales/id/drawer.json";
+import type dropdownMenu from "./locales/id/dropdown-menu.json";
+import type empty from "./locales/id/empty.json";
+import type field from "./locales/id/field.json";
+import type form from "./locales/id/form.json";
+import type foundations from "./locales/id/foundations.json";
+import type hoverCard from "./locales/id/hover-card.json";
+import type home from "./locales/id/home.json";
+import type input from "./locales/id/input.json";
+import type inputGroup from "./locales/id/input-group.json";
+import type inputOtp from "./locales/id/input-otp.json";
+import type installation from "./locales/id/installation.json";
+import type introduction from "./locales/id/introduction.json";
+import type item from "./locales/id/item.json";
+import type kbd from "./locales/id/kbd.json";
+import type label from "./locales/id/label.json";
+import type marker from "./locales/id/marker.json";
+import type menubar from "./locales/id/menubar.json";
+import type message from "./locales/id/message.json";
+import type messageScroller from "./locales/id/message-scroller.json";
+import type nativeSelect from "./locales/id/native-select.json";
+import type navigationMenu from "./locales/id/navigation-menu.json";
+import type pagination from "./locales/id/pagination.json";
+import type popover from "./locales/id/popover.json";
+import type progress from "./locales/id/progress.json";
+import type questionnaire from "./locales/id/questionnaire.json";
+import type radioGroup from "./locales/id/radio-group.json";
+import type resizable from "./locales/id/resizable.json";
+import type scrollArea from "./locales/id/scroll-area.json";
+import type select from "./locales/id/select.json";
+import type separator from "./locales/id/separator.json";
+import type sheet from "./locales/id/sheet.json";
+import type sidebar from "./locales/id/sidebar.json";
+import type skeleton from "./locales/id/skeleton.json";
+import type slider from "./locales/id/slider.json";
+import type sonner from "./locales/id/sonner.json";
+import type spinner from "./locales/id/spinner.json";
+// "switch" is a reserved word in JavaScript, hence the different name.
+import type switchTexts from "./locales/id/switch.json";
+import type table from "./locales/id/table.json";
+import type tabs from "./locales/id/tabs.json";
+import type textarea from "./locales/id/textarea.json";
+import type toggle from "./locales/id/toggle.json";
+import type toggleGroup from "./locales/id/toggle-group.json";
+import type tooltip from "./locales/id/tooltip.json";
+import type typography from "./locales/id/typography.json";
+
+declare module "i18next" {
+  interface CustomTypeOptions {
+    defaultNS: "common";
+    resources: {
+      accordion: typeof accordion;
+      alert: typeof alert;
+      "alert-dialog": typeof alertDialog;
+      "aspect-ratio": typeof aspectRatio;
+      attachment: typeof attachment;
+      avatar: typeof avatar;
+      badge: typeof badge;
+      breadcrumb: typeof breadcrumb;
+      blocks: typeof blocks;
+      bubble: typeof bubble;
+      button: typeof button;
+      "button-group": typeof buttonGroup;
+      calendar: typeof calendar;
+      card: typeof card;
+      carousel: typeof carousel;
+      chart: typeof chart;
+      checkbox: typeof checkbox;
+      collapsible: typeof collapsible;
+      combobox: typeof combobox;
+      command: typeof command;
+      common: typeof common;
+      "context-menu": typeof contextMenu;
+      "data-table": typeof dataTable;
+      "date-picker": typeof datePicker;
+      dialog: typeof dialog;
+      direction: typeof direction;
+      drawer: typeof drawer;
+      "dropdown-menu": typeof dropdownMenu;
+      empty: typeof empty;
+      field: typeof field;
+      form: typeof form;
+      foundations: typeof foundations;
+      "hover-card": typeof hoverCard;
+      home: typeof home;
+      input: typeof input;
+      "input-group": typeof inputGroup;
+      "input-otp": typeof inputOtp;
+      installation: typeof installation;
+      introduction: typeof introduction;
+      item: typeof item;
+      kbd: typeof kbd;
+      label: typeof label;
+      marker: typeof marker;
+      menubar: typeof menubar;
+      message: typeof message;
+      "message-scroller": typeof messageScroller;
+      "native-select": typeof nativeSelect;
+      "navigation-menu": typeof navigationMenu;
+      pagination: typeof pagination;
+      popover: typeof popover;
+      progress: typeof progress;
+      questionnaire: typeof questionnaire;
+      "radio-group": typeof radioGroup;
+      resizable: typeof resizable;
+      "scroll-area": typeof scrollArea;
+      select: typeof select;
+      separator: typeof separator;
+      sheet: typeof sheet;
+      sidebar: typeof sidebar;
+      skeleton: typeof skeleton;
+      slider: typeof slider;
+      sonner: typeof sonner;
+      spinner: typeof spinner;
+      switch: typeof switchTexts;
+      table: typeof table;
+      tabs: typeof tabs;
+      textarea: typeof textarea;
+      toggle: typeof toggle;
+      "toggle-group": typeof toggleGroup;
+      tooltip: typeof tooltip;
+      typography: typeof typography;
+    };
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "description": "A menu that opens on right-click (or long-press on touch screens), such as on a table row in the dashboard.",
+  "guidelines": {
+    "visible": "Users often do not know about right-click — offer the same actions somewhere visible too.",
+    "parts": "Its parts (items, checkboxes, radios, sub-menus, shortcuts) are the same as"
+  }
+}

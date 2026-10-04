@@ -1,0 +1,22 @@
+{
+  "description": "One box per character for one-time codes, such as a 6-digit verification code sent by SMS or WhatsApp.",
+  "examples": {
+    "separator": {
+      "title": "With Separator",
+      "description": "Split the boxes into two groups. pattern allows numbers only."
+    },
+    "states": {
+      "title": "Error & Disabled",
+      "description": "Add aria-invalid to every slot for an error, or disabled to InputOTP."
+    }
+  },
+  "props": {
+    "maxLength": "Number of characters (= number of boxes).",
+    "value": "Current value (controlled).",
+    "onChange": "Called whenever the value changes.",
+    "onComplete": "Called when every box is filled.",
+    "pattern": "Regex of allowed characters, e.g. REGEXP_ONLY_DIGITS.",
+    "disabled": "Disables the field.",
+    "index": "Position of the box (0 = first)."
+  }
+}

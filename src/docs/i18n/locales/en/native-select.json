@@ -1,0 +1,19 @@
+{
+  "description": "The browser's own <select> element, styled with the design system. The lightest option and comfortable on mobile.",
+  "examples": {
+    "groups": {
+      "title": "With Groups",
+      "description": "Group options with NativeSelectOptGroup."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "Add aria-invalid and an error message below."
+    }
+  },
+  "props": {
+    "size": "Field height: md 48px, sm 40px.",
+    "ariaInvalid": "Shows the error state.",
+    "disabled": "Disables the select.",
+    "native": "NativeSelect also accepts every native <select> attribute, such as value, onChange and name."
+  }
+}

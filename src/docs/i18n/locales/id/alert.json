@@ -1,0 +1,13 @@
+{
+  "description": "Kotak pesan untuk menarik perhatian: informasi, keberhasilan, peringatan, atau kesalahan.",
+  "tip": "Letakkan ikon sebagai elemen pertama; ikon otomatis mendapat kolom sendiri dan warna sesuai varian. Tulis pesan dengan nada hangat dan jelaskan langkah berikutnya.",
+  "examples": {
+    "variants": {
+      "title": "Varian",
+      "description": "info, success, warning, dan danger memakai warna status dari DESIGN.md."
+    }
+  },
+  "props": {
+    "variant": "Jenis pesan, menentukan warna latar, teks, dan ikon."
+  }
+}

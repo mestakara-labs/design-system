@@ -1,0 +1,20 @@
+{
+  "description": "Satu baris percakapan: avatar, nama pengirim, balon pesan, dan waktu. align=\"end\" mencerminkan baris untuk pesan milik pengguna.",
+  "examples": {
+    "assistant": {
+      "title": "Asisten",
+      "description": "Balon ghost tanpa latar cocok untuk jawaban panjang dari asisten. MessageAvatar bisa berisi ikon."
+    }
+  },
+  "parts": {
+    "group": "Daftar pesan dengan jarak yang sama.",
+    "message": "Satu baris pesan.",
+    "avatar": "Tempat avatar, sejajar dengan balon terakhir.",
+    "content": "Kolom berisi header, balon, dan footer.",
+    "header": "Baris kecil di atas balon, misalnya nama pengirim.",
+    "footer": "Baris kecil di bawah balon, misalnya waktu atau status dibaca."
+  },
+  "props": {
+    "align": "\"end\" = pesan milik pengguna, ditampilkan di kanan."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Asks to confirm an important action, such as cancelling an order. It does not close on an outside click — the user must choose.",
+  "guidelines": {
+    "verbs": "Label buttons with clear verbs (\"Ya, Batalkan\"), not \"OK\". Use variant=\"destructive\" for dangerous actions.",
+    "outside": "Explain the consequence in the description, such as when the money is refunded."
+  },
+  "examples": {
+    "small": {
+      "title": "Small Size",
+      "description": "size=\"sm\": narrow and centered with two equal buttons — good for phones."
+    }
+  },
+  "props": {
+    "size": "md = wide with the icon on the left (large screens), sm = narrow and centered.",
+    "actionVariant": "Style of the confirm button.",
+    "cancelVariant": "Style of the cancel button.",
+    "open": "Open state (controlled)."
+  }
+}

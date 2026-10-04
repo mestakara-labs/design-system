@@ -1,0 +1,15 @@
+{
+  "description": "Bottom sheet yang bisa ditarik ke bawah untuk menutup — pola paling alami di ponsel, misalnya memilih jumlah tiket atau metode pembayaran.",
+  "examples": {
+    "right": {
+      "title": "Dari Samping",
+      "description": "direction=\"right\" muncul dari kanan dan bisa digeser ke kanan untuk menutup."
+    }
+  },
+  "props": {
+    "direction": "Tepi layar tempat drawer muncul.",
+    "open": "Status terbuka (terkontrol).",
+    "onOpenChange": "Dipanggil saat drawer dibuka atau ditutup.",
+    "vaul": "Drawer dibangun di atas Vaul. Semua props Vaul dapat dipakai, misalnya snapPoints."
+  }
+}

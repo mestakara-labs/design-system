@@ -1,0 +1,22 @@
+{
+  "description": "Daftar judul yang masing-masing membuka atau menutup satu bagian isi, misalnya FAQ, rincian paket, atau syarat & ketentuan.",
+  "examples": {
+    "multiple": {
+      "title": "Beberapa terbuka & non-aktif",
+      "description": "type=\"multiple\" membolehkan beberapa bagian terbuka bersamaan. Accordion juga bisa diberi bingkai kartu, dan item dengan disabled tidak bisa dibuka."
+    }
+  },
+  "parts": {
+    "root": "Pembungkus; mengatur bagian mana yang terbuka.",
+    "item": "Satu bagian (judul + isi), dipisahkan garis.",
+    "trigger": "Judul yang bisa diklik, dengan panah di kanan.",
+    "content": "Isi yang muncul dengan animasi meluncur."
+  },
+  "props": {
+    "type": "\"single\" = satu bagian terbuka; \"multiple\" = beberapa sekaligus.",
+    "collapsible": "Khusus type=\"single\": bagian yang terbuka bisa ditutup lagi.",
+    "defaultValue": "Bagian yang terbuka di awal. Berupa array untuk type=\"multiple\".",
+    "value": "Bagian yang terbuka (terkontrol), dipakai bersama onValueChange.",
+    "disabled": "Bagian ini tidak bisa dibuka."
+  }
+}

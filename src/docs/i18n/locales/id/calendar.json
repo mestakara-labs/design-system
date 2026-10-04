@@ -1,0 +1,28 @@
+{
+  "description": "Tampilan satu bulan untuk memilih tanggal, beberapa tanggal, atau rentang tanggal.",
+  "locale": "Bahasa default kalender adalah Indonesia (minggu dimulai hari Senin). Ganti dengan prop locale bila perlu.",
+  "examples": {
+    "range": {
+      "title": "Rentang Tanggal",
+      "description": "mode=\"range\" untuk tanggal menginap. numberOfMonths={2} menampilkan dua bulan."
+    },
+    "disabledDays": {
+      "title": "Tanggal Non-aktif",
+      "description": "Nonaktifkan tanggal yang sudah lewat dan hari tutup (contoh: setiap Senin)."
+    },
+    "dropdown": {
+      "title": "Dropdown Bulan & Tahun",
+      "description": "captionLayout=\"dropdown\" memudahkan memilih tanggal lahir."
+    }
+  },
+  "props": {
+    "mode": "Cara memilih: satu tanggal, beberapa tanggal, atau rentang.",
+    "selected": "Tanggal yang dipilih.",
+    "onSelect": "Dipanggil saat pilihan berubah.",
+    "disabled": "Tanggal yang tidak bisa dipilih, misalnya { before: new Date() }.",
+    "numberOfMonths": "Jumlah bulan yang ditampilkan.",
+    "captionLayout": "Judul bulan berupa teks atau dropdown.",
+    "localeProp": "Bahasa dan format tanggal.",
+    "dayPicker": "Calendar dibangun di atas react-day-picker. Semua props-nya dapat dipakai — lihat daypicker.dev."
+  }
+}

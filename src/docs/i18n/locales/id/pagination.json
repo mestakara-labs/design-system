@@ -1,0 +1,25 @@
+{
+  "description": "Nomor halaman di bawah daftar atau tabel yang panjang. Halaman aktif memakai pil hijau muda seperti item navigasi aktif.",
+  "tip": "Komponen ini hanya tampilan: hitung sendiri nomor halaman yang ditampilkan, dan beri setiap tautan URL halamannya (misalnya ?page=2).",
+  "examples": {
+    "simple": {
+      "title": "Sederhana",
+      "description": "Hanya Sebelumnya/Berikutnya dengan keterangan halaman. Di halaman pertama, tombol Sebelumnya dinonaktifkan dengan aria-disabled."
+    }
+  },
+  "parts": {
+    "root": "Elemen nav dengan aria-label \"Navigasi halaman\".",
+    "content": "Daftar (ul) berisi semua item.",
+    "item": "Pembungkus satu item (li).",
+    "link": "Nomor halaman. Halaman aktif diberi isActive.",
+    "previous": "Tautan ke halaman sebelumnya. Di ponsel hanya panahnya yang tampil.",
+    "next": "Tautan ke halaman berikutnya.",
+    "ellipsis": "Tanda … untuk nomor halaman yang dilewati."
+  },
+  "props": {
+    "isActive": "Menandai halaman yang sedang dibuka (aria-current=\"page\").",
+    "size": "\"icon\" = kotak nomor; \"md\" = lebih lebar.",
+    "text": "Teks tombol. Default: \"Sebelumnya\" / \"Berikutnya\".",
+    "ariaLabel": "Label nav untuk screen reader."
+  }
+}

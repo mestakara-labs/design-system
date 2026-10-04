@@ -1,0 +1,19 @@
+{
+  "description": "Slides you can swipe or move with arrows, such as landscape photos of a destination. Left/right keyboard arrows work too.",
+  "examples": {
+    "multiple": {
+      "title": "Several Slides at Once",
+      "description": "className=\"basis-1/2\" on CarouselItem shows two slides."
+    },
+    "dots": {
+      "title": "With Dot Indicators",
+      "description": "setApi gives access to the carousel to build your own controls, such as dots."
+    }
+  },
+  "props": {
+    "opts": "Embla options, e.g. { loop: true, align: \"start\" }.",
+    "plugins": "Embla plugins, such as autoplay.",
+    "orientation": "Swipe direction.",
+    "setApi": "Receives the Embla API to control the carousel from outside."
+  }
+}

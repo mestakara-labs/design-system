@@ -1,0 +1,101 @@
+/*
+ * LAYER 1 — PRIMITIVE COLORS
+ * ---------------------------------------------------------------------------
+ * Every raw color of the design system, taken from DESIGN.md §2 "Skala lengkap".
+ *
+ * Rules:
+ * - Components should NOT use these directly. Use the semantic tokens in
+ *   `semantic.css` instead (e.g. `bg-primary`, not `bg-green-600`).
+ * - Tailwind's default palette is switched off (`--color-*: initial`), so only the
+ *   colors below exist. This keeps every app inside the brand palette.
+ *
+ * `@theme static` = always output these CSS variables, even when no class uses them,
+ * so `semantic.css` (and apps using this package) can always read them.
+ *
+ * Each `--color-<name>-<shade>` here also becomes a Tailwind class,
+ * e.g. `--color-green-600` → `bg-green-600`, `text-green-600`, `border-green-600`.
+ */
+
+@theme static {
+  --color-*: initial;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Tea Leaf Green — main brand color */
+  --color-green-50: #e9f7ee;
+  --color-green-100: #c8ebd4;
+  --color-green-200: #96d9ae;
+  --color-green-300: #5ec384;
+  --color-green-400: #33b463;
+  --color-green-500: #1baa4e;
+  --color-green-600: #158c40;
+  --color-green-700: #116e33;
+  --color-green-800: #0d5327;
+  --color-green-900: #08381a;
+
+  /* Sunrise Orange — accent / promo */
+  --color-orange-50: #fef3e8;
+  --color-orange-100: #fde1c4;
+  --color-orange-200: #fbc48c;
+  --color-orange-300: #f9a85a;
+  --color-orange-400: #f7983f;
+  --color-orange-500: #f58a2b;
+  --color-orange-600: #db6f12;
+  --color-orange-700: #b0570c;
+  --color-orange-800: #85410a;
+  --color-orange-900: #5a2c07;
+
+  /* Highland Navy — headings & links */
+  --color-navy-50: #eeeff8;
+  --color-navy-100: #d5d7ee;
+  --color-navy-200: #abafdd;
+  --color-navy-300: #8086cb;
+  --color-navy-400: #575db4;
+  --color-navy-500: #363a96;
+  --color-navy-600: #2c2f7c;
+  --color-navy-700: #222562;
+  --color-navy-800: #191b48;
+  --color-navy-900: #10112e;
+
+  /* Forest Deep — dark brand color */
+  --color-forest-50: #eef4f1;
+  --color-forest-100: #d3e3dc;
+  --color-forest-300: #7fa898;
+  --color-forest-500: #2f6b57;
+  --color-forest-700: #1e4a3c;
+  --color-forest-800: #163a2f;
+  --color-forest-900: #0f2820;
+
+  /* Walini Gold — premium accent */
+  --color-gold-50: #faf5e6;
+  --color-gold-100: #f2e5bf;
+  --color-gold-300: #ddc27a;
+  --color-gold-500: #c9a23a;
+  --color-gold-700: #9a7a26;
+  --color-gold-900: #5e4a16;
+
+  /* Bosscha Sky — info */
+  --color-sky-100: #dceffa;
+  --color-sky-500: #5bb3e4;
+  --color-sky-700: #2b7dae;
+
+  /* Neutral (warm stone) */
+  --color-neutral-0: #ffffff;
+  --color-neutral-25: #fcfbf8;
+  --color-neutral-50: #f7f5f0;
+  --color-neutral-100: #eeebe3;
+  --color-neutral-200: #dedad0;
+  --color-neutral-300: #c5c0b4;
+  --color-neutral-400: #a29d90;
+  --color-neutral-500: #7d796e;
+  --color-neutral-600: #5e5b53;
+  --color-neutral-700: #45433d;
+  --color-neutral-800: #2d2c28;
+  --color-neutral-900: #1a1a17;
+
+  /* Red — errors & destructive actions */
+  --color-red-50: #fdecec;
+  --color-red-500: #d93b3b;
+  --color-red-700: #a82626;
+}

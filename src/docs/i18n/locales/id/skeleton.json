@@ -1,0 +1,10 @@
+{
+  "description": "Kotak abu-abu berdenyut yang ditampilkan selama konten sedang dimuat.",
+  "tip": "Atur ukuran dan bentuknya dengan className (h-*, w-*, rounded-*) agar menyerupai konten yang akan muncul.",
+  "examples": {
+    "card": {
+      "title": "Kartu Destinasi",
+      "description": "Skeleton dengan bentuk yang sama seperti kartu destinasi: foto, judul, meta, dan harga."
+    }
+  }
+}

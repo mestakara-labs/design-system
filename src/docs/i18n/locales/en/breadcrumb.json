@@ -1,0 +1,28 @@
+{
+  "description": "Shows where the current page sits, such as Home › Tour Packages › Gunung Mas. Earlier pages are grey links (navy on hover), the current page is dark.",
+  "tip": "With a router (React Router, Next.js), use asChild so BreadcrumbLink renders the router's Link component.",
+  "examples": {
+    "separator": {
+      "title": "Custom separator",
+      "description": "Put another icon inside BreadcrumbSeparator, such as a slash."
+    },
+    "collapsed": {
+      "title": "Collapsed",
+      "description": "For a long trail, the middle pages are replaced by \"…\" that opens a menu."
+    }
+  },
+  "parts": {
+    "root": "nav element with an aria-label.",
+    "list": "Ordered list of all items.",
+    "item": "One step of the trail.",
+    "link": "Link to an earlier page. Supports asChild.",
+    "page": "The current page (not a link), with aria-current=\"page\".",
+    "separator": "The › between items. Can be replaced by another icon.",
+    "ellipsis": "The … for hidden pages."
+  },
+  "props": {
+    "asChild": "Render the child element (e.g. a router Link) with breadcrumb link styles.",
+    "separatorChildren": "Replacement separator icon. Default: right arrow.",
+    "label": "Screen-reader text. Default: \"Halaman lainnya\"."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Pesan singkat sementara di pojok layar (toast), misalnya \"Tiket ditambahkan ke keranjang\". Hilang otomatis setelah beberapa detik.",
+  "setup": "Pasang <Toaster /> sekali di dekat root aplikasi:",
+  "call": "Lalu panggil toast() dari mana saja. Selalu impor toast dari @mestakara/ui/sonner (bukan dari \"sonner\" langsung) agar terhubung ke Toaster yang sama.",
+  "examples": {
+    "types": {
+      "title": "Jenis",
+      "description": "toast.success, toast.info, toast.warning, dan toast.error memakai warna status."
+    },
+    "promise": {
+      "title": "Proses Berjalan",
+      "description": "toast.promise menampilkan status memuat, lalu berhasil atau gagal."
+    }
+  },
+  "props": {
+    "position": "Posisi tumpukan toast.",
+    "richColors": "Warna latar sesuai jenis (sukses hijau, error merah, …).",
+    "toast": "Menampilkan toast. Opsi: description, action, duration, dan lainnya."
+  }
+}

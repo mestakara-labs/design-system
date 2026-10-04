@@ -1,0 +1,21 @@
+{
+  "description": "Shows or hides one piece of content with a button, such as a price breakdown. It has no look of its own, so you style the button and content yourself.",
+  "tip": "For a list of several collapsible sections, use Accordion.",
+  "examples": {
+    "showMore": {
+      "title": "Read more",
+      "description": "The button text follows the open state, using the data-state attribute."
+    }
+  },
+  "parts": {
+    "root": "Wrapper; keeps the open/closed state.",
+    "trigger": "Button that opens/closes. Use asChild to render a Button.",
+    "content": "Hidden content that slides open."
+  },
+  "props": {
+    "open": "Open state (controlled).",
+    "defaultOpen": "Open at first (uncontrolled).",
+    "onOpenChange": "Called when the state changes.",
+    "disabled": "The button cannot open/close."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Menampilkan atau menyembunyikan satu bagian isi dengan sebuah tombol, misalnya rincian harga. Komponen ini tidak punya tampilan sendiri, jadi tombol dan isinya kamu atur sendiri.",
+  "tip": "Untuk daftar beberapa bagian yang bisa dibuka-tutup, gunakan Accordion.",
+  "examples": {
+    "showMore": {
+      "title": "Baca selengkapnya",
+      "description": "Teks tombol berubah mengikuti status terbuka, memakai atribut data-state."
+    }
+  },
+  "parts": {
+    "root": "Pembungkus; menyimpan status terbuka/tertutup.",
+    "trigger": "Tombol yang membuka/menutup. Pakai asChild untuk memakai Button.",
+    "content": "Isi yang disembunyikan, muncul dengan animasi."
+  },
+  "props": {
+    "open": "Status terbuka (terkontrol).",
+    "defaultOpen": "Terbuka di awal (tidak terkontrol).",
+    "onOpenChange": "Dipanggil saat status berubah.",
+    "disabled": "Tombol tidak bisa membuka/menutup."
+  }
+}

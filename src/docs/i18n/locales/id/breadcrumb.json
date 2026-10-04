@@ -1,0 +1,28 @@
+{
+  "description": "Menunjukkan posisi halaman saat ini, misalnya Beranda › Paket Wisata › Gunung Mas. Halaman sebelumnya berupa tautan abu-abu (navy saat hover), halaman saat ini berwarna gelap.",
+  "tip": "Untuk router (React Router, Next.js), pakai asChild agar BreadcrumbLink merender komponen Link milik router.",
+  "examples": {
+    "separator": {
+      "title": "Pemisah lain",
+      "description": "Isi BreadcrumbSeparator dengan ikon lain, misalnya garis miring."
+    },
+    "collapsed": {
+      "title": "Diringkas",
+      "description": "Untuk jejak yang panjang, halaman tengah diganti \"…\" yang membuka menu."
+    }
+  },
+  "parts": {
+    "root": "Elemen nav dengan aria-label.",
+    "list": "Daftar berurutan berisi semua item.",
+    "item": "Satu langkah di jejak.",
+    "link": "Tautan ke halaman sebelumnya. Mendukung asChild.",
+    "page": "Halaman saat ini (bukan tautan), dengan aria-current=\"page\".",
+    "separator": "Tanda › di antara item. Bisa diganti ikon lain.",
+    "ellipsis": "Tanda … untuk halaman yang disembunyikan."
+  },
+  "props": {
+    "asChild": "Render elemen anak (misalnya Link router) dengan gaya tautan breadcrumb.",
+    "separatorChildren": "Ikon pemisah pengganti. Default: panah kanan.",
+    "label": "Teks untuk screen reader. Default: \"Halaman lainnya\"."
+  }
+}

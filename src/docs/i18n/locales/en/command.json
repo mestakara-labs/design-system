@@ -1,0 +1,20 @@
+{
+  "description": "A searchable list of commands or pages: type to filter, then pick with the arrow keys + Enter. The search in this site's header (Ctrl+K) uses Command too.",
+  "examples": {
+    "dialog": {
+      "title": "As a Dialog",
+      "description": "CommandDialog shows Command as a popup. Try pressing Ctrl+J."
+    }
+  },
+  "parts": {
+    "command": "The command box (input + list).",
+    "dialog": "Command inside a dialog.",
+    "input": "The search field.",
+    "list": "Scrollable list of results.",
+    "empty": "Shown when there are no results.",
+    "group": "A group of results with a heading.",
+    "item": "One result; onSelect runs on click or Enter.",
+    "shortcut": "Keyboard shortcut on the right of an item.",
+    "separator": "Divider line between groups."
+  }
+}

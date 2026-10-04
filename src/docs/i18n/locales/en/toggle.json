@@ -1,0 +1,25 @@
+{
+  "description": "A button that stays pressed (on) or not (off), such as save to favorites.",
+  "examples": {
+    "outline": {
+      "title": "Outline",
+      "description": "A variant with a border, good for facility filters."
+    },
+    "sizes": {
+      "title": "Sizes",
+      "description": "Small (32px), Medium (44px, default) and Large (52px) — same as Button."
+    },
+    "disabled": {
+      "title": "Disabled",
+      "description": "A toggle that cannot be pressed."
+    }
+  },
+  "props": {
+    "variant": "Visual style of the toggle.",
+    "size": "Size of the toggle.",
+    "pressed": "On/off state (controlled).",
+    "defaultPressed": "Initial state (uncontrolled).",
+    "onPressedChange": "Called when the state changes.",
+    "disabled": "Disables the toggle."
+  }
+}

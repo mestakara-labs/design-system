@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "announcement": "Baru: komponen Questionnaire",
+    "title": "Fondasi Design System Agrowisata",
+    "description": "Komponen yang mudah disusun, aksesibel, dan sudah mengikuti desain Agrowisata Regional 2. Pakai langsung di aplikasi React, Next.js, atau Vite, lalu sesuaikan sesuai kebutuhan.",
+    "getStarted": "Mulai",
+    "viewComponents": "Lihat Komponen"
+  },
+  "blocks": {
+    "title": "Blok siap pakai",
+    "description": "Halaman dasbor, sidebar, dan login yang disusun dari komponen Mestakara UI. Salin kodenya ke aplikasi Anda.",
+    "viewAll": "Lihat semua blocks",
+    "tabs": {
+      "dashboard": "Dasbor",
+      "sidebar": "Sidebar",
+      "login": "Login"
+    }
+  }
+}

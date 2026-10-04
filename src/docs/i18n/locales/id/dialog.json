@@ -1,0 +1,27 @@
+{
+  "description": "Jendela di atas halaman yang meminta perhatian pengguna, misalnya form singkat atau detail. Halaman di belakangnya diredupkan.",
+  "tip": "Dialog bisa ditutup dengan tombol ×, tombol Esc, atau klik di luar jendela. Untuk konfirmasi tindakan penting yang tidak boleh tertutup tanpa sengaja, gunakan Alert Dialog.",
+  "examples": {
+    "scroll": {
+      "title": "Konten Panjang",
+      "description": "Batasi tinggi dialog; hanya bagian tengah yang bisa digulir, judul dan tombol tetap terlihat."
+    }
+  },
+  "parts": {
+    "root": "Menyimpan status buka/tutup.",
+    "trigger": "Tombol yang membuka dialog.",
+    "content": "Jendela dialog (sudah termasuk latar redup dan tombol ×).",
+    "header": "Area judul dan deskripsi.",
+    "title": "Judul dialog (dibacakan screen reader).",
+    "description": "Penjelasan singkat.",
+    "footer": "Tombol-tombol di bagian bawah.",
+    "close": "Bungkus elemen apa pun agar menutup dialog."
+  },
+  "props": {
+    "open": "Status terbuka (terkontrol).",
+    "onOpenChange": "Dipanggil saat dialog dibuka atau ditutup.",
+    "showCloseButton": "Tampilkan tombol × di pojok kanan atas.",
+    "closeLabel": "Label tombol × untuk screen reader.",
+    "footerClose": "Tambahkan tombol \"Tutup\" di footer."
+  }
+}

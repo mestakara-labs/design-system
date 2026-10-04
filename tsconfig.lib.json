@@ -1,0 +1,14 @@
+// TypeScript settings for the NPM PACKAGE type files (`.d.ts`), used by `npm run build:lib`.
+// Only the library is included — never the docs site.
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": []
+  },
+  "include": ["src/index.ts", "src/components", "src/lib", "src/hooks"]
+}

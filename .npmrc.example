@@ -1,0 +1,6 @@
+# Copy this file to `.npmrc` (in this repo to publish, or in an app to install)
+# and replace <URL_REGISTRY> with the team's private npm registry address.
+@mestakara:registry=<URL_REGISTRY>
+
+# If the registry needs a login token, keep it OUT of git — e.g. in your user-level ~/.npmrc:
+# //<registry-host>/:_authToken=${NPM_TOKEN}

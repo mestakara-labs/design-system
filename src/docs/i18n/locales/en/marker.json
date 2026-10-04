@@ -1,0 +1,18 @@
+{
+  "description": "A small note between messages: a date (\"Today\"), an event (\"Rina joined\"), or a status (\"Order created\").",
+  "examples": {
+    "icon": {
+      "title": "With icon & link",
+      "description": "MarkerIcon adds an icon before the text. Links inside a marker are underlined automatically."
+    }
+  },
+  "parts": {
+    "marker": "The note row.",
+    "icon": "Optional icon before the text; hidden from screen readers.",
+    "content": "The note text."
+  },
+  "props": {
+    "variant": "\"separator\" = text in the middle of a line; \"border\" = line underneath.",
+    "asChild": "Render the child element with marker styles."
+  }
+}

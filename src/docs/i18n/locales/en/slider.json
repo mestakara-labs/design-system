@@ -1,0 +1,23 @@
+{
+  "description": "Pick a value or a range by dragging, such as a price filter.",
+  "examples": {
+    "range": {
+      "title": "Range",
+      "description": "Two values in the array = two thumbs for the lower and upper limit."
+    },
+    "disabled": {
+      "title": "Disabled",
+      "description": "A slider that cannot be moved."
+    }
+  },
+  "props": {
+    "value": "Current value (controlled). One number = one thumb.",
+    "defaultValue": "Initial value (uncontrolled).",
+    "onValueChange": "Called when the value changes.",
+    "min": "Smallest value.",
+    "max": "Largest value.",
+    "step": "Size of each step.",
+    "orientation": "Direction of the slider.",
+    "disabled": "Disables the slider."
+  }
+}

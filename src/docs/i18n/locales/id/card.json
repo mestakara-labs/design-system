@@ -1,0 +1,29 @@
+{
+  "description": "Kotak yang mengelompokkan konten terkait, misalnya paket wisata, ringkasan tiket, atau statistik.",
+  "examples": {
+    "elevated": {
+      "title": "Outline & Elevated",
+      "description": "Kartu memakai border ATAU bayangan Elevation/1 — tidak keduanya (DESIGN.md §4)."
+    },
+    "stat": {
+      "title": "Stat Card",
+      "description": "Kartu statistik dashboard: label, angka besar Fraunces, dan badge tren."
+    },
+    "withForm": {
+      "title": "Dengan Form",
+      "description": "Header dengan garis bawah (border-b) dan tombol penuh di footer."
+    }
+  },
+  "parts": {
+    "card": "Pembungkus kartu.",
+    "header": "Area judul dan deskripsi.",
+    "title": "Judul kartu (Heading/H3).",
+    "description": "Teks pendukung di bawah judul.",
+    "action": "Pojok kanan atas header, misalnya badge atau tombol kecil.",
+    "content": "Isi utama kartu.",
+    "footer": "Bagian bawah, biasanya harga dan tombol."
+  },
+  "props": {
+    "variant": "outline = border 1px, elevated = bayangan tanpa border."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Menampilkan tombol keyboard atau pintasan, misalnya Ctrl + K. Berguna untuk aplikasi dashboard.",
+  "parts": {
+    "kbd": "Satu tombol keyboard.",
+    "group": "Beberapa tombol yang ditekan bersamaan."
+  }
+}

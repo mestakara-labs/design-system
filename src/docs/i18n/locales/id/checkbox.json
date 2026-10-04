@@ -1,0 +1,24 @@
+{
+  "description": "Mengaktifkan atau menonaktifkan sebuah pilihan. Bisa juga berstatus \"sebagian\" (indeterminate).",
+  "examples": {
+    "withDescription": {
+      "title": "Dengan Deskripsi",
+      "description": "Gunakan Field horizontal + FieldContent untuk label dan penjelasan."
+    },
+    "indeterminate": {
+      "title": "Sebagian Terpilih",
+      "description": "Checkbox \"Pilih semua\" menampilkan tanda strip saat hanya sebagian item yang dipilih."
+    },
+    "disabled": {
+      "title": "Non-aktif",
+      "description": "Pilihan yang tidak dapat diubah, dalam keadaan tercentang maupun tidak."
+    }
+  },
+  "props": {
+    "checked": "Status tercentang (terkontrol).",
+    "defaultChecked": "Status awal (tidak terkontrol).",
+    "onCheckedChange": "Dipanggil saat status berubah.",
+    "disabled": "Menonaktifkan checkbox.",
+    "required": "Wajib dicentang sebelum form dikirim."
+  }
+}

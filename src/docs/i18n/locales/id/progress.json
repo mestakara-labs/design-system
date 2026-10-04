@@ -1,0 +1,13 @@
+{
+  "description": "Bilah horizontal yang menunjukkan kemajuan sebuah proses, dari 0 sampai 100.",
+  "examples": {
+    "withLabel": {
+      "title": "Dengan Label",
+      "description": "Tampilkan judul dan angka di atas bilah, misalnya kuota tiket yang terjual."
+    }
+  },
+  "props": {
+    "value": "Nilai kemajuan (0–100). null = tidak diketahui.",
+    "max": "Nilai maksimum."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "description": "Contoh menyusun teks dengan kelas typo-*: judul, paragraf, daftar, kutipan, dan kode.",
+  "usage": "Tidak ada komponen Typography — cukup gabungkan kelas typo-* (ukuran) dengan text-fg-* (warna). Daftar lengkap gaya teks ada di",
+  "examples": {
+    "headings": {
+      "title": "Judul di Aplikasi",
+      "description": "Judul layar dan seksi memakai Plus Jakarta Sans berwarna navy (text-fg-heading)."
+    },
+    "body": {
+      "title": "Paragraf, Kode & Tautan",
+      "description": "Body/L untuk isi utama, Body/M untuk pendukung, Body/S untuk meta."
+    },
+    "listQuote": {
+      "title": "Daftar & Kutipan",
+      "description": "Daftar fasilitas dan kutipan ulasan pengunjung."
+    }
+  }
+}

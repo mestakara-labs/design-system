@@ -1,0 +1,13 @@
+{
+  "description": "A message box that draws attention: information, success, a warning or an error.",
+  "tip": "Put an icon as the first element; it gets its own column and the variant color automatically. Write warm messages and explain the next step.",
+  "examples": {
+    "variants": {
+      "title": "Variants",
+      "description": "info, success, warning and danger use the status colors from DESIGN.md."
+    }
+  },
+  "props": {
+    "variant": "Kind of message; sets the background, text and icon color."
+  }
+}

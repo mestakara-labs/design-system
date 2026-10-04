@@ -1,0 +1,91 @@
+{
+  "site": {
+    "name": "Mestakara UI",
+    "tagline": "Agrowisata Regional 2 Design System"
+  },
+  "nav": {
+    "home": "Home",
+    "docs": "Docs",
+    "gettingStarted": "Getting Started",
+    "introduction": "Introduction",
+    "installation": "Installation",
+    "foundations": "Foundations",
+    "colors": "Colors",
+    "typography": "Typography",
+    "spacing": "Spacing",
+    "radius": "Radius",
+    "elevation": "Elevation",
+    "components": "Components",
+    "allComponents": "All Components",
+    "blocks": "Blocks"
+  },
+  "categories": {
+    "form": "Form & Input",
+    "data-display": "Data Display",
+    "overlay": "Overlay",
+    "navigation": "Navigation & Layout",
+    "chat": "Chat & Conversation"
+  },
+  "header": {
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "search": {
+    "button": "Search…",
+    "placeholder": "Type a component or page name…",
+    "empty": "No results found."
+  },
+  "preview": {
+    "preview": "Preview",
+    "code": "Code",
+    "copy": "Copy code",
+    "copied": "Copied"
+  },
+  "sections": {
+    "installation": "Installation",
+    "usage": "Usage",
+    "examples": "Examples",
+    "states": "All States",
+    "statesDescription": "Every variant in every state — shown at once, without hovering or clicking.",
+    "apiReference": "API Reference",
+    "anatomy": "Anatomy"
+  },
+  "props": {
+    "prop": "Prop",
+    "type": "Type",
+    "default": "Default",
+    "description": "Description"
+  },
+  "parts": {
+    "component": "Component",
+    "element": "Element"
+  },
+  "states": {
+    "default": "Default",
+    "hover": "Hover",
+    "focus": "Focus",
+    "pressed": "Pressed",
+    "invalid": "Error",
+    "disabled": "Disabled"
+  },
+  "toc": {
+    "onThisPage": "On this page"
+  },
+  "componentsOverview": {
+    "description": "Every component available in @mestakara/ui, grouped by what it does."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has moved.",
+    "backHome": "Back to Home"
+  },
+  "pageError": {
+    "title": "This page could not be loaded",
+    "description": "A new version of this site may be available. Reload to try again.",
+    "reload": "Reload"
+  },
+  "footer": {
+    "text": "Mestakara UI — Agrowisata Regional 2 Design System. Built on shadcn/ui."
+  }
+}

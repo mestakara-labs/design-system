@@ -1,0 +1,34 @@
+{
+  "description": "Daftar aksi atau pilihan yang muncul dari sebuah tombol, misalnya menu akun atau tombol \"⋯\" di baris tabel.",
+  "anatomy": "Bagian-bagian yang sama juga dipakai Context Menu dan Menubar.",
+  "examples": {
+    "checkboxes": {
+      "title": "Pilihan Centang",
+      "description": "DropdownMenuCheckboxItem untuk opsi on/off, misalnya kolom tabel yang ditampilkan."
+    },
+    "radio": {
+      "title": "Pilihan Tunggal",
+      "description": "DropdownMenuRadioGroup untuk memilih satu dari beberapa opsi, misalnya urutan."
+    },
+    "rowActions": {
+      "title": "Aksi Baris Tabel",
+      "description": "Tombol \"⋯\" dengan aksi berbahaya berwarna merah (variant=\"destructive\")."
+    }
+  },
+  "parts": {
+    "trigger": "Tombol yang membuka menu.",
+    "content": "Panel menu.",
+    "item": "Satu aksi.",
+    "checkbox": "Opsi yang bisa dicentang.",
+    "radio": "Opsi tunggal dalam satu grup.",
+    "label": "Judul kecil di atas grup.",
+    "separator": "Garis pemisah.",
+    "shortcut": "Pintasan keyboard di kanan item.",
+    "sub": "Sub-menu yang muncul di samping."
+  },
+  "props": {
+    "variant": "destructive = merah, untuk aksi berbahaya.",
+    "inset": "Geser teks agar sejajar dengan item yang punya tanda centang.",
+    "align": "Perataan menu terhadap tombol."
+  }
+}

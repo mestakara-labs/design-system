@@ -1,0 +1,26 @@
+{
+  "description": "Joins related buttons (or inputs and selects) into one bar.",
+  "examples": {
+    "withInput": {
+      "title": "With Input",
+      "description": "An input and a button in one bar, such as a promo code."
+    },
+    "quantity": {
+      "title": "Quantity Stepper",
+      "description": "ButtonGroupText shows non-clickable text between buttons."
+    },
+    "separator": {
+      "title": "With Separator",
+      "description": "Solid buttons have no border, so add a ButtonGroupSeparator between them."
+    },
+    "vertical": {
+      "title": "Vertical",
+      "description": "orientation=\"vertical\" stacks the buttons."
+    }
+  },
+  "props": {
+    "orientation": "Direction of the buttons.",
+    "asChild": "Apply the styles to the child element (e.g. a <label>).",
+    "separatorOrientation": "Direction of the separator line."
+  }
+}

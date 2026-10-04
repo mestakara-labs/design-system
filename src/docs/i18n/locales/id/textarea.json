@@ -1,0 +1,22 @@
+{
+  "description": "Kolom teks beberapa baris untuk catatan, ulasan, atau permintaan khusus. Tingginya menyesuaikan isi.",
+  "examples": {
+    "withLabel": {
+      "title": "Dengan Label",
+      "description": "Gabungkan dengan Field, FieldLabel, dan FieldDescription."
+    },
+    "invalid": {
+      "title": "Error",
+      "description": "Border merah dan pesan yang menjelaskan cara memperbaiki isian."
+    },
+    "disabled": {
+      "title": "Non-aktif",
+      "description": "Isian yang tidak dapat diubah."
+    }
+  },
+  "props": {
+    "ariaInvalid": "Menampilkan state error (border merah).",
+    "disabled": "Menonaktifkan isian.",
+    "native": "Textarea juga menerima semua atribut bawaan <textarea>, seperti rows dan maxLength."
+  }
+}

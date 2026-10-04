@@ -1,0 +1,21 @@
+{
+  "description": "Area gulir percakapan. Dimulai dari pesan terbaru, mengikuti pesan baru selama pengguna berada di bawah, dan menampilkan tombol ↓ saat pengguna menggulir ke atas.",
+  "tip": "Beri tinggi tetap pada pembungkusnya. Panggil useMessageScroller() di dalam MessageScrollerProvider untuk menggulir lewat kode, misalnya scrollToEnd() setelah mengirim pesan.",
+  "parts": {
+    "provider": "Menyimpan status gulir. Letakkan juga di sekitar komponen yang memakai hook.",
+    "root": "Pembungkus area gulir.",
+    "viewport": "Bagian yang benar-benar menggulir.",
+    "content": "Kolom pesan.",
+    "item": "Pembungkus satu pesan. Beri messageId.",
+    "button": "Tombol bulat ke pesan terbaru (atau pertama); hanya muncul bila perlu.",
+    "hooks": "Hook: menggulir lewat kode, membaca bisa-tidaknya digulir, dan pesan yang terlihat."
+  },
+  "props": {
+    "autoScroll": "Ikuti pesan baru selama pengguna berada di bawah.",
+    "defaultScrollPosition": "Posisi awal: pesan pertama, terakhir, atau anchor terakhir.",
+    "messageId": "ID pesan untuk scrollToMessage(id).",
+    "scrollAnchor": "Saat pesan ini datang, gulir sehingga pesan berada di atas.",
+    "direction": "Arah tombol: ke pesan terbaru atau pertama.",
+    "label": "Teks tombol untuk screen reader."
+  }
+}

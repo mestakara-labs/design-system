@@ -1,0 +1,17 @@
+{
+  "description": "Tampilan saat belum ada data: belum ada pesanan, tiket, atau hasil pencarian. Jelaskan alasannya dan tawarkan langkah berikutnya.",
+  "examples": {
+    "outline": {
+      "title": "Dengan Garis Putus-putus",
+      "description": "Tambahkan className=\"border\" untuk garis tepi putus-putus, misalnya untuk hasil pencarian kosong."
+    }
+  },
+  "parts": {
+    "empty": "Pembungkus, isi di tengah.",
+    "header": "Mengelompokkan media, judul, dan deskripsi.",
+    "media": "Ikon (variant=\"icon\") atau ilustrasi.",
+    "title": "Judul singkat.",
+    "description": "Penjelasan dan saran.",
+    "content": "Tombol atau tindakan berikutnya."
+  }
+}

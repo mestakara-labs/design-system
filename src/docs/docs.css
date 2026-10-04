@@ -1,0 +1,75 @@
+/*
+ * Styles of the DOCUMENTATION SITE only.
+ * The design system itself lives in `src/styles/` (that is what the npm package ships).
+ */
+
+@import "tailwindcss";
+@import "../styles/index.css";
+
+/*
+ * State preview (used by <StateMatrix>)
+ * ---------------------------------------------------------------------------
+ * Normally `hover:` only works while the mouse is over an element. Here we add a second
+ * trigger: being inside `<div data-preview-state="hover">`. Same for focus and pressed.
+ * This lets the docs show all states at once. Apps using the package never load this file.
+ */
+@custom-variant hover {
+  @media (hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+  :where([data-preview-state="hover"]) & {
+    @slot;
+  }
+}
+
+@custom-variant focus-visible {
+  &:focus-visible {
+    @slot;
+  }
+  :where([data-preview-state="focus"]) & {
+    @slot;
+  }
+}
+
+@custom-variant active {
+  &:active {
+    @slot;
+  }
+  :where([data-preview-state="pressed"]) & {
+    @slot;
+  }
+}
+
+/* Code blocks: Shiki's <pre> gets our spacing and font, but not its own background. */
+@layer components {
+  .code-block pre,
+  pre.code-block {
+    overflow-x: auto;
+    padding: 16px 48px 16px 16px;
+    background-color: transparent !important;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+/*
+ * Sidebar examples (pass `previewClassName="sidebar-preview"`).
+ * The preview box acts as a small "screen": `transform` makes the sidebar's `position: fixed`
+ * stick to this box instead of the browser window, and the sidebar fills its height.
+ * Plain CSS (no @layer) so it wins over the box's Tailwind classes.
+ */
+.sidebar-preview {
+  display: block;
+  height: 600px;
+  padding: 0;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.sidebar-preview [data-slot="sidebar-wrapper"] {
+  height: 100%;
+  min-height: 100%;
+}

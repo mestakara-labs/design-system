@@ -1,0 +1,106 @@
+/*
+ * LAYER 2 — SEMANTIC TOKENS
+ * ---------------------------------------------------------------------------
+ * What each color is FOR, taken from DESIGN.md §2 "Token semantik".
+ * The names follow the Figma tokens: `bg/canvas` → `--bg-canvas`, `text/link` → `--text-link`.
+ *
+ * To change a color everywhere (e.g. the main button color), edit it here.
+ *
+ * Tokens marked "derived" are not in DESIGN.md; they were added for hover/pressed
+ * states and are built from the same palette.
+ *
+ * Dark mode (later): add a `.dark { … }` block below that overrides these same variables.
+ */
+
+:root {
+  /* Backgrounds */
+  --bg-canvas: var(--color-neutral-25); /* page background */
+  --bg-surface: var(--color-neutral-0); /* cards, sheets, inputs */
+  --bg-subtle: var(--color-neutral-50); /* zebra rows, logo area */
+  --bg-muted: var(--color-neutral-100); /* inactive background */
+  --bg-brand: var(--color-forest-700); /* brand top bar, ticket header, selected chip */
+  --bg-brand-subtle: var(--color-green-50); /* tonal button, active nav indicator */
+  --bg-inverse: var(--color-forest-900); /* home hero, dashboard sidebar */
+  --bg-accent-subtle: var(--color-orange-50); /* warm info / promo box */
+
+  /* Actions (buttons) */
+  --action-primary: var(--color-green-600);
+  --action-primary-hover: var(--color-green-700);
+  --action-primary-pressed: var(--color-green-800);
+  --action-secondary: var(--color-orange-500); /* "Accent" button, dark text */
+  /*
+   * derived — hover and pressed are BOTH orange-600 (dark text contrast 5.2:1, WCAG AA).
+   * orange-700 would drop to 3.5:1, so the pressed state is shown with a small
+   * shrink effect in the Button instead of an even darker color.
+   */
+  --action-secondary-hover: var(--color-orange-600);
+  --action-secondary-pressed: var(--color-orange-600);
+  --action-tertiary: var(--color-navy-500);
+  --action-tertiary-hover: var(--color-navy-600); /* derived */
+  --action-tertiary-pressed: var(--color-navy-700); /* derived */
+  --action-tonal: var(--color-green-50); /* derived — same as bg/brand-subtle */
+  --action-tonal-hover: var(--color-green-100); /* derived */
+  --action-tonal-pressed: var(--color-green-200); /* derived */
+  --action-danger: var(--color-red-500); /* derived — destructive button */
+  --action-danger-hover: var(--color-red-700); /* derived */
+  --action-disabled: var(--color-neutral-100);
+
+  /* Text */
+  --text-primary: var(--color-neutral-900); /* main text */
+  --text-secondary: var(--color-neutral-600); /* supporting text */
+  --text-tertiary: var(--color-neutral-500); /* placeholder, meta */
+  --text-disabled: var(--color-neutral-400);
+  --text-brand: var(--color-forest-700); /* brand titles (serif), prices */
+  --text-heading: var(--color-navy-500); /* section titles inside apps */
+  --text-link: var(--color-navy-500); /* links, ghost buttons */
+  --text-on-brand: var(--color-neutral-0); /* text on green / forest */
+  --text-accent: var(--color-orange-700); /* overline / unit label */
+
+  /* Borders */
+  --border-default: var(--color-neutral-200); /* card & input outlines */
+  --border-strong: var(--color-neutral-300); /* outline button */
+  --border-focus: var(--color-navy-400); /* focus ring (2px) */
+
+  /* Status — each has a strong color and a light background */
+  --status-success: var(--color-green-600);
+  --status-success-bg: var(--color-green-50);
+  --status-warning: var(--color-orange-600);
+  --status-warning-bg: var(--color-orange-50);
+  --status-danger: var(--color-red-500);
+  --status-danger-bg: var(--color-red-50);
+  --status-info: var(--color-sky-700);
+  --status-info-bg: var(--color-sky-100);
+
+  /*
+   * derived — TEXT on the light status backgrounds (badges, alerts).
+   * The status colors above are a bit too light for small text on their own background
+   * (e.g. sky-700 on sky-100 is 3.7:1). These darker shades pass WCAG AA (≥ 4.5:1).
+   * The status colors stay in use for dots and icons.
+   */
+  --status-success-text: var(--color-green-700);
+  --status-warning-text: var(--color-orange-700);
+  --status-danger-text: var(--color-red-700);
+  --status-info-text: var(--color-navy-700);
+
+  /* Premium accent (labels, overline on dark backgrounds) */
+  --accent-gold: var(--color-gold-500);
+
+  /* Chart series — derived from the brand palette */
+  --chart-1: var(--color-green-600);
+  --chart-2: var(--color-orange-500);
+  --chart-3: var(--color-navy-500);
+  --chart-4: var(--color-sky-500);
+  --chart-5: var(--color-gold-500);
+
+  /*
+   * Dashboard sidebar — DESIGN.md §6: dark forest background, active item `bg/brand`.
+   * Change these to give <Sidebar> another look (e.g. a light sidebar) without touching the component.
+   */
+  --sidebar-bg: var(--bg-inverse);
+  --sidebar-text: var(--color-forest-50); /* item text */
+  --sidebar-text-muted: var(--color-forest-300); /* group labels, hints */
+  --sidebar-item-hover: var(--color-forest-800); /* derived */
+  --sidebar-item-active: var(--bg-brand); /* active menu item */
+  --sidebar-item-active-text: var(--text-on-brand); /* text of the active menu item */
+  --sidebar-border: var(--color-forest-800); /* derived — lines inside the sidebar */
+}

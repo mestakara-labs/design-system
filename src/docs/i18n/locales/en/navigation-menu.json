@@ -1,0 +1,27 @@
+{
+  "description": "The main links of a website, with optional drop-down panels. The open trigger and the active link use the light-green pill.",
+  "tip": "Navigation Menu is for a site header on wide screens. On phones, show the same links in a Sheet or Drawer.",
+  "examples": {
+    "noViewport": {
+      "title": "Without viewport",
+      "description": "viewport={false} opens each panel right under its trigger. The active prop marks the current page."
+    }
+  },
+  "parts": {
+    "root": "Wrapper. Adds the viewport automatically.",
+    "list": "Row of top-level items.",
+    "item": "One top-level item.",
+    "trigger": "Button that opens a panel, with an arrow.",
+    "content": "Panel content.",
+    "link": "A link inside a panel or at the top level.",
+    "viewport": "Shared box the panels open in; resizes and slides between panels.",
+    "indicator": "Optional small arrow under the open trigger.",
+    "triggerStyle": "CSS class function that gives a top-level link the trigger look."
+  },
+  "props": {
+    "viewport": "true = every panel opens in one animated box; false = under each trigger.",
+    "active": "Marks the link of the current page.",
+    "delayDuration": "Delay (ms) before a panel opens on hover.",
+    "value": "Open item (controlled)."
+  }
+}

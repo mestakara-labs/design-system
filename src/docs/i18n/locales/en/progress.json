@@ -1,0 +1,13 @@
+{
+  "description": "A horizontal bar that shows how far a process is, from 0 to 100.",
+  "examples": {
+    "withLabel": {
+      "title": "With Label",
+      "description": "Show a title and numbers above the bar, such as sold ticket quota."
+    }
+  },
+  "props": {
+    "value": "Progress value (0–100). null = unknown.",
+    "max": "Maximum value."
+  }
+}

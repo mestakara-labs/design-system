@@ -1,0 +1,26 @@
+{
+  "description": "A small pill that shows a status or category: \"Lunas\", \"Menunggu Bayar\", \"Premium\".",
+  "guidelines": {
+    "text": "Always include text — never rely on color alone.",
+    "contrast": "Status text uses a darker shade than the dot so the contrast meets WCAG AA."
+  },
+  "examples": {
+    "variants": {
+      "title": "Variants",
+      "description": "The seven tones from DESIGN.md (success, warning, danger, info, neutral, brand, premium) plus outline."
+    },
+    "withoutDot": {
+      "title": "Without Dot / With Icon",
+      "description": "dot={false} removes the dot, for example when the badge contains an icon."
+    },
+    "asLink": {
+      "title": "As Link",
+      "description": "asChild applies the badge styles to the child element, such as an <a>."
+    }
+  },
+  "props": {
+    "variant": "Color tone of the badge.",
+    "dot": "Show a 6px dot before the text.",
+    "asChild": "Apply the styles to the child element (no dot is added)."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Short temporary messages in a corner of the screen (toasts), such as \"Tiket ditambahkan ke keranjang\". They disappear after a few seconds.",
+  "setup": "Place <Toaster /> once near the root of your app:",
+  "call": "Then call toast() from anywhere. Always import toast from @mestakara/ui/sonner (not from \"sonner\" directly) so it talks to the same Toaster.",
+  "examples": {
+    "types": {
+      "title": "Types",
+      "description": "toast.success, toast.info, toast.warning and toast.error use the status colors."
+    },
+    "promise": {
+      "title": "Running Process",
+      "description": "toast.promise shows a loading state, then success or failure."
+    }
+  },
+  "props": {
+    "position": "Where the toasts stack.",
+    "richColors": "Background color per type (success green, error red, …).",
+    "toast": "Shows a toast. Options: description, action, duration and more."
+  }
+}

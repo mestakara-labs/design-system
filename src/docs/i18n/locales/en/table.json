@@ -1,0 +1,24 @@
+{
+  "description": "Rows and columns of data, such as the transaction list on the operations dashboard. Zebra rows and status badges as in DESIGN.md.",
+  "dataTable": "For sorting, searching, row selection and paging, see the pattern",
+  "examples": {
+    "basic": {
+      "title": "Basic",
+      "description": "A table without zebra rows, such as opening hours."
+    }
+  },
+  "parts": {
+    "table": "The table, wrapped in an area that scrolls horizontally on small screens.",
+    "header": "Column title row (cream background).",
+    "body": "The data rows.",
+    "footer": "Summary row, such as a total.",
+    "row": "One row.",
+    "head": "One column title.",
+    "cell": "One data cell.",
+    "caption": "Table caption."
+  },
+  "props": {
+    "striped": "Even rows get a cream background (zebra).",
+    "selected": "Marks a selected row (light-green background)."
+  }
+}

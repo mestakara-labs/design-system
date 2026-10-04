@@ -1,0 +1,41 @@
+{
+  "description": "Memicu sebuah aksi, seperti memesan tiket, membayar, atau melihat paket.",
+  "guidelines": {
+    "onePrimary": "Gunakan hanya satu tombol primary di setiap layar (misalnya \"Pesan Tiket\" atau \"Bayar\").",
+    "shortVerbs": "Tulis label dengan kata kerja singkat: \"Pesan Tiket\", \"Bayar Sekarang\", \"Lihat Paket\".",
+    "accentText": "Tombol accent (oranye) selalu memakai teks gelap — teks putih di atas oranye kontrasnya kurang."
+  },
+  "examples": {
+    "variants": {
+      "title": "Varian",
+      "description": "Primary untuk aksi utama, accent untuk promo, tonal untuk aksi sekunder, outline dan ghost untuk aksi pendukung, destructive untuk aksi berbahaya."
+    },
+    "sizes": {
+      "title": "Ukuran",
+      "description": "Small (32px), Medium (44px, default), dan Large (52px)."
+    },
+    "withIcon": {
+      "title": "Dengan Ikon",
+      "description": "Letakkan ikon sebelum atau sesudah teks. Ukuran ikon menyesuaikan ukuran tombol secara otomatis."
+    },
+    "iconOnly": {
+      "title": "Hanya Ikon",
+      "description": "Tombol persegi berisi ikon saja. Wajib diberi aria-label."
+    },
+    "loading": {
+      "title": "Sedang Memproses",
+      "description": "Nonaktifkan tombol dan tambahkan ikon berputar selama aksi berjalan."
+    },
+    "asLink": {
+      "title": "Sebagai Tautan",
+      "description": "Gunakan asChild agar sebuah tautan (<a> atau <Link>) tampil seperti tombol."
+    }
+  },
+  "props": {
+    "variant": "Gaya tampilan tombol.",
+    "size": "Ukuran tombol. Ukuran icon-* untuk tombol yang hanya berisi ikon.",
+    "asChild": "Menerapkan gaya tombol ke elemen anak (misalnya <a>) alih-alih membuat <button>.",
+    "disabled": "Menonaktifkan tombol.",
+    "native": "Button juga menerima semua atribut bawaan <button>, seperti onClick, type, dan aria-*."
+  }
+}

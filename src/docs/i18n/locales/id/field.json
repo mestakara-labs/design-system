@@ -1,0 +1,36 @@
+{
+  "description": "Kumpulan blok untuk menyusun form yang rapi dan aksesibel: label, kontrol, teks bantuan, dan pesan error.",
+  "anatomy": "Bagian-bagian yang bisa digabungkan sesuai kebutuhan form.",
+  "examples": {
+    "choiceCard": {
+      "title": "Kartu Pilihan",
+      "description": "FieldLabel yang membungkus Field menjadi kartu yang bisa diklik dan berubah hijau saat dipilih."
+    },
+    "checkboxGroup": {
+      "title": "Grup Checkbox",
+      "description": "FieldSet + FieldLegend untuk mengelompokkan beberapa checkbox."
+    },
+    "horizontal": {
+      "title": "Horizontal",
+      "description": "Label dan deskripsi di samping kontrol, cocok untuk switch."
+    }
+  },
+  "parts": {
+    "fieldSet": "Mengelompokkan beberapa field terkait.",
+    "fieldLegend": "Judul sebuah FieldSet.",
+    "fieldGroup": "Menyusun beberapa Field dengan jarak yang konsisten.",
+    "field": "Satu field: label + kontrol + teks bantuan.",
+    "fieldContent": "Membungkus label dan deskripsi di samping checkbox/radio/switch.",
+    "fieldLabel": "Label field. Jika membungkus Field, menjadi kartu pilihan.",
+    "fieldTitle": "Judul teks biasa (tidak terhubung ke kontrol).",
+    "fieldDescription": "Teks bantuan di bawah kontrol.",
+    "fieldError": "Pesan error berwarna merah.",
+    "fieldSeparator": "Garis pemisah, bisa diberi teks di tengah (misalnya \"atau\")."
+  },
+  "props": {
+    "orientation": "Letak label: di atas (vertical), di samping (horizontal), atau menyesuaikan lebar (responsive).",
+    "invalid": "Tandai field yang error.",
+    "disabled": "Tandai field yang non-aktif (label ikut berwarna abu-abu).",
+    "errors": "Daftar error (misalnya dari react-hook-form/zod). Satu error tampil sebagai teks, lebih dari satu sebagai daftar."
+  }
+}

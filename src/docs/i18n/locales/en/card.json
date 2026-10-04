@@ -1,0 +1,29 @@
+{
+  "description": "A box that groups related content, such as a travel package, a ticket summary or a statistic.",
+  "examples": {
+    "elevated": {
+      "title": "Outline & Elevated",
+      "description": "A card uses a border OR the Elevation/1 shadow — never both (DESIGN.md §4)."
+    },
+    "stat": {
+      "title": "Stat Card",
+      "description": "A dashboard statistic card: label, large Fraunces number and a trend badge."
+    },
+    "withForm": {
+      "title": "With Form",
+      "description": "A header with a bottom border (border-b) and full-width buttons in the footer."
+    }
+  },
+  "parts": {
+    "card": "The card wrapper.",
+    "header": "Title and description area.",
+    "title": "Card title (Heading/H3).",
+    "description": "Supporting text under the title.",
+    "action": "Top-right corner of the header, such as a badge or a small button.",
+    "content": "Main content of the card.",
+    "footer": "Bottom area, usually a price and a button."
+  },
+  "props": {
+    "variant": "outline = 1px border, elevated = shadow without a border."
+  }
+}

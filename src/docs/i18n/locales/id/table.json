@@ -1,0 +1,24 @@
+{
+  "description": "Baris dan kolom data, misalnya daftar transaksi di dashboard operasional. Baris selang-seling dan badge status sesuai DESIGN.md.",
+  "dataTable": "Untuk pengurutan, pencarian, pemilihan baris, dan halaman, lihat pola",
+  "examples": {
+    "basic": {
+      "title": "Sederhana",
+      "description": "Tabel tanpa baris selang-seling, misalnya jadwal buka."
+    }
+  },
+  "parts": {
+    "table": "Tabel, dibungkus area yang bisa digulir horizontal di layar kecil.",
+    "header": "Baris judul kolom (latar krem).",
+    "body": "Baris-baris data.",
+    "footer": "Baris ringkasan, misalnya total.",
+    "row": "Satu baris.",
+    "head": "Satu judul kolom.",
+    "cell": "Satu sel data.",
+    "caption": "Keterangan tabel."
+  },
+  "props": {
+    "striped": "Baris genap berlatar krem (zebra).",
+    "selected": "Tandai baris terpilih (latar hijau muda)."
+  }
+}

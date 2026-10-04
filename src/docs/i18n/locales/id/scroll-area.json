@@ -1,0 +1,18 @@
+{
+  "description": "Kotak dengan gulirannya sendiri dan scrollbar tipis membulat yang tampil sama di semua browser. Beri tinggi tetap (atau lebar untuk guliran horizontal).",
+  "examples": {
+    "horizontal": {
+      "title": "Horizontal",
+      "description": "Untuk baris foto atau chip yang digulir ke samping. Tambahkan <ScrollBar orientation=\"horizontal\" />."
+    }
+  },
+  "parts": {
+    "root": "Kotak guliran. Scrollbar vertikal ditambahkan otomatis.",
+    "scrollbar": "Scrollbar tambahan, misalnya horizontal."
+  },
+  "props": {
+    "type": "Kapan scrollbar terlihat: \"hover\" (default), \"scroll\", \"auto\", atau \"always\".",
+    "orientation": "Arah scrollbar.",
+    "className": "Atur tinggi/lebar di sini, misalnya h-72."
+  }
+}

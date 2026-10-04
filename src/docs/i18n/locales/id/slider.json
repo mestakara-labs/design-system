@@ -1,0 +1,23 @@
+{
+  "description": "Memilih nilai atau rentang nilai dengan menggeser, misalnya filter harga.",
+  "examples": {
+    "range": {
+      "title": "Rentang",
+      "description": "Dua nilai dalam array = dua penggeser untuk batas bawah dan atas."
+    },
+    "disabled": {
+      "title": "Non-aktif",
+      "description": "Slider yang tidak dapat digeser."
+    }
+  },
+  "props": {
+    "value": "Nilai saat ini (terkontrol). Satu angka = satu penggeser.",
+    "defaultValue": "Nilai awal (tidak terkontrol).",
+    "onValueChange": "Dipanggil saat nilai berubah.",
+    "min": "Nilai terkecil.",
+    "max": "Nilai terbesar.",
+    "step": "Besar setiap langkah.",
+    "orientation": "Arah slider.",
+    "disabled": "Menonaktifkan slider."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Garis tipis untuk memisahkan konten, secara horizontal atau vertikal.",
+  "examples": {
+    "vertical": {
+      "title": "Vertikal",
+      "description": "Separator vertikal butuh elemen induk yang punya tinggi."
+    }
+  },
+  "props": {
+    "orientation": "Arah garis.",
+    "decorative": "true = hanya hiasan (diabaikan screen reader). false = pemisah yang bermakna."
+  }
+}

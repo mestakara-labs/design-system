@@ -1,0 +1,15 @@
+{
+  "description": "A bottom sheet you can drag down to close — the most natural pattern on phones, such as choosing a ticket quantity or a payment method.",
+  "examples": {
+    "right": {
+      "title": "From the Side",
+      "description": "direction=\"right\" comes from the right and can be swiped right to close."
+    }
+  },
+  "props": {
+    "direction": "Edge of the screen the drawer comes from.",
+    "open": "Open state (controlled).",
+    "onOpenChange": "Called when the drawer opens or closes.",
+    "vaul": "Drawer is built on Vaul. Every Vaul prop can be used, such as snapPoints."
+  }
+}

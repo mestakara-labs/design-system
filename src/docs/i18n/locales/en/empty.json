@@ -1,0 +1,17 @@
+{
+  "description": "What to show when there is no data yet: no orders, tickets or search results. Explain why and offer the next step.",
+  "examples": {
+    "outline": {
+      "title": "With Dashed Border",
+      "description": "Add className=\"border\" for a dashed outline, for example for empty search results."
+    }
+  },
+  "parts": {
+    "empty": "Wrapper, content centered.",
+    "header": "Groups media, title and description.",
+    "media": "An icon (variant=\"icon\") or an illustration.",
+    "title": "Short title.",
+    "description": "Explanation and suggestion.",
+    "content": "Buttons or next actions."
+  }
+}

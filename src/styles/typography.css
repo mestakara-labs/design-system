@@ -1,0 +1,120 @@
+/*
+ * TYPOGRAPHY — DESIGN.md §3
+ * ---------------------------------------------------------------------------
+ * One class = one text style from Figma (font, size, line height, weight, letter spacing).
+ *
+ *   Fraunces (brand moments, max. one per mobile screen)
+ *     typo-display-xl · typo-display-l · typo-display-m
+ *   Plus Jakarta Sans (all UI text)
+ *     typo-h1 · typo-h2 · typo-h3
+ *     typo-body-l · typo-body-m · typo-body-s
+ *     typo-label-l · typo-label-m · typo-label-s
+ *     typo-overline
+ *
+ * Why `typo-` and not `text-`? `text-*` is already used for colors (`text-fg-primary`).
+ * A separate prefix lets `cn("typo-body-m text-fg-secondary")` keep both classes.
+ *
+ * Color is NOT part of these classes — combine with a `text-fg-*` class.
+ */
+
+/* Display — Fraunces SemiBold */
+@utility typo-display-xl {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1px;
+}
+@utility typo-display-l {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+}
+@utility typo-display-m {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+/* Headings — Plus Jakarta Sans */
+@utility typo-h1 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+}
+@utility typo-h2 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+}
+@utility typo-h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+/* Body — Plus Jakarta Sans Regular */
+@utility typo-body-l {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+@utility typo-body-m {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+@utility typo-body-s {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+/* Labels — Plus Jakarta Sans SemiBold */
+@utility typo-label-l {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+@utility typo-label-m {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+@utility typo-label-s {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+
+/* Caption / Overline — always UPPERCASE */
+@utility typo-overline {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}

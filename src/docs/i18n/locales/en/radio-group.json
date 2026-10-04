@@ -1,0 +1,21 @@
+{
+  "description": "Pick exactly one option from a list, such as a payment method.",
+  "examples": {
+    "choiceCard": {
+      "title": "Choice Card",
+      "description": "For options with extra details, combine with Field to make cards."
+    },
+    "disabled": {
+      "title": "Disabled Item",
+      "description": "Disable items that are not available, such as a fully booked session."
+    }
+  },
+  "props": {
+    "value": "Selected value (controlled).",
+    "defaultValue": "Initial value (uncontrolled).",
+    "onValueChange": "Called when the selection changes.",
+    "orientation": "Direction of keyboard navigation.",
+    "itemValue": "Unique value of each item.",
+    "disabled": "Disables the item."
+  }
+}

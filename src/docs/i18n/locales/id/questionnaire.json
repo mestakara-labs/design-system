@@ -1,0 +1,28 @@
+{
+  "description": "Formulir singkat yang menanyakan satu pertanyaan sekaligus, misalnya survei kepuasan pengunjung. Mendukung pilihan tunggal, pilihan ganda, jawaban teks, pertanyaan wajib atau boleh dilewati, dan pintasan keyboard.",
+  "tip": "Tombol navigasi menyembunyikan dirinya sendiri bila tidak berlaku. Tekan A/B/C untuk memilih jawaban dan Enter untuk lanjut.",
+  "parts": {
+    "root": "Elemen form. Prop shortcuts mengaktifkan pintasan huruf atau angka.",
+    "progress": "Teks \"Pertanyaan 1 dari 3\" dan bar progres.",
+    "item": "Satu pertanyaan (fieldset); hanya yang aktif yang tampil.",
+    "title": "Teks pertanyaan (legend).",
+    "description": "Keterangan tambahan.",
+    "choices": "Daftar pilihan jawaban.",
+    "choice": "Satu pilihan berbentuk kartu.",
+    "choiceInput": "Radio atau checkbox bawaan, berwarna hijau brand.",
+    "choiceLabel": "Teks pilihan.",
+    "choiceShortcut": "Tombol pintasan (A, B, C …).",
+    "input": "Jawaban teks, tampil seperti Input.",
+    "error": "Pesan saat pengguna lanjut tanpa menjawab.",
+    "actions": "Baris tombol navigasi.",
+    "navigation": "Tombol Sebelumnya, Lewati, Berikutnya, dan Kirim."
+  },
+  "props": {
+    "shortcuts": "Pintasan keyboard untuk memilih jawaban.",
+    "required": "Pertanyaan wajib dijawab (tidak bisa dilewati).",
+    "multiple": "Boleh memilih lebih dari satu (checkbox).",
+    "onSubmit": "Dipanggil setelah pertanyaan terakhir. Baca jawaban dengan FormData.",
+    "item": "Pertanyaan yang aktif (terkontrol), dipakai bersama onItemChange.",
+    "label": "Teks progres. Default: \"Pertanyaan X dari Y\"."
+  }
+}

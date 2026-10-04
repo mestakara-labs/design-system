@@ -1,0 +1,13 @@
+{
+  "description": "Text label for a form control. Clicking the label focuses its control.",
+  "tip": "For a complete form field (label + description + error), use the Field component, which uses Label inside.",
+  "examples": {
+    "withInput": {
+      "title": "With Input",
+      "description": "Link the label to the input with matching htmlFor and id."
+    }
+  },
+  "props": {
+    "htmlFor": "id of the control being labelled."
+  }
+}

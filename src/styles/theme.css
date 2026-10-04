@@ -1,0 +1,181 @@
+/*
+ * LAYER 3 — TAILWIND THEME
+ * ---------------------------------------------------------------------------
+ * Turns the semantic tokens into Tailwind classes, plus fonts, radius and shadows.
+ *
+ * How to read this file:  --color-<class-name>: var(--<semantic-token>);
+ *   --color-canvas: var(--bg-canvas)   →   `bg-canvas`, `text-canvas`, `border-canvas` …
+ *
+ * Class cheat sheet
+ *   Backgrounds   bg-canvas · bg-surface · bg-subtle · bg-muted · bg-brand · bg-brand-subtle
+ *                 bg-inverse · bg-accent-subtle
+ *   Actions       bg-primary · bg-secondary · bg-tertiary · bg-tonal · bg-danger · bg-disabled
+ *                 (+ -hover / -pressed)
+ *   Text          text-fg-primary · text-fg-secondary · text-fg-tertiary · text-fg-disabled
+ *                 text-fg-brand · text-fg-heading · text-fg-link · text-fg-on-brand · text-fg-accent
+ *                 text-fg-success · text-fg-warning · text-fg-danger · text-fg-info (status text)
+ *   Borders       border-border · border-border-strong · border-focus · ring-focus
+ *   Status        text-success / bg-success-subtle (same for warning, danger, info)
+ *   Sidebar       bg-sidebar · bg-sidebar-hover · bg-sidebar-active · text-sidebar-fg
+ *                 text-sidebar-active-fg · text-sidebar-fg-muted · border-sidebar-border
+ *                 sidebar-light (light colors for a sidebar on a white surface)
+ */
+
+@theme inline {
+  /* Backgrounds */
+  --color-canvas: var(--bg-canvas);
+  --color-surface: var(--bg-surface);
+  --color-subtle: var(--bg-subtle);
+  --color-muted: var(--bg-muted);
+  --color-brand: var(--bg-brand);
+  --color-brand-subtle: var(--bg-brand-subtle);
+  --color-inverse: var(--bg-inverse);
+  --color-accent-subtle: var(--bg-accent-subtle);
+
+  /* Actions */
+  --color-primary: var(--action-primary);
+  --color-primary-hover: var(--action-primary-hover);
+  --color-primary-pressed: var(--action-primary-pressed);
+  --color-secondary: var(--action-secondary);
+  --color-secondary-hover: var(--action-secondary-hover);
+  --color-secondary-pressed: var(--action-secondary-pressed);
+  --color-tertiary: var(--action-tertiary);
+  --color-tertiary-hover: var(--action-tertiary-hover);
+  --color-tertiary-pressed: var(--action-tertiary-pressed);
+  --color-tonal: var(--action-tonal);
+  --color-tonal-hover: var(--action-tonal-hover);
+  --color-tonal-pressed: var(--action-tonal-pressed);
+  --color-danger-hover: var(--action-danger-hover);
+  --color-disabled: var(--action-disabled);
+
+  /* Text ("fg" = foreground, so it never clashes with background names) */
+  --color-fg-primary: var(--text-primary);
+  --color-fg-secondary: var(--text-secondary);
+  --color-fg-tertiary: var(--text-tertiary);
+  --color-fg-disabled: var(--text-disabled);
+  --color-fg-brand: var(--text-brand);
+  --color-fg-heading: var(--text-heading);
+  --color-fg-link: var(--text-link);
+  --color-fg-on-brand: var(--text-on-brand);
+  --color-fg-accent: var(--text-accent);
+  --color-fg-success: var(--status-success-text);
+  --color-fg-warning: var(--status-warning-text);
+  --color-fg-danger: var(--status-danger-text);
+  --color-fg-info: var(--status-info-text);
+
+  /* Borders */
+  --color-border: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-focus: var(--border-focus);
+
+  /* Status */
+  --color-success: var(--status-success);
+  --color-success-subtle: var(--status-success-bg);
+  --color-warning: var(--status-warning);
+  --color-warning-subtle: var(--status-warning-bg);
+  --color-danger: var(--status-danger);
+  --color-danger-subtle: var(--status-danger-bg);
+  --color-info: var(--status-info);
+  --color-info-subtle: var(--status-info-bg);
+
+  --color-premium: var(--accent-gold);
+
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar-bg);
+  --color-sidebar-hover: var(--sidebar-item-hover);
+  --color-sidebar-active: var(--sidebar-item-active);
+  --color-sidebar-active-fg: var(--sidebar-item-active-text);
+  --color-sidebar-fg: var(--sidebar-text);
+  --color-sidebar-fg-muted: var(--sidebar-text-muted);
+  --color-sidebar-border: var(--sidebar-border);
+}
+
+@theme {
+  /* Fonts — DESIGN.md §3. `font-sans` is the default for all UI text. */
+  --font-sans:
+    "Plus Jakarta Sans Variable", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces Variable", "Fraunces", ui-serif, Georgia, serif;
+
+  /* Radius — DESIGN.md §4. Classes: rounded-xs … rounded-xl, rounded-full */
+  --radius-*: initial;
+  --radius-xs: 4px; /* tags, checkbox */
+  --radius-sm: 8px; /* small buttons */
+  --radius-md: 12px; /* buttons, inputs */
+  --radius-lg: 16px; /* cards */
+  --radius-xl: 24px; /* sheets, modals, e-ticket */
+
+  /*
+   * Elevation — DESIGN.md §4. Shadows are tinted dark green (#0F2921), never pure black.
+   *   shadow-sm = Elevation/1 → cards, list items
+   *   shadow-md = Elevation/2 → dropdowns, tickets
+   *   shadow-lg = Elevation/3 → modals, bottom sheets
+   */
+  --shadow-*: initial;
+  --shadow-sm: 0 1px 2px rgb(15 41 33 / 6%), 0 1px 3px rgb(15 41 33 / 8%);
+  --shadow-md: 0 4px 12px rgb(15 41 33 / 8%), 0 2px 4px rgb(15 41 33 / 4%);
+  --shadow-lg: 0 12px 32px rgb(15 41 33 / 12%), 0 4px 8px rgb(15 41 33 / 6%);
+}
+
+@theme {
+  /* Blinking text cursor, used by <InputOTP>. Class: animate-caret-blink */
+  --animate-caret-blink: caret-blink 1.25s ease-out infinite;
+
+  @keyframes caret-blink {
+    0%,
+    70%,
+    100% {
+      opacity: 1;
+    }
+    20%,
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+/*
+ * Moving shine over text while something loads, e.g. the file name of an uploading
+ * <Attachment>. Class: shimmer
+ */
+@utility shimmer {
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    var(--text-primary) 35%,
+    var(--text-disabled) 50%,
+    var(--text-primary) 65%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/*
+ * Light sidebar colors, for a <Sidebar> placed on a white surface (inside a popover, dialog …).
+ * It only swaps the --sidebar-* tokens for the element it is on. Class: sidebar-light
+ */
+@utility sidebar-light {
+  --sidebar-bg: var(--bg-surface);
+  --sidebar-text: var(--text-primary);
+  --sidebar-text-muted: var(--text-tertiary);
+  --sidebar-item-hover: var(--bg-subtle);
+  --sidebar-item-active: var(--bg-brand-subtle);
+  --sidebar-item-active-text: var(--text-brand);
+  --sidebar-border: var(--border-default);
+}

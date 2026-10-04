@@ -1,0 +1,36 @@
+{
+  "description": "Building blocks for tidy, accessible forms: label, control, helper text and error message.",
+  "anatomy": "Parts that can be combined to fit the form.",
+  "examples": {
+    "choiceCard": {
+      "title": "Choice Card",
+      "description": "A FieldLabel that wraps a Field becomes a clickable card that turns green when selected."
+    },
+    "checkboxGroup": {
+      "title": "Checkbox Group",
+      "description": "FieldSet + FieldLegend to group several checkboxes."
+    },
+    "horizontal": {
+      "title": "Horizontal",
+      "description": "Label and description next to the control, good for switches."
+    }
+  },
+  "parts": {
+    "fieldSet": "Groups related fields.",
+    "fieldLegend": "Title of a FieldSet.",
+    "fieldGroup": "Stacks several Fields with consistent spacing.",
+    "field": "One field: label + control + helper text.",
+    "fieldContent": "Wraps label and description next to a checkbox/radio/switch.",
+    "fieldLabel": "Field label. When it wraps a Field, it becomes a choice card.",
+    "fieldTitle": "A plain text title (not linked to a control).",
+    "fieldDescription": "Helper text under the control.",
+    "fieldError": "Red error message.",
+    "fieldSeparator": "A divider line, optionally with text in the middle (e.g. \"or\")."
+  },
+  "props": {
+    "orientation": "Label position: above (vertical), beside (horizontal), or depending on width (responsive).",
+    "invalid": "Marks the field as having an error.",
+    "disabled": "Marks the field as disabled (the label turns grey too).",
+    "errors": "List of errors (e.g. from react-hook-form/zod). One error shows as text, several as a list."
+  }
+}

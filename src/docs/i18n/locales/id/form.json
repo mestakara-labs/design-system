@@ -1,0 +1,21 @@
+{
+  "description": "Menghubungkan kolom form ke react-hook-form. Label, pesan error, dan atribut aksesibilitas terpasang otomatis. Coba klik \"Pesan Tiket\" tanpa mengisi form.",
+  "dependencies": "Form memerlukan react-hook-form di aplikasi Anda. Untuk validasi, gunakan zod beserta resolver-nya.",
+  "howItWorks": {
+    "title": "Cara Kerja",
+    "schema": "Tulis aturan data yang valid dengan zod. Pesan error menjelaskan cara memperbaikinya.",
+    "useForm": "Buat form dengan useForm() dan zodResolver(schema).",
+    "field": "Setiap kolom: FormField → FormItem → FormLabel + FormControl (berisi Input/Select/…) + FormMessage.",
+    "submit": "form.handleSubmit(onSubmit) hanya memanggil onSubmit jika semua kolom valid."
+  },
+  "parts": {
+    "form": "Pembungkus <form>; isi dengan semua hasil useForm().",
+    "formField": "Satu kolom yang terhubung ke react-hook-form (lewat prop name).",
+    "formItem": "Mengelompokkan label, kontrol, deskripsi, dan pesan satu kolom.",
+    "formLabel": "Label kolom, otomatis terhubung ke kontrolnya.",
+    "formControl": "Membungkus kontrol dan memberi id, aria-describedby, serta aria-invalid.",
+    "formDescription": "Teks bantuan di bawah kontrol.",
+    "formMessage": "Pesan error hasil validasi.",
+    "useFormField": "Membaca id dan error kolom saat ini (untuk komponen buatan sendiri)."
+  }
+}

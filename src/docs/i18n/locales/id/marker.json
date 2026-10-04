@@ -1,0 +1,18 @@
+{
+  "description": "Catatan kecil di antara pesan: tanggal (\"Hari ini\"), kejadian (\"Rina bergabung\"), atau status (\"Pesanan dibuat\").",
+  "examples": {
+    "icon": {
+      "title": "Dengan ikon & tautan",
+      "description": "MarkerIcon menambahkan ikon di depan teks. Tautan di dalam marker otomatis bergaris bawah."
+    }
+  },
+  "parts": {
+    "marker": "Baris catatan.",
+    "icon": "Ikon opsional di depan teks; disembunyikan dari screen reader.",
+    "content": "Teks catatan."
+  },
+  "props": {
+    "variant": "\"separator\" = teks di tengah garis; \"border\" = garis di bawah.",
+    "asChild": "Render elemen anak dengan gaya marker."
+  }
+}

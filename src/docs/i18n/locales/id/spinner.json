@@ -1,0 +1,17 @@
+{
+  "description": "Ikon berputar yang menandakan sesuatu sedang dimuat. Warnanya mengikuti warna teks di sekitarnya.",
+  "examples": {
+    "sizes": {
+      "title": "Ukuran & Warna",
+      "description": "Atur ukuran dengan size-* dan warna dengan text-*."
+    },
+    "button": {
+      "title": "Di Dalam Tombol",
+      "description": "Nonaktifkan tombol dan letakkan Spinner sebelum teks selama aksi berjalan."
+    }
+  },
+  "props": {
+    "ariaLabel": "Teks untuk screen reader. Default berbahasa Indonesia: \"Memuat\".",
+    "className": "Ukuran (size-*) dan warna (text-*)."
+  }
+}

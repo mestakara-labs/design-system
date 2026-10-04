@@ -1,0 +1,27 @@
+{
+  "description": "Tautan utama sebuah situs, dengan panel turun (drop-down) opsional. Trigger yang terbuka dan tautan aktif memakai pil hijau muda.",
+  "tip": "Navigation Menu untuk header situs di layar lebar. Di ponsel, tampilkan menu yang sama di dalam Sheet atau Drawer.",
+  "examples": {
+    "noViewport": {
+      "title": "Tanpa viewport",
+      "description": "viewport={false} membuka setiap panel tepat di bawah trigger-nya. Prop active menandai halaman saat ini."
+    }
+  },
+  "parts": {
+    "root": "Pembungkus. Menambahkan viewport secara otomatis.",
+    "list": "Baris item tingkat atas.",
+    "item": "Satu item tingkat atas.",
+    "trigger": "Tombol yang membuka panel, dengan panah.",
+    "content": "Isi panel.",
+    "link": "Tautan di dalam panel atau di tingkat atas.",
+    "viewport": "Kotak bersama tempat panel terbuka; berubah ukuran dan bergeser antar panel.",
+    "indicator": "Panah kecil opsional di bawah trigger yang terbuka.",
+    "triggerStyle": "Fungsi kelas CSS untuk memberi tautan tingkat atas gaya trigger."
+  },
+  "props": {
+    "viewport": "true = semua panel terbuka di satu kotak beranimasi; false = di bawah masing-masing trigger.",
+    "active": "Menandai tautan halaman saat ini.",
+    "delayDuration": "Jeda (ms) sebelum panel terbuka saat hover.",
+    "value": "Item yang terbuka (terkontrol)."
+  }
+}

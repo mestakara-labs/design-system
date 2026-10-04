@@ -1,0 +1,18 @@
+{
+  "description": "A box with its own scrolling and a thin, rounded scrollbar that looks the same in every browser. Give it a fixed height (or width for horizontal scrolling).",
+  "examples": {
+    "horizontal": {
+      "title": "Horizontal",
+      "description": "For a row of photos or chips that scrolls sideways. Add <ScrollBar orientation=\"horizontal\" />."
+    }
+  },
+  "parts": {
+    "root": "The scrolling box. A vertical scrollbar is added automatically.",
+    "scrollbar": "An extra scrollbar, e.g. horizontal."
+  },
+  "props": {
+    "type": "When the scrollbar shows: \"hover\" (default), \"scroll\", \"auto\" or \"always\".",
+    "orientation": "Direction of the scrollbar.",
+    "className": "Set the height/width here, e.g. h-72."
+  }
+}

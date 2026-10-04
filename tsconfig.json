@@ -1,0 +1,25 @@
+// TypeScript settings for the whole project (library + documentation site).
+// `npm run typecheck` uses this file.
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "types": ["vite/client", "node"],
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+
+    // `@/…` always points to `src/…`, e.g. `import { Button } from "@/components/ui/button"`.
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["src", "scripts", "vite.config.ts", "vite.lib.config.ts", "eslint.config.js"]
+}

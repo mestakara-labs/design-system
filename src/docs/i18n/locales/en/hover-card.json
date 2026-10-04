@@ -1,0 +1,9 @@
+{
+  "description": "A preview card that appears when hovering (or keyboard-focusing) a link, such as short info about a unit.",
+  "tip": "Phones cannot hover, so never put essential information only in a Hover Card.",
+  "props": {
+    "openDelay": "Delay before it appears (ms).",
+    "closeDelay": "Delay before it disappears (ms).",
+    "side": "Side where the card appears."
+  }
+}

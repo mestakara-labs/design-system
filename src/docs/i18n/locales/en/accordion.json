@@ -1,0 +1,22 @@
+{
+  "description": "A list of headings that each show or hide a section of content, such as an FAQ, package details, or terms & conditions.",
+  "examples": {
+    "multiple": {
+      "title": "Several open & disabled",
+      "description": "type=\"multiple\" lets several sections be open together. An accordion can also sit in a card frame, and an item with disabled cannot be opened."
+    }
+  },
+  "parts": {
+    "root": "Wrapper; controls which sections are open.",
+    "item": "One section (heading + content), separated by a line.",
+    "trigger": "Clickable heading, with an arrow on the right.",
+    "content": "Content that slides open."
+  },
+  "props": {
+    "type": "\"single\" = one section open; \"multiple\" = several at once.",
+    "collapsible": "Only for type=\"single\": the open section can be closed again.",
+    "defaultValue": "Sections open at first. An array for type=\"multiple\".",
+    "value": "Open sections (controlled), used with onValueChange.",
+    "disabled": "This section cannot be opened."
+  }
+}

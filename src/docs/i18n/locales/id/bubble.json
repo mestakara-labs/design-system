@@ -1,0 +1,26 @@
+{
+  "description": "Balon di sekitar satu pesan chat. Pesan milik pengguna berwarna hijau di kanan, balasan berwarna terang di kiri. Radius 16px.",
+  "examples": {
+    "variants": {
+      "title": "Varian",
+      "description": "Tujuh varian untuk pengirim dan kondisi yang berbeda, termasuk ghost (tanpa balon) dan destructive (gagal terkirim)."
+    },
+    "actions": {
+      "title": "Reaksi & saran yang bisa diklik",
+      "description": "BubbleReactions menempel di sudut balon. Dengan asChild, BubbleContent menjadi tombol, misalnya untuk saran pertanyaan."
+    }
+  },
+  "parts": {
+    "group": "Menumpuk beberapa balon dari pengirim yang sama.",
+    "bubble": "Pembungkus; mengatur varian dan sisi (kiri/kanan).",
+    "content": "Teks di dalam balon. Mendukung asChild.",
+    "reactions": "Reaksi emoji di sudut balon."
+  },
+  "props": {
+    "variant": "Warna balon.",
+    "align": "\"end\" = sisi kanan (pesan milik pengguna). Di dalam Message mengikuti pesannya.",
+    "asChild": "Render elemen anak (button atau a) dengan gaya balon.",
+    "side": "Posisi reaksi: atas atau bawah balon.",
+    "reactionsAlign": "Posisi reaksi: kiri atau kanan."
+  }
+}

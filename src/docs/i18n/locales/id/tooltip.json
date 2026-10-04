@@ -1,0 +1,15 @@
+{
+  "description": "Label singkat yang muncul saat hover atau fokus keyboard, misalnya penjelasan tombol ikon. Latar hijau tua dengan teks putih.",
+  "tip": "Cukup beberapa kata. Tooltip tidak muncul di ponsel, jadi tombol ikon tetap wajib punya aria-label.",
+  "examples": {
+    "sides": {
+      "title": "Posisi",
+      "description": "side menentukan letak tooltip; posisi bergeser otomatis bila tidak cukup ruang."
+    }
+  },
+  "props": {
+    "side": "Sisi tempat tooltip muncul.",
+    "delayDuration": "Jeda sebelum tooltip muncul (ms).",
+    "open": "Status terbuka (terkontrol)."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "overline": "PTPN I Regional 2 · Unit Agrowisata",
+    "title": "Satu design system untuk seluruh aplikasi Agrowisata",
+    "description": "Komponen React siap pakai berbasis shadcn/ui, dengan warna, tipografi, dan gaya dari kebun teh dataran tinggi Jawa Barat.",
+    "getStarted": "Mulai Gunakan",
+    "browseComponents": "Lihat Komponen"
+  },
+  "principles": {
+    "title": "Prinsip Desain",
+    "warm": {
+      "title": "Hangat & Ramah",
+      "description": "Menyapa pengunjung seperti tuan rumah di kebun."
+    },
+    "natural": {
+      "title": "Alami & Asri",
+      "description": "Ruang lapang, warna daun teh, foto lanskap asli; minim ornamen."
+    },
+    "trusted": {
+      "title": "Tepercaya & Rapi",
+      "description": "Harga, jadwal, dan status selalu jelas; satu komponen, satu perilaku di semua aplikasi."
+    }
+  },
+  "inside": {
+    "title": "Isi Design System",
+    "foundations": {
+      "title": "Fondasi",
+      "description": "warna, tipografi, spasi, radius, dan elevasi."
+    },
+    "components": {
+      "title": "Komponen",
+      "description": "seluruh komponen shadcn/ui dengan gaya Mestakara, lengkap dengan contoh dan semua state."
+    },
+    "installation": {
+      "title": "Instalasi",
+      "description": "cara memasang @mestakara/ui di aplikasi React atau Next.js."
+    }
+  },
+  "source": {
+    "title": "Sumber Desain",
+    "description": "Semua token dan gaya mengacu pada file Figma \"Agrowisata Regional 2 — Design System\" (dirangkum dalam DESIGN.md)."
+  }
+}

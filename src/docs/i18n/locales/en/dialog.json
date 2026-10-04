@@ -1,0 +1,27 @@
+{
+  "description": "A window on top of the page that asks for the user's attention, such as a short form or details. The page behind is dimmed.",
+  "tip": "A dialog closes with the × button, the Esc key, or a click outside. For confirming important actions that must not close by accident, use Alert Dialog.",
+  "examples": {
+    "scroll": {
+      "title": "Long Content",
+      "description": "Limit the dialog height; only the middle scrolls, while the title and buttons stay visible."
+    }
+  },
+  "parts": {
+    "root": "Holds the open/closed state.",
+    "trigger": "The button that opens the dialog.",
+    "content": "The dialog window (includes the dimmed backdrop and the × button).",
+    "header": "Title and description area.",
+    "title": "Dialog title (read by screen readers).",
+    "description": "Short explanation.",
+    "footer": "Buttons at the bottom.",
+    "close": "Wrap any element to make it close the dialog."
+  },
+  "props": {
+    "open": "Open state (controlled).",
+    "onOpenChange": "Called when the dialog opens or closes.",
+    "showCloseButton": "Show the × button in the top-right corner.",
+    "closeLabel": "Screen-reader label of the × button.",
+    "footerClose": "Add a \"Tutup\" (close) button to the footer."
+  }
+}

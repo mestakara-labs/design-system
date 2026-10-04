@@ -1,0 +1,41 @@
+{
+  "description": "Triggers an action, such as booking a ticket, paying, or viewing a package.",
+  "guidelines": {
+    "onePrimary": "Use only one primary button per screen (for example \"Pesan Tiket\" or \"Bayar\").",
+    "shortVerbs": "Write labels as short verbs: \"Pesan Tiket\", \"Bayar Sekarang\", \"Lihat Paket\".",
+    "accentText": "The accent (orange) button always uses dark text — white text on orange does not have enough contrast."
+  },
+  "examples": {
+    "variants": {
+      "title": "Variants",
+      "description": "Primary for the main action, accent for promos, tonal for secondary actions, outline and ghost for supporting actions, destructive for dangerous actions."
+    },
+    "sizes": {
+      "title": "Sizes",
+      "description": "Small (32px), Medium (44px, default), and Large (52px)."
+    },
+    "withIcon": {
+      "title": "With Icon",
+      "description": "Place an icon before or after the text. The icon size follows the button size automatically."
+    },
+    "iconOnly": {
+      "title": "Icon Only",
+      "description": "A square button that contains only an icon. An aria-label is required."
+    },
+    "loading": {
+      "title": "Loading",
+      "description": "Disable the button and add a spinning icon while the action runs."
+    },
+    "asLink": {
+      "title": "As Link",
+      "description": "Use asChild to make a link (<a> or <Link>) look like a button."
+    }
+  },
+  "props": {
+    "variant": "Visual style of the button.",
+    "size": "Size of the button. The icon-* sizes are for buttons that only contain an icon.",
+    "asChild": "Applies the button styles to the child element (e.g. <a>) instead of rendering a <button>.",
+    "disabled": "Disables the button.",
+    "native": "Button also accepts every native <button> attribute, such as onClick, type and aria-*."
+  }
+}

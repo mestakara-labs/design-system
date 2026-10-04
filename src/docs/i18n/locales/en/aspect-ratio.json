@@ -1,0 +1,6 @@
+{
+  "description": "Keeps content (usually an image) at a fixed width-to-height ratio, such as the 19:10 landscape photos of destination cards.",
+  "props": {
+    "ratio": "Width ÷ height, e.g. 19 / 10 or 16 / 9."
+  }
+}

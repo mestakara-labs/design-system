@@ -1,0 +1,11 @@
+{
+  "description": "A full data table with search, sorting, row selection and paging. Try searching \"Rancabali\" or clicking the Pengunjung column title.",
+  "installation": "Data Table is not a separate component but a pattern combining the Table component with the @tanstack/react-table v8 library.",
+  "howItWorks": {
+    "title": "How It Works",
+    "columns": "Define the columns (ColumnDef): which data to show and how it looks.",
+    "table": "Create the table with useReactTable(): data, columns and the features you want (sorting, filtering, paging).",
+    "render": "Render it with the Table components: TableHeader from getHeaderGroups(), TableBody from getRowModel()."
+  },
+  "docs": "Full TanStack Table documentation is at tanstack.com/table/v8."
+}

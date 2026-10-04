@@ -1,0 +1,23 @@
+{
+  "description": "Foto profil berbentuk lingkaran, dengan inisial sebagai cadangan saat foto belum dimuat atau tidak ada.",
+  "examples": {
+    "sizes": {
+      "title": "Ukuran",
+      "description": "Small (32px), Medium (40px, default), dan Large (56px)."
+    },
+    "badge": {
+      "title": "Dengan Badge",
+      "description": "Titik kecil di pojok kanan bawah, misalnya status online atau terverifikasi."
+    },
+    "group": {
+      "title": "Grup",
+      "description": "Beberapa avatar bertumpuk, dengan jumlah sisanya di akhir."
+    }
+  },
+  "props": {
+    "size": "Ukuran avatar.",
+    "src": "Alamat gambar.",
+    "alt": "Teks alternatif untuk screen reader.",
+    "delayMs": "Tunda tampilnya fallback (ms), agar tidak berkedip saat gambar cepat dimuat."
+  }
+}

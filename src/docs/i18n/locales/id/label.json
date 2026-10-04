@@ -1,0 +1,13 @@
+{
+  "description": "Teks label untuk sebuah kontrol form. Mengklik label akan memfokuskan kontrolnya.",
+  "tip": "Untuk form lengkap (label + deskripsi + error), gunakan komponen Field yang sudah memakai Label di dalamnya.",
+  "examples": {
+    "withInput": {
+      "title": "Dengan Input",
+      "description": "Hubungkan label ke input lewat htmlFor dan id yang sama."
+    }
+  },
+  "props": {
+    "htmlFor": "id dari kontrol yang diberi label."
+  }
+}

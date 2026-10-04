@@ -1,0 +1,42 @@
+{
+  "description": "The side menu of a dashboard: logo, menu groups, user account, and a button to fold it away. 240px wide with a dark green background; the active item uses the brand color. On phones the menu opens as a Sheet.",
+  "structure": "Page structure: SidebarProvider wraps Sidebar (the menu) and SidebarInset (the page content). SidebarTrigger in the header opens/closes the menu, and so does Ctrl+B (⌘B on Mac).",
+  "colors": "The sidebar colors come from the --sidebar-* tokens in semantic.css. Change those tokens for another look (e.g. a light sidebar) without touching the component.",
+  "hook": "useSidebar() reads and changes the menu state from any component inside SidebarProvider.",
+  "examples": {
+    "variants": {
+      "title": "Variants",
+      "description": "sidebar is attached to the screen edge, floating is a rounded box, and inset turns the page content into a card next to the menu."
+    },
+    "loading": {
+      "title": "Loading",
+      "description": "SidebarMenuSkeleton stands in for items while the menu loads. collapsible=\"none\" keeps the menu always open."
+    }
+  },
+  "parts": {
+    "provider": "Keeps the open/folded state. Wraps the menu and the page content.",
+    "sidebar": "The menu itself. Becomes a Sheet on phones.",
+    "trigger": "Button that opens/closes the menu, usually in the page header.",
+    "rail": "Thin strip on the menu edge; click to fold/unfold.",
+    "inset": "The page content next to the menu (main element).",
+    "header": "Top part: logo or unit switcher.",
+    "content": "Scrolling middle part with the menu groups.",
+    "footer": "Bottom part: user account.",
+    "group": "Menu group with a label and an optional action.",
+    "menu": "List of menu items (ul/li).",
+    "menuButton": "Menu button or link. Supports isActive, tooltip and asChild.",
+    "menuExtras": "Extras on the right of an item: a small action button or a number (badge).",
+    "menuSub": "Indented list of sub-items.",
+    "skeleton": "Grey placeholder row while loading."
+  },
+  "props": {
+    "defaultOpen": "Open at first (uncontrolled).",
+    "open": "Open state (controlled), used with onOpenChange.",
+    "side": "Side of the screen the menu is on.",
+    "variant": "Frame style: attached, floating, or inset.",
+    "collapsible": "When closed: slides off screen, folds to icons, or cannot close.",
+    "isActive": "Marks the page that is open.",
+    "tooltip": "Label shown on hover while the menu is folded to icons.",
+    "size": "Button height: sm 32px, md 40px, lg 48px."
+  }
+}

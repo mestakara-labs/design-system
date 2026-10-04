@@ -1,0 +1,25 @@
+{
+  "description": "Tombol yang bisa ditekan dan tetap dalam keadaan aktif (on) atau tidak (off), misalnya simpan ke favorit.",
+  "examples": {
+    "outline": {
+      "title": "Outline",
+      "description": "Varian dengan border, cocok untuk filter fasilitas."
+    },
+    "sizes": {
+      "title": "Ukuran",
+      "description": "Small (32px), Medium (44px, default), dan Large (52px) — sama seperti Button."
+    },
+    "disabled": {
+      "title": "Non-aktif",
+      "description": "Toggle yang tidak dapat ditekan."
+    }
+  },
+  "props": {
+    "variant": "Gaya tampilan toggle.",
+    "size": "Ukuran toggle.",
+    "pressed": "Status on/off (terkontrol).",
+    "defaultPressed": "Status awal (tidak terkontrol).",
+    "onPressedChange": "Dipanggil saat status berubah.",
+    "disabled": "Menonaktifkan toggle."
+  }
+}

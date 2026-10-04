@@ -1,0 +1,15 @@
+{
+  "description": "A short label that appears on hover or keyboard focus, such as the meaning of an icon button. Dark green background with white text.",
+  "tip": "Keep it to a few words. Tooltips do not show on phones, so icon buttons still need an aria-label.",
+  "examples": {
+    "sides": {
+      "title": "Position",
+      "description": "side sets where the tooltip appears; it moves automatically when there is not enough room."
+    }
+  },
+  "props": {
+    "side": "Side where the tooltip appears.",
+    "delayDuration": "Delay before the tooltip appears (ms).",
+    "open": "Open state (controlled)."
+  }
+}

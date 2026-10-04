@@ -1,0 +1,28 @@
+{
+  "description": "A month view for picking a date, several dates, or a date range.",
+  "locale": "The calendar is in Indonesian by default (weeks start on Monday). Change it with the locale prop if needed.",
+  "examples": {
+    "range": {
+      "title": "Date Range",
+      "description": "mode=\"range\" for a stay. numberOfMonths={2} shows two months."
+    },
+    "disabledDays": {
+      "title": "Disabled Days",
+      "description": "Disable past dates and closed days (example: every Monday)."
+    },
+    "dropdown": {
+      "title": "Month & Year Dropdowns",
+      "description": "captionLayout=\"dropdown\" makes picking a birth date easier."
+    }
+  },
+  "props": {
+    "mode": "How to pick: one date, several dates, or a range.",
+    "selected": "The selected date(s).",
+    "onSelect": "Called when the selection changes.",
+    "disabled": "Dates that cannot be picked, e.g. { before: new Date() }.",
+    "numberOfMonths": "Number of months shown.",
+    "captionLayout": "Month title as text or dropdowns.",
+    "localeProp": "Language and date format.",
+    "dayPicker": "Calendar is built on react-day-picker. Every one of its props can be used — see daypicker.dev."
+  }
+}
