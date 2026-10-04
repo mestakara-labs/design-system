@@ -178,4 +178,5 @@
   --sidebar-item-active: var(--bg-brand-subtle);
   --sidebar-item-active-text: var(--text-brand);
   --sidebar-border: var(--border-default);
+  --sidebar-scrollbar-thumb: var(--scrollbar-thumb);
 }

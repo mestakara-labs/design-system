@@ -61,6 +61,10 @@
   --border-strong: var(--color-neutral-300); /* outline button */
   --border-focus: var(--color-navy-400); /* focus ring (2px) */
 
+  /* Scrollbar — thin, rounded thumb on a transparent track */
+  --scrollbar-thumb: var(--color-neutral-300);
+  --scrollbar-thumb-hover: var(--color-neutral-400);
+
   /* Status — each has a strong color and a light background */
   --status-success: var(--color-green-600);
   --status-success-bg: var(--color-green-50);
@@ -103,4 +107,5 @@
   --sidebar-item-active: var(--bg-brand); /* active menu item */
   --sidebar-item-active-text: var(--text-on-brand); /* text of the active menu item */
   --sidebar-border: var(--color-forest-800); /* derived — lines inside the sidebar */
+  --sidebar-scrollbar-thumb: var(--color-forest-700); /* scrollbar inside the sidebar */
 }

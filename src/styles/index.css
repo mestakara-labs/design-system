@@ -43,4 +43,44 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+
+  /*
+   * Scrollbars: thin and minimal everywhere (page, sidebar, menus, code blocks).
+   * Colors come from --scrollbar-thumb / --scrollbar-thumb-hover, so an area can recolor
+   * its scrollbars by changing those two variables (the dark sidebar does this below).
+   */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+  }
+
+  /* Chrome, Edge and Safari: draw the bar ourselves for a rounded thumb with some air around it. */
+  @supports selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: auto;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      border: 3px solid transparent; /* transparent border = space around the thumb */
+      border-radius: 9999px;
+      background: var(--scrollbar-thumb) padding-box;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: var(--scrollbar-thumb-hover);
+    }
+  }
+
+  /* The dark sidebar gets a darker thumb that still shows on forest green. */
+  [data-slot="sidebar-inner"] {
+    --scrollbar-thumb: var(--sidebar-scrollbar-thumb);
+    --scrollbar-thumb-hover: var(--sidebar-text-muted);
+  }
 }
