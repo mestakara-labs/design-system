@@ -2,8 +2,9 @@
  * Shared look of every text-like form control:
  * Input, Textarea, Select, Native Select, Input Group, Combobox.
  *
- * Design: DESIGN.md §5 "Text Field"
- *   - height 48, radius 12, padding 16, 1px border `border/default`
+ * Design: DESIGN.md §5 "Text Field" — sizes follow shadcn/ui
+ *   - height 36 (small: 32), radius 12, padding 12, 1px border `border/default`
+ *   - text: `typo-field` (Body/M, 16px on phones so iOS Safari does not zoom in)
  *   - focus: 2px border `border/focus`   (1px border + 1px ring = 2px, without layout shift)
  *   - error: 2px border `status/danger`  (set `aria-invalid="true"` on the control)
  *
@@ -12,8 +13,8 @@
 export const controlStyles = {
   /**
    * Border, background, text color and placeholder.
-   * The text SIZE is not here: each control adds `typo-body-l` (or `typo-body-m` when small),
-   * because cn() cannot tell that two `typo-*` classes conflict.
+   * The text SIZE is not here: each control adds `typo-field` (or `typo-body-m` for a Select,
+   * which is a button, not a text field), because cn() cannot tell that two `typo-*` classes conflict.
    */
   base: "w-full min-w-0 rounded-md border border-border bg-surface text-fg-primary outline-none transition-[border-color,box-shadow] placeholder:text-fg-tertiary hover:border-border-strong",
   /** Keyboard / click focus. */
@@ -37,7 +38,7 @@ export const panelStyles =
  * The highlighted option uses the same light-green pill as the active navigation item.
  */
 export const panelItemStyles =
-  "relative flex w-full cursor-default items-center gap-2 rounded-sm px-3 py-2 typo-body-m outline-none select-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-fg-tertiary";
+  "relative flex w-full cursor-default items-center gap-2 rounded-sm px-2 py-1.5 typo-body-m outline-none select-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-fg-tertiary";
 
 /**
  * Disabled look of a panel option, for Radix / Base UI items (they add `data-disabled` when disabled).
@@ -60,19 +61,19 @@ export const menuStyles = {
   /** The menu panel. */
   content: "z-50 min-w-[10rem] overflow-x-hidden overflow-y-auto p-1",
   /** One clickable item. `inset` items line up with checkbox/radio items. */
-  item: "focus:bg-brand-subtle focus:text-fg-brand data-[inset]:pl-9",
+  item: "focus:bg-brand-subtle focus:text-fg-brand data-[inset]:pl-8",
   /** Red "dangerous" item, e.g. "Batalkan pesanan". */
   destructive:
     "data-[variant=destructive]:text-fg-danger data-[variant=destructive]:focus:bg-danger-subtle data-[variant=destructive]:focus:text-fg-danger data-[variant=destructive]:*:[svg]:text-danger!",
   /** Checkbox/radio item: leaves room on the left for the check mark or dot. */
-  choiceItem: "pl-9 focus:bg-brand-subtle focus:text-fg-brand",
+  choiceItem: "pl-8 focus:bg-brand-subtle focus:text-fg-brand",
   /** Where the check mark or dot of a choice item sits. */
-  indicator: "pointer-events-none absolute left-3 flex size-4 items-center justify-center",
+  indicator: "pointer-events-none absolute left-2 flex size-4 items-center justify-center",
   /** Item that opens a sub-menu. */
   subTrigger:
-    "focus:bg-brand-subtle focus:text-fg-brand data-[inset]:pl-9 data-[state=open]:bg-brand-subtle data-[state=open]:text-fg-brand",
+    "focus:bg-brand-subtle focus:text-fg-brand data-[inset]:pl-8 data-[state=open]:bg-brand-subtle data-[state=open]:text-fg-brand",
   /** Small title above a group of items. */
-  label: "px-3 pt-2 pb-1 typo-overline text-fg-tertiary data-[inset]:pl-9",
+  label: "px-2 py-1.5 typo-label-m text-fg-primary data-[inset]:pl-8",
   separator: "-mx-1 my-1 h-px bg-border",
   /** Keyboard shortcut text on the right of an item. */
   shortcut: "ml-auto typo-body-s tracking-widest text-fg-tertiary",
@@ -87,4 +88,4 @@ export const overlayBackdropStyles =
 
 /** The "×" close button in the top-right corner of Dialog and Sheet. */
 export const overlayCloseButtonStyles =
-  "absolute top-4 right-4 inline-flex size-8 cursor-pointer items-center justify-center rounded-sm text-fg-tertiary transition-colors hover:bg-subtle hover:text-fg-primary focus-visible:outline-2 focus-visible:outline-focus disabled:pointer-events-none [&_svg]:size-5";
+  "absolute top-4 right-4 inline-flex size-8 cursor-pointer items-center justify-center rounded-sm text-fg-tertiary transition-colors hover:bg-subtle hover:text-fg-primary focus-visible:outline-2 focus-visible:outline-focus disabled:pointer-events-none [&_svg]:size-4";

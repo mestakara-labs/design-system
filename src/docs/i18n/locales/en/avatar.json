@@ -3,7 +3,7 @@
   "examples": {
     "sizes": {
       "title": "Sizes",
-      "description": "Small (32px), Medium (40px, default) and Large (56px)."
+      "description": "Small (24px), Medium (32px, default) and Large (40px)."
     },
     "badge": {
       "title": "With Badge",

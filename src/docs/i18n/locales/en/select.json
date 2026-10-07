@@ -16,7 +16,7 @@
     "defaultValue": "Initial value (uncontrolled).",
     "onValueChange": "Called when the selection changes.",
     "disabled": "Disables the select.",
-    "size": "Field height: md 48px, sm 40px.",
+    "size": "Field height: md 36px, sm 32px.",
     "position": "item-aligned = the list covers the field (native style). popper = the list opens below the field.",
     "itemDisabled": "Disables one option."
   }

@@ -16,7 +16,7 @@
     "defaultValue": "Nilai awal (tidak terkontrol).",
     "onValueChange": "Dipanggil saat pilihan berubah.",
     "disabled": "Menonaktifkan select.",
-    "size": "Tinggi kolom: md 48px, sm 40px.",
+    "size": "Tinggi kolom: md 36px, sm 32px.",
     "position": "item-aligned = daftar menutupi kolom (gaya native). popper = daftar muncul di bawah kolom.",
     "itemDisabled": "Menonaktifkan satu opsi."
   }

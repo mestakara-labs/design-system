@@ -10,6 +10,7 @@
  *     typo-body-l · typo-body-m · typo-body-s
  *     typo-label-l · typo-label-m · typo-label-s
  *     typo-overline
+ *     typo-field (text typed into Input, Textarea, Native Select …)
  *
  * Why `typo-` and not `text-`? `text-*` is already used for colors (`text-fg-primary`).
  * A separate prefix lets `cn("typo-body-m text-fg-secondary")` keep both classes.
@@ -117,4 +118,23 @@
   line-height: 14px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+
+/*
+ * Field — the text a user types (Input, Textarea, Native Select, Combobox, Command search).
+ * Body/M like the rest of the components, but Body/L (16px) on phones:
+ * iOS Safari zooms the whole page when a field with text smaller than 16px gets focus.
+ * Same as `text-base md:text-sm` in shadcn/ui.
+ */
+@utility typo-field {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+
+  @media (width >= 48rem) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

@@ -39,7 +39,7 @@ const emptyMediaVariants = cva(
         // Any content, e.g. an illustration or an <Avatar>.
         default: "bg-transparent",
         // An icon inside a light-green circle.
-        icon: "size-14 rounded-full bg-brand-subtle text-fg-brand [&_svg:not([class*='size-'])]:size-7",
+        icon: "size-10 rounded-full bg-brand-subtle text-fg-brand [&_svg:not([class*='size-'])]:size-6",
       },
     },
     defaultVariants: {

@@ -18,7 +18,9 @@ export default function ItemMenu() {
         <img src="/images/tea-hills-1.svg" alt="" />
       </ItemMedia>
       <ItemContent>
-        <ItemTitle className="typo-label-l">Teh Tarik Rancabali</ItemTitle>
+        <ItemTitle>
+          <span className="typo-label-l">Teh Tarik Rancabali</span>
+        </ItemTitle>
         <ItemDescription>Teh hitam lokal dengan susu, disajikan hangat.</ItemDescription>
         <p className="typo-label-m text-fg-brand">Rp18.000</p>
       </ItemContent>

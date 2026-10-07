@@ -75,6 +75,18 @@
       "oneFraunces": "At most one Fraunces text per mobile screen (usually the hero or the unit name).",
       "overline": "An uppercase overline in text-fg-accent sits above a title to name the unit or category.",
       "noColor": "typo-* classes do not set a color — combine them with a text-fg-* class."
+    },
+    "components": {
+      "title": "Sizes in Components",
+      "description": "Same as shadcn/ui: every component is based on size M (14px). The L sizes, H1–H2, Display and Overline are for page content, not inside components.",
+      "rows": {
+        "field": "Typed text: Input, Textarea, Native Select, Combobox, Command search. 16px on phones so iOS Safari does not zoom the page.",
+        "body": "Component content: menus, Select items, tables, Dialog/Card/Field descriptions, error messages.",
+        "label": "Buttons (every size), Label, Tabs, Accordion titles, table headers, Alert/Popover titles.",
+        "small": "Badge, Tooltip, Kbd, chips, Sidebar/Command group labels, Calendar weekday names.",
+        "panelTitle": "Card, Sheet and Drawer titles, and Field legends.",
+        "dialogTitle": "Dialog, Alert Dialog and Empty titles."
+      }
     }
   },
   "spacing": {

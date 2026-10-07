@@ -4,7 +4,7 @@
   "examples": {
     "sizes": {
       "title": "Ukuran",
-      "description": "Small (20px) dan Medium (24px, default)."
+      "description": "Small (16px) dan Medium (20px, default)."
     },
     "withDescription": {
       "title": "Dengan Deskripsi",

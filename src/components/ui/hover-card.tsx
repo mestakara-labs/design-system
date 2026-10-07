@@ -34,7 +34,7 @@ function HoverCardContent({
         sideOffset={sideOffset}
         className={cn(
           panelStyles,
-          "z-50 w-72 origin-(--radix-hover-card-content-transform-origin) p-4",
+          "z-50 w-64 origin-(--radix-hover-card-content-transform-origin) p-4",
           panelAnimation,
           className,
         )}

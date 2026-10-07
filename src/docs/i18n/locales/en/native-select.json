@@ -11,7 +11,7 @@
     }
   },
   "props": {
-    "size": "Field height: md 48px, sm 40px.",
+    "size": "Field height: md 36px, sm 32px.",
     "ariaInvalid": "Shows the error state.",
     "disabled": "Disables the select.",
     "native": "NativeSelect also accepts every native <select> attribute, such as value, onChange and name."

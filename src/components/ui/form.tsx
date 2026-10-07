@@ -137,7 +137,7 @@ function FormDescription({ className, ...props }: React.ComponentProps<"p">) {
     <p
       data-slot="form-description"
       id={formDescriptionId}
-      className={cn("typo-body-s text-fg-secondary", className)}
+      className={cn("typo-body-m text-fg-secondary", className)}
       {...props}
     />
   );
@@ -154,7 +154,7 @@ function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
     <p
       data-slot="form-message"
       id={formMessageId}
-      className={cn("typo-body-s text-danger", className)}
+      className={cn("typo-body-m text-danger", className)}
       {...props}
     >
       {body}

@@ -46,7 +46,7 @@ function FieldLegend({
       data-variant={variant}
       className={cn(
         "mb-3 text-fg-primary",
-        "data-[variant=legend]:typo-h3",
+        "data-[variant=legend]:typo-label-l",
         "data-[variant=label]:typo-label-m",
         className,
       )}
@@ -69,7 +69,7 @@ function FieldGroup({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-const fieldVariants = cva("group/field flex w-full gap-2", {
+const fieldVariants = cva("group/field flex w-full gap-3", {
   variants: {
     orientation: {
       // Label above the control (default).
@@ -161,7 +161,7 @@ function FieldDescription({ className, ...props }: React.ComponentProps<"p">) {
     <p
       data-slot="field-description"
       className={cn(
-        "typo-body-s text-fg-secondary group-has-[[data-orientation=horizontal]]/field:text-balance",
+        "typo-body-m text-fg-secondary group-has-[[data-orientation=horizontal]]/field:text-balance",
         "[&>a]:text-fg-link [&>a]:underline [&>a]:underline-offset-4",
         className,
       )}
@@ -180,7 +180,7 @@ function FieldSeparator({
     <div
       data-slot="field-separator"
       data-content={!!children}
-      className={cn("relative -my-2 h-5 typo-body-s", className)}
+      className={cn("relative -my-2 h-5 typo-body-m", className)}
       {...props}
     >
       <Separator className="absolute inset-0 top-1/2" />
@@ -229,7 +229,7 @@ function FieldError({
     <div
       role="alert"
       data-slot="field-error"
-      className={cn("typo-body-s text-danger", className)}
+      className={cn("typo-body-m text-danger", className)}
       {...props}
     >
       {content}

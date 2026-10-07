@@ -17,7 +17,7 @@ const toggleVariants = cva(
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
     "data-[state=on]:bg-brand-subtle data-[state=on]:text-fg-brand",
     "disabled:pointer-events-none disabled:text-fg-disabled disabled:data-[state=on]:border-border disabled:data-[state=on]:bg-muted",
-    "[&_svg]:pointer-events-none [&_svg]:shrink-0",
+    "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
   {
     variants: {
@@ -26,9 +26,10 @@ const toggleVariants = cva(
         outline: "border border-border bg-surface data-[state=on]:border-primary",
       },
       size: {
-        sm: "h-8 min-w-8 rounded-sm px-2 typo-label-s [&_svg:not([class*='size-'])]:size-4",
-        md: "h-11 min-w-11 rounded-md px-3 typo-label-m [&_svg:not([class*='size-'])]:size-5",
-        lg: "h-13 min-w-13 rounded-md px-4 typo-label-l [&_svg:not([class*='size-'])]:size-5",
+        // Same heights as <Button>: 32 / 36 / 40px.
+        sm: "h-8 min-w-8 rounded-sm px-1.5 typo-label-m",
+        md: "h-9 min-w-9 rounded-md px-2 typo-label-m",
+        lg: "h-10 min-w-10 rounded-md px-2.5 typo-label-m",
       },
     },
     defaultVariants: {

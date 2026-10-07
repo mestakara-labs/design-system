@@ -12,7 +12,7 @@
     },
     "sizes": {
       "title": "Sizes",
-      "description": "Small (32px), Medium (44px, default), and Large (52px)."
+      "description": "Small (32px), Medium (36px, default), and Large (40px)."
     },
     "withIcon": {
       "title": "With Icon",

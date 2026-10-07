@@ -27,8 +27,8 @@ function NativeSelect({ className, size = "md", ...props }: NativeSelectProps) {
           controlStyles.focus,
           controlStyles.invalid,
           controlStyles.disabled,
-          "cursor-pointer appearance-none pr-11",
-          size === "md" ? "h-12 pl-4 typo-body-l" : "h-10 pl-3 typo-body-m",
+          "cursor-pointer appearance-none pr-9 pl-3 typo-field",
+          size === "md" ? "h-9" : "h-8",
           className,
         )}
         {...props}
@@ -36,7 +36,7 @@ function NativeSelect({ className, size = "md", ...props }: NativeSelectProps) {
       <ChevronDownIcon
         aria-hidden="true"
         data-slot="native-select-icon"
-        className="pointer-events-none absolute top-1/2 right-4 size-4 -translate-y-1/2 text-fg-tertiary"
+        className="pointer-events-none absolute top-1/2 right-3 size-4 -translate-y-1/2 text-fg-tertiary"
       />
     </div>
   );

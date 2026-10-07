@@ -26,7 +26,25 @@ const TEXT_STYLES = [
     figma: "Caption/Overline",
     spec: "Plus Jakarta Sans Bold · 11/14 · 1.2",
   },
+  {
+    className: "typo-field",
+    figma: "Body/M (Body/L < 768px)",
+    spec: "Plus Jakarta Sans Regular · 14/20 · 16/24 on phones",
+  },
 ];
+
+/**
+ * Which text style each kind of component part uses (same scale as shadcn/ui).
+ * `key` points to the description in foundations.json → typography.components.rows.
+ */
+const COMPONENT_STYLES = [
+  { key: "field", className: "typo-field" },
+  { key: "body", className: "typo-body-m" },
+  { key: "label", className: "typo-label-m" },
+  { key: "small", className: "typo-body-s · typo-label-s" },
+  { key: "panelTitle", className: "typo-label-l" },
+  { key: "dialogTitle", className: "typo-h3" },
+] as const;
 
 const USAGE_CODE = `
 <p className="typo-overline text-fg-accent">Rancabali Tea Valley</p>
@@ -79,6 +97,28 @@ export default function TypographyPage() {
               </div>
               <p className={`${style.className} min-w-0 truncate text-fg-primary`}>
                 Gunung Mas Tea Hills
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        id="components"
+        title={t("typography.components.title")}
+        description={t("typography.components.description")}
+      >
+        <div className="overflow-hidden rounded-md border border-border bg-surface">
+          {COMPONENT_STYLES.map((row) => (
+            <div
+              key={row.key}
+              className="flex flex-col gap-1 border-b border-border px-4 py-3 last:border-b-0 sm:flex-row sm:gap-6"
+            >
+              <code className="w-56 shrink-0 font-mono text-[12px] text-fg-link">
+                {row.className}
+              </code>
+              <p className="typo-body-m text-fg-secondary">
+                {t(`typography.components.rows.${row.key}`)}
               </p>
             </div>
           ))}

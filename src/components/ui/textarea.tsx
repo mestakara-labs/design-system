@@ -19,7 +19,7 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
         controlStyles.focus,
         controlStyles.invalid,
         controlStyles.disabled,
-        "flex field-sizing-content min-h-24 px-4 py-3 typo-body-l",
+        "flex field-sizing-content min-h-16 px-3 py-2 typo-field",
         className,
       )}
       {...props}

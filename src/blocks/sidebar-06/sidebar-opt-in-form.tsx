@@ -6,7 +6,9 @@ export function SidebarOptInForm() {
   return (
     <Card className="gap-2 py-4 shadow-none">
       <CardHeader className="px-4">
-        <CardTitle className="typo-body-m">Berlangganan kabar terbaru</CardTitle>
+        <CardTitle>
+          <span className="typo-label-m">Berlangganan kabar terbaru</span>
+        </CardTitle>
         <CardDescription>Dapatkan info promo dan acara terbaru dari Agrowisata.</CardDescription>
       </CardHeader>
       <CardContent className="px-4">

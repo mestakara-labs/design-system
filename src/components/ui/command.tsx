@@ -56,7 +56,7 @@ function CommandDialog({
         className={cn("top-[20%] translate-y-0 gap-0 overflow-hidden p-0 sm:max-w-xl", className)}
         showCloseButton={showCloseButton}
       >
-        <Command className="**:data-[slot=command-input-wrapper]:h-14">{children}</Command>
+        <Command className="**:data-[slot=command-input-wrapper]:h-12">{children}</Command>
       </DialogContent>
     </Dialog>
   );
@@ -70,13 +70,13 @@ function CommandInput({
   return (
     <div
       data-slot="command-input-wrapper"
-      className="flex h-12 items-center gap-3 border-b border-border px-4"
+      className="flex h-9 items-center gap-2 border-b border-border px-3"
     >
-      <SearchIcon className="size-5 shrink-0 text-fg-tertiary" />
+      <SearchIcon className="size-4 shrink-0 text-fg-tertiary" />
       <CommandPrimitive.Input
         data-slot="command-input"
         className={cn(
-          "flex h-full w-full bg-transparent typo-body-l text-fg-primary outline-none placeholder:text-fg-tertiary disabled:cursor-not-allowed",
+          "flex h-full w-full bg-transparent typo-field text-fg-primary outline-none placeholder:text-fg-tertiary disabled:cursor-not-allowed",
           className,
         )}
         {...props}
@@ -89,7 +89,7 @@ function CommandList({ className, ...props }: React.ComponentProps<typeof Comman
   return (
     <CommandPrimitive.List
       data-slot="command-list"
-      className={cn("max-h-[320px] scroll-py-2 overflow-x-hidden overflow-y-auto p-2", className)}
+      className={cn("max-h-[320px] scroll-py-2 overflow-x-hidden overflow-y-auto p-1", className)}
       {...props}
     />
   );
@@ -119,7 +119,7 @@ function CommandGroup({
       data-slot="command-group"
       className={cn(
         "overflow-hidden text-fg-primary",
-        "[&_[cmdk-group-heading]]:px-3 [&_[cmdk-group-heading]]:pt-3 [&_[cmdk-group-heading]]:pb-1 [&_[cmdk-group-heading]]:typo-overline [&_[cmdk-group-heading]]:text-fg-tertiary",
+        "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:typo-label-s [&_[cmdk-group-heading]]:text-fg-tertiary",
         className,
       )}
       {...props}
@@ -147,7 +147,7 @@ function CommandItem({ className, ...props }: React.ComponentProps<typeof Comman
       data-slot="command-item"
       className={cn(
         panelItemStyles,
-        "cursor-pointer py-2.5",
+        "cursor-pointer",
         "data-[selected=true]:bg-brand-subtle data-[selected=true]:text-fg-brand data-[selected=true]:[&_svg:not([class*='text-'])]:text-fg-brand",
         "data-[disabled=true]:pointer-events-none data-[disabled=true]:text-fg-disabled",
         className,

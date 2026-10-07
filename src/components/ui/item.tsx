@@ -60,7 +60,7 @@ const itemVariants = cva(
       },
       size: {
         md: "gap-4 p-4",
-        sm: "gap-3 px-4 py-3",
+        sm: "gap-2.5 px-4 py-3",
       },
     },
     defaultVariants: {
@@ -100,8 +100,8 @@ const itemMediaVariants = cva(
     variants: {
       variant: {
         default: "bg-transparent",
-        icon: "size-10 rounded-md bg-brand-subtle text-fg-brand [&_svg:not([class*='size-'])]:size-5",
-        image: "size-14 overflow-hidden rounded-md [&_img]:size-full [&_img]:object-cover",
+        icon: "size-8 rounded-sm bg-brand-subtle text-fg-brand [&_svg:not([class*='size-'])]:size-4",
+        image: "size-10 overflow-hidden rounded-sm [&_img]:size-full [&_img]:object-cover",
       },
     },
     defaultVariants: {
@@ -153,7 +153,7 @@ function ItemDescription({ className, ...props }: React.ComponentProps<"p">) {
     <p
       data-slot="item-description"
       className={cn(
-        "line-clamp-2 typo-body-s text-balance text-fg-secondary",
+        "line-clamp-2 typo-body-m text-balance text-fg-secondary",
         "[&>a]:text-fg-link [&>a]:underline [&>a]:underline-offset-4",
         className,
       )}

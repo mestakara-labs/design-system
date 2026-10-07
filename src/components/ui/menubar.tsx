@@ -25,7 +25,7 @@ function Menubar({ className, ...props }: React.ComponentProps<typeof MenubarPri
     <MenubarPrimitive.Root
       data-slot="menubar"
       className={cn(
-        "flex h-11 items-center gap-1 rounded-md border border-border bg-surface p-1",
+        "flex h-9 items-center gap-1 rounded-md border border-border bg-surface p-1",
         className,
       )}
       {...props}
@@ -59,7 +59,7 @@ function MenubarTrigger({
     <MenubarPrimitive.Trigger
       data-slot="menubar-trigger"
       className={cn(
-        "flex h-9 cursor-default items-center rounded-sm px-3 typo-label-m text-fg-primary outline-none select-none",
+        "flex cursor-default items-center rounded-sm px-2 py-1 typo-label-m text-fg-primary outline-none select-none",
         "focus:bg-brand-subtle focus:text-fg-brand data-[state=open]:bg-brand-subtle data-[state=open]:text-fg-brand",
         className,
       )}

@@ -11,7 +11,7 @@
     }
   },
   "props": {
-    "size": "Tinggi kolom: md 48px, sm 40px.",
+    "size": "Tinggi kolom: md 36px, sm 32px.",
     "ariaInvalid": "Menampilkan state error.",
     "disabled": "Menonaktifkan select.",
     "native": "NativeSelect juga menerima semua atribut bawaan <select>, seperti value, onChange, dan name."

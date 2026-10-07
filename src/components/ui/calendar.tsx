@@ -41,8 +41,8 @@ function Calendar({
       locale={locale}
       captionLayout={captionLayout}
       className={cn(
-        // --cell-size = size of one day. 40px is comfortable to tap.
-        "group/calendar bg-surface p-3 [--cell-size:--spacing(10)]",
+        // --cell-size = size of one day: 32px, as in shadcn/ui.
+        "group/calendar bg-surface p-3 [--cell-size:--spacing(8)]",
         "[[data-slot=card-content]_&]:bg-transparent [[data-slot=popover-content]_&]:bg-transparent",
         className,
       )}
@@ -90,7 +90,7 @@ function Calendar({
         ),
         month_grid: cn("w-full border-collapse", defaultClassNames.month_grid),
         weekdays: cn("flex", defaultClassNames.weekdays),
-        weekday: cn("flex-1 typo-label-s text-fg-tertiary select-none", defaultClassNames.weekday),
+        weekday: cn("flex-1 typo-body-s text-fg-tertiary select-none", defaultClassNames.weekday),
         week: cn("mt-1 flex w-full", defaultClassNames.week),
         week_number_header: cn("w-(--cell-size) select-none", defaultClassNames.week_number_header),
         week_number: cn("typo-body-s text-fg-tertiary select-none", defaultClassNames.week_number),

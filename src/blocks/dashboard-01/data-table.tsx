@@ -506,9 +506,7 @@ export function DataTable({ data: initialData }: { data: Activity[] }) {
           </div>
           <div className="flex w-full items-center gap-8 lg:w-fit">
             <div className="hidden items-center gap-2 lg:flex">
-              <Label htmlFor="rows-per-page" className="typo-label-m">
-                Baris per halaman
-              </Label>
+              <Label htmlFor="rows-per-page">Baris per halaman</Label>
               <Select
                 value={`${table.getState().pagination.pageSize}`}
                 onValueChange={(value) => {

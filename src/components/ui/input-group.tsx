@@ -29,13 +29,13 @@ function InputGroup({ className, ...props }: React.ComponentProps<"div">) {
       role="group"
       className={cn(
         controlStyles.base,
-        "group/input-group relative flex h-12 items-center has-[>textarea]:h-auto",
+        "group/input-group relative flex h-9 items-center has-[>textarea]:h-auto",
 
         // Layout depends on where the addons are placed.
         "has-[>[data-align=inline-start]]:[&>input]:pl-2",
         "has-[>[data-align=inline-end]]:[&>input]:pr-2",
-        "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
-        "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
+        "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-2",
+        "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-2",
 
         // Focus: when the input/textarea inside is focused.
         "has-[[data-slot=input-group-control]:focus-visible]:border-focus has-[[data-slot=input-group-control]:focus-visible]:ring-1 has-[[data-slot=input-group-control]:focus-visible]:ring-focus",
@@ -56,19 +56,19 @@ const inputGroupAddonVariants = cva(
   [
     "flex h-auto cursor-text items-center justify-center gap-2 py-1.5 typo-body-m text-fg-tertiary select-none",
     "group-has-[[data-slot=input-group-control]:disabled]/input-group:text-fg-disabled",
-    "[&>svg:not([class*='size-'])]:size-5",
+    "[&>svg:not([class*='size-'])]:size-4",
   ],
   {
     variants: {
       align: {
         // Left of the input
-        "inline-start": "order-first pl-4 has-[>button]:ml-[-0.5rem]",
+        "inline-start": "order-first pl-3 has-[>button]:ml-[-0.45rem]",
         // Right of the input
-        "inline-end": "order-last pr-4 has-[>button]:mr-[-0.5rem]",
+        "inline-end": "order-last pr-3 has-[>button]:mr-[-0.45rem]",
         // Above the input (full width)
-        "block-start": "order-first w-full justify-start px-4 pt-3 [.border-b]:pb-3",
+        "block-start": "order-first w-full justify-start px-3 pt-3 [.border-b]:pb-3",
         // Below the input (full width)
-        "block-end": "order-last w-full justify-start px-4 pb-3 [.border-t]:pt-3",
+        "block-end": "order-last w-full justify-start px-3 pb-3 [.border-t]:pt-3",
       },
     },
     defaultVariants: {
@@ -104,9 +104,9 @@ function InputGroupAddon({
 const inputGroupButtonVariants = cva("flex items-center gap-2", {
   variants: {
     size: {
-      xs: "h-7 gap-1 rounded-xs px-2 typo-label-s [&>svg:not([class*='size-'])]:size-3.5",
-      sm: "h-8 gap-1.5 rounded-sm px-2.5 typo-label-s [&>svg:not([class*='size-'])]:size-4",
-      "icon-xs": "size-7 rounded-xs p-0 [&>svg:not([class*='size-'])]:size-4",
+      xs: "h-6 gap-1 rounded-xs px-2 typo-label-s [&>svg:not([class*='size-'])]:size-3.5",
+      sm: "h-8 gap-1.5 rounded-sm px-2.5 typo-label-m [&>svg:not([class*='size-'])]:size-4",
+      "icon-xs": "size-6 rounded-xs p-0 [&>svg:not([class*='size-'])]:size-3.5",
       "icon-sm": "size-8 rounded-sm p-0 [&>svg:not([class*='size-'])]:size-4",
     },
   },

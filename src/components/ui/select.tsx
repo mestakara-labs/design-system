@@ -55,7 +55,8 @@ function SelectTrigger({
         controlStyles.invalid,
         controlStyles.disabled,
         "flex w-fit cursor-pointer items-center justify-between gap-2 whitespace-nowrap",
-        size === "md" ? "h-12 px-4 typo-body-l" : "h-10 px-3 typo-body-m",
+        "px-3 typo-body-m",
+        size === "md" ? "h-9" : "h-8",
         "data-[placeholder]:text-fg-tertiary",
         "*:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2",
         "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-fg-tertiary",
@@ -116,7 +117,7 @@ function SelectLabel({ className, ...props }: React.ComponentProps<typeof Select
   return (
     <SelectPrimitive.Label
       data-slot="select-label"
-      className={cn("px-3 pt-2 pb-1 typo-overline text-fg-tertiary", className)}
+      className={cn("px-2 py-1.5 typo-body-s text-fg-tertiary", className)}
       {...props}
     />
   );
@@ -134,7 +135,7 @@ function SelectItem({
       className={cn(
         panelItemStyles,
         panelItemDisabledStyles,
-        "pr-9 focus:bg-brand-subtle focus:text-fg-brand",
+        "pr-8 focus:bg-brand-subtle focus:text-fg-brand",
         "*:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2",
         className,
       )}
@@ -142,7 +143,7 @@ function SelectItem({
     >
       <span
         data-slot="select-item-indicator"
-        className="absolute right-3 flex size-4 items-center justify-center"
+        className="absolute right-2 flex size-4 items-center justify-center"
       >
         <SelectPrimitive.ItemIndicator>
           <CheckIcon className="size-4 text-primary" />

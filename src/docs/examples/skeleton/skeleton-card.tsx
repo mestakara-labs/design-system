@@ -10,7 +10,7 @@ export default function SkeletonCard() {
       <Skeleton className="h-3 w-1/2" />
       <div className="flex items-center justify-between pt-2">
         <Skeleton className="h-7 w-28" />
-        <Skeleton className="h-11 w-24 rounded-md" />
+        <Skeleton className="h-9 w-24 rounded-md" />
       </div>
     </div>
   );

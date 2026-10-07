@@ -25,7 +25,7 @@ export default function CarouselMultiple() {
             <CarouselItem key={unit.name} className="basis-1/2">
               <Card>
                 <CardHeader>
-                  <CardTitle className="typo-label-l">{unit.name}</CardTitle>
+                  <CardTitle>{unit.name}</CardTitle>
                   <CardDescription>{unit.city}</CardDescription>
                 </CardHeader>
               </Card>

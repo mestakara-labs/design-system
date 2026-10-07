@@ -10,8 +10,8 @@ import * as React from "react";
 
 /** Track and thumb classes per size. The thumb moves by (track width − thumb − padding). */
 const SIZES = {
-  sm: { track: "h-5 w-9", thumb: "size-4 data-[state=checked]:translate-x-4" },
-  md: { track: "h-6 w-11", thumb: "size-5 data-[state=checked]:translate-x-5" },
+  sm: { track: "h-4 w-7", thumb: "size-3 data-[state=checked]:translate-x-3" },
+  md: { track: "h-5 w-9", thumb: "size-4 data-[state=checked]:translate-x-4" },
 };
 
 type SwitchProps = React.ComponentProps<typeof SwitchPrimitive.Root> & {

@@ -29,7 +29,7 @@ function RadioGroupItem({
     <RadioGroupPrimitive.Item
       data-slot="radio-group-item"
       className={cn(
-        "aspect-square size-5 shrink-0 cursor-pointer rounded-full border-[1.5px] border-border-strong bg-surface transition-colors",
+        "aspect-square size-4 shrink-0 cursor-pointer rounded-full border-[1.5px] border-border-strong bg-surface transition-colors",
         "hover:border-primary",
         "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
         "aria-invalid:border-danger",
@@ -44,7 +44,7 @@ function RadioGroupItem({
         className="flex size-full items-center justify-center"
       >
         {/* The green dot. Grey when the item is disabled. */}
-        <span className="size-2.5 rounded-full bg-primary [[data-disabled]_&]:bg-fg-disabled" />
+        <span className="size-2 rounded-full bg-primary [[data-disabled]_&]:bg-fg-disabled" />
       </RadioGroupPrimitive.Indicator>
     </RadioGroupPrimitive.Item>
   );

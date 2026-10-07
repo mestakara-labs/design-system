@@ -48,7 +48,9 @@ export function TeamSwitcher({
             side="bottom"
             sideOffset={4}
           >
-            <DropdownMenuLabel className="typo-body-s text-fg-secondary">Unit</DropdownMenuLabel>
+            <DropdownMenuLabel>
+              <span className="typo-body-s text-fg-secondary">Unit</span>
+            </DropdownMenuLabel>
             {teams.map((team, index) => (
               <DropdownMenuItem
                 key={team.name}

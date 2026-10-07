@@ -216,8 +216,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarHeader className="gap-3.5 border-b p-4">
           <div className="flex w-full items-center justify-between">
             <div className="typo-label-l text-sidebar-fg">{activeItem?.title}</div>
-            <Label className="flex items-center gap-2 typo-body-m text-sidebar-fg">
-              <span>Belum dibaca</span>
+            <Label className="text-sidebar-fg">
+              <span className="typo-body-m">Belum dibaca</span>
               <Switch className="shadow-none" />
             </Label>
           </div>

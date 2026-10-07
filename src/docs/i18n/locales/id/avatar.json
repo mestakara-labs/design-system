@@ -3,7 +3,7 @@
   "examples": {
     "sizes": {
       "title": "Ukuran",
-      "description": "Small (32px), Medium (40px, default), dan Large (56px)."
+      "description": "Small (24px), Medium (32px, default), dan Large (40px)."
     },
     "badge": {
       "title": "Dengan Badge",

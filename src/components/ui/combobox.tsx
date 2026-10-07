@@ -135,7 +135,7 @@ function ComboboxContent({
             "data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95",
             "data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
             // A search input placed inside the panel (chips mode).
-            "*:data-[slot=input-group]:m-1 *:data-[slot=input-group]:mb-0 *:data-[slot=input-group]:h-10",
+            "*:data-[slot=input-group]:m-1 *:data-[slot=input-group]:mb-0 *:data-[slot=input-group]:h-8",
             className,
           )}
           {...props}
@@ -167,7 +167,7 @@ function ComboboxItem({ className, children, ...props }: ComboboxPrimitive.Item.
       className={cn(
         panelItemStyles,
         panelItemDisabledStyles,
-        "pr-9 data-highlighted:bg-brand-subtle data-highlighted:text-fg-brand",
+        "pr-8 data-highlighted:bg-brand-subtle data-highlighted:text-fg-brand",
         className,
       )}
       {...props}
@@ -176,7 +176,7 @@ function ComboboxItem({ className, children, ...props }: ComboboxPrimitive.Item.
       <ComboboxPrimitive.ItemIndicator
         data-slot="combobox-item-indicator"
         render={
-          <span className="pointer-events-none absolute right-3 flex size-4 items-center justify-center" />
+          <span className="pointer-events-none absolute right-2 flex size-4 items-center justify-center" />
         }
       >
         <CheckIcon className="pointer-events-none size-4 text-primary" />
@@ -194,7 +194,7 @@ function ComboboxLabel({ className, ...props }: ComboboxPrimitive.GroupLabel.Pro
   return (
     <ComboboxPrimitive.GroupLabel
       data-slot="combobox-label"
-      className={cn("px-3 pt-2 pb-1 typo-overline text-fg-tertiary", className)}
+      className={cn("px-2 py-1.5 typo-body-s text-fg-tertiary", className)}
       {...props}
     />
   );
@@ -238,10 +238,10 @@ function ComboboxChips({
       data-slot="combobox-chips"
       className={cn(
         controlStyles.base,
-        "flex min-h-12 flex-wrap items-center gap-1.5 px-3 py-2 typo-body-l",
+        "flex min-h-9 flex-wrap items-center gap-1.5 px-3 py-1 typo-field",
         "focus-within:border-focus focus-within:ring-1 focus-within:ring-focus",
         "has-aria-invalid:border-danger has-aria-invalid:ring-1 has-aria-invalid:ring-danger",
-        "has-data-[slot=combobox-chip]:px-2",
+        "has-data-[slot=combobox-chip]:px-1",
         className,
       )}
       {...props}
@@ -260,7 +260,7 @@ function ComboboxChip({
     <ComboboxPrimitive.Chip
       data-slot="combobox-chip"
       className={cn(
-        "flex h-7 w-fit items-center justify-center gap-1 rounded-full bg-brand-subtle px-3 typo-label-s whitespace-nowrap text-fg-brand",
+        "flex h-6 w-fit items-center justify-center gap-1 rounded-full bg-brand-subtle px-2 typo-label-s whitespace-nowrap text-fg-brand",
         "has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-disabled:text-fg-disabled",
         "has-data-[slot=combobox-chip-remove]:pr-1",
         className,
@@ -271,7 +271,7 @@ function ComboboxChip({
       {showRemove && (
         <ComboboxPrimitive.ChipRemove
           render={<Button variant="ghost" size="icon-sm" />}
-          className="size-5 rounded-full text-fg-brand hover:bg-tonal-hover [&_svg]:size-3.5!"
+          className="size-4 rounded-full text-fg-brand hover:bg-tonal-hover [&_svg]:size-3!"
           data-slot="combobox-chip-remove"
         >
           <XIcon className="pointer-events-none" />

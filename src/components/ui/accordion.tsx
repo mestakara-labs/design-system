@@ -37,7 +37,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "flex flex-1 cursor-pointer items-start justify-between gap-4 rounded-sm py-4 text-left typo-label-l text-fg-primary transition-colors",
+          "flex flex-1 cursor-pointer items-start justify-between gap-4 rounded-sm py-4 text-left typo-label-m text-fg-primary transition-colors",
           "hover:text-fg-brand focus-visible:outline-2 focus-visible:outline-focus",
           "disabled:pointer-events-none disabled:text-fg-disabled",
           // The arrow turns upside down when the section is open.
@@ -47,7 +47,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <ChevronDownIcon className="pointer-events-none mt-0.5 size-5 shrink-0 text-fg-tertiary transition-transform duration-200" />
+        <ChevronDownIcon className="pointer-events-none size-4 shrink-0 translate-y-0.5 text-fg-tertiary transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

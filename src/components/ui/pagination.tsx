@@ -79,7 +79,12 @@ function PaginationPrevious({
   ...props
 }: React.ComponentProps<typeof PaginationLink> & { text?: string }) {
   return (
-    <PaginationLink aria-label={text} size="md" className={cn("gap-1 px-3", className)} {...props}>
+    <PaginationLink
+      aria-label={text}
+      size="md"
+      className={cn("gap-1 px-2.5", className)}
+      {...props}
+    >
       <ChevronLeftIcon />
       {/* On phones only the arrow is shown. */}
       <span className="hidden sm:block">{text}</span>
@@ -93,7 +98,12 @@ function PaginationNext({
   ...props
 }: React.ComponentProps<typeof PaginationLink> & { text?: string }) {
   return (
-    <PaginationLink aria-label={text} size="md" className={cn("gap-1 px-3", className)} {...props}>
+    <PaginationLink
+      aria-label={text}
+      size="md"
+      className={cn("gap-1 px-2.5", className)}
+      {...props}
+    >
       <span className="hidden sm:block">{text}</span>
       <ChevronRightIcon />
     </PaginationLink>
@@ -112,7 +122,7 @@ function PaginationEllipsis({
   return (
     <span
       data-slot="pagination-ellipsis"
-      className={cn("flex size-11 items-center justify-center text-fg-tertiary", className)}
+      className={cn("flex size-9 items-center justify-center text-fg-tertiary", className)}
       {...props}
     >
       <MoreHorizontalIcon className="size-4" />

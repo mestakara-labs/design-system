@@ -75,6 +75,18 @@
       "oneFraunces": "Maksimal satu teks Fraunces per layar ponsel (biasanya hero atau nama unit).",
       "overline": "Overline huruf kapital berwarna text-fg-accent dipakai di atas judul untuk menyebut nama unit atau kategori.",
       "noColor": "Kelas typo-* tidak mengatur warna — gabungkan dengan kelas text-fg-*."
+    },
+    "components": {
+      "title": "Ukuran di Komponen",
+      "description": "Mengikuti shadcn/ui: ukuran dasar semua komponen adalah M (14px). Ukuran L, H1–H2, Display, dan Overline dipakai untuk konten halaman, bukan di dalam komponen.",
+      "rows": {
+        "field": "Teks yang diketik: Input, Textarea, Native Select, Combobox, pencarian Command. 16px di ponsel agar iOS Safari tidak memperbesar halaman.",
+        "body": "Isi komponen: menu, item Select, tabel, deskripsi Dialog/Card/Field, pesan error.",
+        "label": "Tombol (semua ukuran), Label, Tabs, judul Accordion, header tabel, judul Alert/Popover.",
+        "small": "Badge, Tooltip, Kbd, chip, label grup Sidebar/Command, nama hari Calendar.",
+        "panelTitle": "Judul Card, Sheet, Drawer, dan legend Field.",
+        "dialogTitle": "Judul Dialog, Alert Dialog, dan Empty."
+      }
     }
   },
   "spacing": {

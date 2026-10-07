@@ -16,7 +16,9 @@ export function SectionCards() {
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Pendapatan Tiket</CardDescription>
-          <CardTitle className="typo-h2 tabular-nums">Rp 125,4 jt</CardTitle>
+          <CardTitle>
+            <span className="typo-h2 tabular-nums">Rp 125,4 jt</span>
+          </CardTitle>
           <CardAction>
             <Badge variant="outline" dot={false}>
               <TrendingUp />
@@ -34,7 +36,9 @@ export function SectionCards() {
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Pengunjung Baru</CardDescription>
-          <CardTitle className="typo-h2 tabular-nums">1.234</CardTitle>
+          <CardTitle>
+            <span className="typo-h2 tabular-nums">1.234</span>
+          </CardTitle>
           <CardAction>
             <Badge variant="outline" dot={false}>
               <TrendingDown />
@@ -52,7 +56,9 @@ export function SectionCards() {
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Pemesanan Aktif</CardDescription>
-          <CardTitle className="typo-h2 tabular-nums">4.567</CardTitle>
+          <CardTitle>
+            <span className="typo-h2 tabular-nums">4.567</span>
+          </CardTitle>
           <CardAction>
             <Badge variant="outline" dot={false}>
               <TrendingUp />
@@ -70,7 +76,9 @@ export function SectionCards() {
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Tingkat Pertumbuhan</CardDescription>
-          <CardTitle className="typo-h2 tabular-nums">4,5%</CardTitle>
+          <CardTitle>
+            <span className="typo-h2 tabular-nums">4,5%</span>
+          </CardTitle>
           <CardAction>
             <Badge variant="outline" dot={false}>
               <TrendingUp />

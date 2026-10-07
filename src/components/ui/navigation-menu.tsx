@@ -72,7 +72,7 @@ function NavigationMenuItem({
  *   <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/paket">Paket</NavigationMenuLink>
  */
 const navigationMenuTriggerStyle = cva([
-  "group inline-flex h-10 w-max cursor-pointer items-center justify-center rounded-md px-4 typo-label-m text-fg-primary transition-colors",
+  "group inline-flex h-9 w-max cursor-pointer items-center justify-center rounded-md px-4 typo-label-m text-fg-primary transition-colors",
   "hover:bg-subtle focus-visible:outline-2 focus-visible:outline-focus",
   "disabled:pointer-events-none disabled:text-fg-disabled",
   "data-[state=open]:bg-brand-subtle data-[state=open]:text-fg-brand",
@@ -153,7 +153,7 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "flex flex-col gap-1 rounded-sm p-3 typo-body-m text-fg-primary transition-colors",
+        "flex flex-col gap-1 rounded-sm p-2 typo-body-m text-fg-primary transition-colors",
         "hover:bg-subtle focus-visible:outline-2 focus-visible:outline-focus",
         "data-[active]:bg-brand-subtle data-[active]:text-fg-brand",
         "[&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-fg-tertiary",

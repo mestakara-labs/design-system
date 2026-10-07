@@ -149,7 +149,7 @@ function QuestionnaireChoice({
     <QuestionnairePrimitive.Choice
       data-slot="questionnaire-choice"
       className={cn(
-        "flex cursor-pointer items-center gap-3 rounded-md border border-border bg-surface px-4 py-3 typo-body-l text-fg-primary transition-colors",
+        "flex cursor-pointer items-center gap-3 rounded-md border border-border bg-surface px-3 py-2.5 typo-body-m text-fg-primary transition-colors",
         "hover:border-border-strong has-focus-visible:outline-2 has-focus-visible:outline-focus",
         "has-checked:border-primary has-checked:bg-brand-subtle",
         "has-disabled:cursor-not-allowed has-disabled:bg-muted has-disabled:text-fg-disabled",
@@ -169,7 +169,7 @@ function QuestionnaireChoiceInput({
   return (
     <QuestionnairePrimitive.ChoiceInput
       data-slot="questionnaire-choice-input"
-      className={cn("size-5 shrink-0 cursor-[inherit] accent-primary outline-none", className)}
+      className={cn("size-4 shrink-0 cursor-[inherit] accent-primary outline-none", className)}
       {...props}
     />
   );
@@ -197,7 +197,7 @@ function QuestionnaireChoiceShortcut({
     <QuestionnairePrimitive.ChoiceShortcut
       data-slot="questionnaire-choice-shortcut"
       className={cn(
-        "inline-flex h-6 min-w-6 items-center justify-center rounded-xs border border-border bg-subtle px-1.5 font-mono text-xs text-fg-secondary",
+        "inline-flex h-5 min-w-5 items-center justify-center rounded-xs border border-border bg-subtle px-1 typo-label-s text-fg-secondary",
         className,
       )}
       {...props}
@@ -218,7 +218,7 @@ function QuestionnaireInput({
         controlStyles.focus,
         controlStyles.invalid,
         controlStyles.disabled,
-        "h-12 px-4 typo-body-l",
+        "h-9 px-3 typo-field",
         className,
       )}
       {...props}

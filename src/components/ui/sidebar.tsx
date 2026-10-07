@@ -2,7 +2,7 @@
  * Sidebar
  * The side menu of a dashboard: logo, menu groups, user account, and a button to fold it away.
  *
- * Design: DESIGN.md §6 "Dashboard operasional" — 240px wide, dark forest background,
+ * Design: DESIGN.md §6 "Dashboard operasional" — 256px wide, dark forest background,
  * the active item uses `bg/brand`. Colors come from the `--sidebar-*` tokens in semantic.css.
  * Based on: https://ui.shadcn.com/docs/components/sidebar
  *
@@ -36,9 +36,9 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
-const SIDEBAR_WIDTH = "15rem"; // 240px — DESIGN.md
+const SIDEBAR_WIDTH = "16rem"; // 256px — DESIGN.md, same as shadcn/ui
 const SIDEBAR_WIDTH_MOBILE = "18rem";
-const SIDEBAR_WIDTH_ICON = "4rem"; // folded to icons only
+const SIDEBAR_WIDTH_ICON = "3rem"; // folded to icons only
 const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 
 /* -------------------------------------------------------------------------- */
@@ -347,7 +347,7 @@ function SidebarInset({ className, ...props }: React.ComponentProps<"main">) {
 
 /** Search field at the top of the menu. */
 function SidebarInput({ className, ...props }: React.ComponentProps<typeof Input>) {
-  return <Input data-slot="sidebar-input" className={cn("h-10", className)} {...props} />;
+  return <Input data-slot="sidebar-input" className={cn("h-8", className)} {...props} />;
 }
 
 /** Top of the menu: logo, app or unit switcher. */
@@ -355,7 +355,7 @@ function SidebarHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="sidebar-header"
-      className={cn("flex flex-col gap-2 p-3", className)}
+      className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
     />
   );
@@ -366,7 +366,7 @@ function SidebarFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="sidebar-footer"
-      className={cn("flex flex-col gap-2 p-3", className)}
+      className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
     />
   );
@@ -402,7 +402,7 @@ function SidebarGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="sidebar-group"
-      className={cn("relative flex w-full min-w-0 flex-col p-3", className)}
+      className={cn("relative flex w-full min-w-0 flex-col p-2", className)}
       {...props}
     />
   );
@@ -419,7 +419,7 @@ function SidebarGroupLabel({
     <Component
       data-slot="sidebar-group-label"
       className={cn(
-        "flex h-8 shrink-0 items-center rounded-sm px-2.5 typo-overline text-sidebar-fg-muted",
+        "flex h-8 shrink-0 items-center rounded-sm px-2 typo-label-s text-sidebar-fg-muted",
         "transition-[margin,opacity] duration-200 ease-linear focus-visible:outline-2 focus-visible:outline-sidebar-fg",
         "group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
         "[&>svg]:size-4 [&>svg]:shrink-0",
@@ -442,7 +442,7 @@ function SidebarGroupAction({
     <Component
       data-slot="sidebar-group-action"
       className={cn(
-        "absolute top-4 right-4 flex size-6 cursor-pointer items-center justify-center rounded-sm text-sidebar-fg-muted",
+        "absolute top-3.5 right-3 flex size-5 cursor-pointer items-center justify-center rounded-sm text-sidebar-fg-muted",
         "transition-colors hover:bg-sidebar-hover hover:text-sidebar-fg focus-visible:outline-2 focus-visible:outline-sidebar-fg",
         "[&>svg]:size-4 [&>svg]:shrink-0",
         // Bigger touch area on phones.
@@ -485,16 +485,16 @@ function SidebarMenuItem({ className, ...props }: React.ComponentProps<"li">) {
 
 const sidebarMenuButtonVariants = cva(
   [
-    "peer/menu-button flex w-full cursor-pointer items-center gap-3 overflow-hidden rounded-md p-2.5 text-left whitespace-nowrap text-sidebar-fg",
+    "peer/menu-button flex w-full cursor-pointer items-center gap-2 overflow-hidden rounded-md p-2 text-left whitespace-nowrap text-sidebar-fg",
     "transition-[width,height,padding,background-color] hover:bg-sidebar-hover focus-visible:outline-2 focus-visible:outline-sidebar-fg",
     "disabled:pointer-events-none disabled:text-sidebar-fg-muted aria-disabled:pointer-events-none aria-disabled:text-sidebar-fg-muted",
     // The page the user is on.
-    "data-[active=true]:bg-sidebar-active data-[active=true]:text-sidebar-active-fg",
+    "data-[active=true]:bg-sidebar-active data-[active=true]:font-semibold data-[active=true]:text-sidebar-active-fg",
     // Room for a <SidebarMenuAction> on the right.
-    "group-has-data-[slot=sidebar-menu-action]/menu-item:pr-9",
+    "group-has-data-[slot=sidebar-menu-action]/menu-item:pr-8",
     // Folded to icons only.
-    "group-data-[collapsible=icon]:size-10! group-data-[collapsible=icon]:p-2.5!",
-    "[&>span:last-child]:truncate [&>svg]:size-5 [&>svg]:shrink-0",
+    "group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2!",
+    "[&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
   ],
   {
     variants: {
@@ -503,10 +503,10 @@ const sidebarMenuButtonVariants = cva(
         outline: "border border-sidebar-border",
       },
       size: {
-        sm: "h-8 typo-label-s [&>svg]:size-4",
-        md: "h-10 typo-label-m",
+        sm: "h-7 typo-body-s",
+        md: "h-8 typo-body-m",
         // For a header/footer row with an avatar and two lines of text.
-        lg: "h-12 typo-label-m group-data-[collapsible=icon]:p-1!",
+        lg: "h-12 typo-body-m group-data-[collapsible=icon]:p-0!",
       },
     },
     defaultVariants: { variant: "default", size: "md" },
@@ -584,10 +584,10 @@ function SidebarMenuAction({
     <Component
       data-slot="sidebar-menu-action"
       className={cn(
-        "absolute top-2 right-1.5 flex size-6 cursor-pointer items-center justify-center rounded-sm text-sidebar-fg-muted",
+        "absolute top-1.5 right-1 flex size-5 cursor-pointer items-center justify-center rounded-sm text-sidebar-fg-muted",
         "transition-colors hover:bg-sidebar-hover hover:text-sidebar-fg focus-visible:outline-2 focus-visible:outline-sidebar-fg",
         "peer-data-[active=true]/menu-button:text-sidebar-active-fg peer-data-[active=true]/menu-button:hover:bg-sidebar-hover",
-        "peer-data-[size=lg]/menu-button:top-3 peer-data-[size=sm]/menu-button:top-1",
+        "peer-data-[size=lg]/menu-button:top-2.5 peer-data-[size=sm]/menu-button:top-1",
         "[&>svg]:size-4 [&>svg]:shrink-0",
         "after:absolute after:-inset-2 md:after:hidden",
         "group-data-[collapsible=icon]:hidden",
@@ -606,9 +606,9 @@ function SidebarMenuBadge({ className, ...props }: React.ComponentProps<"div">) 
     <div
       data-slot="sidebar-menu-badge"
       className={cn(
-        "pointer-events-none absolute top-2 right-2 flex h-6 min-w-6 items-center justify-center rounded-full bg-sidebar-hover px-1.5 typo-label-s text-sidebar-fg tabular-nums select-none",
+        "pointer-events-none absolute top-1.5 right-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-sidebar-hover px-1 typo-label-s text-sidebar-fg tabular-nums select-none",
         "peer-data-[active=true]/menu-button:bg-sidebar-hover peer-data-[active=true]/menu-button:text-sidebar-active-fg",
-        "peer-data-[size=lg]/menu-button:top-3 peer-data-[size=sm]/menu-button:top-1",
+        "peer-data-[size=lg]/menu-button:top-3.5 peer-data-[size=sm]/menu-button:top-1",
         "group-data-[collapsible=icon]:hidden",
         className,
       )}
@@ -629,10 +629,10 @@ function SidebarMenuSkeleton({
   return (
     <div
       data-slot="sidebar-menu-skeleton"
-      className={cn("flex h-10 items-center gap-3 rounded-md px-2.5", className)}
+      className={cn("flex h-8 items-center gap-2 rounded-md px-2", className)}
       {...props}
     >
-      {showIcon && <Skeleton className="size-5 rounded-sm bg-sidebar-hover" />}
+      {showIcon && <Skeleton className="size-4 rounded-sm bg-sidebar-hover" />}
       <Skeleton
         className="h-4 max-w-(--skeleton-width) flex-1 bg-sidebar-hover"
         style={{ "--skeleton-width": width } as React.CSSProperties}
@@ -647,7 +647,7 @@ function SidebarMenuSub({ className, ...props }: React.ComponentProps<"ul">) {
     <ul
       data-slot="sidebar-menu-sub"
       className={cn(
-        "mx-5 flex min-w-0 translate-x-px flex-col gap-1 border-l border-sidebar-border px-2.5 py-1",
+        "mx-3.5 flex min-w-0 translate-x-px flex-col gap-1 border-l border-sidebar-border px-2.5 py-0.5",
         "group-data-[collapsible=icon]:hidden",
         className,
       )}
@@ -686,7 +686,7 @@ function SidebarMenuSubButton({
       data-active={isActive}
       aria-current={isActive ? "page" : undefined}
       className={cn(
-        "flex h-8 min-w-0 -translate-x-px cursor-pointer items-center gap-2 overflow-hidden rounded-sm px-2.5 whitespace-nowrap text-sidebar-fg",
+        "flex h-7 min-w-0 -translate-x-px cursor-pointer items-center gap-2 overflow-hidden rounded-sm px-2 whitespace-nowrap text-sidebar-fg",
         "transition-colors hover:bg-sidebar-hover focus-visible:outline-2 focus-visible:outline-sidebar-fg",
         "aria-disabled:pointer-events-none aria-disabled:text-sidebar-fg-muted",
         "data-[active=true]:bg-sidebar-active data-[active=true]:text-sidebar-active-fg",

@@ -22,9 +22,9 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
         controlStyles.focus,
         controlStyles.invalid,
         controlStyles.disabled,
-        "h-12 px-4 typo-body-l",
+        "h-9 px-3 typo-field",
         // <input type="file">
-        "file:mr-3 file:inline-flex file:h-8 file:border-0 file:bg-transparent file:typo-label-m file:text-fg-primary",
+        "file:mr-3 file:inline-flex file:h-7 file:border-0 file:bg-transparent file:typo-label-m file:text-fg-primary",
         className,
       )}
       {...props}

@@ -6,6 +6,22 @@ mengikuti [Semantic Versioning](https://semver.org/lang/id/).
 
 ## [Unreleased]
 
+### Diubah
+
+- **Ukuran komponen mengikuti shadcn/ui.** Kontrol (Button, Toggle, Input, Select, Native Select,
+  Input Group, Combobox) kini setinggi 36px (Small 32px, Large 40px) dengan ikon 16px. Checkbox/Radio
+  16px, Switch 36×20px, Tabs 36px, Card padding 24px, Sidebar 256px dengan item 32px, Avatar
+  24/32/40px, Calendar 32px, dan lainnya — rincian ada di DESIGN.md §5.
+- **Tipografi komponen berbasis ukuran M (14px)**, seperti shadcn/ui. Teks isian kini Body/M
+  (sebelumnya Body/L), tombol semua ukuran Label/M, judul Dialog H3, judul Card/Sheet/Drawer
+  Label/L, teks bantuan & error Body/M. Daftar lengkap di halaman Fondasi → Tipografi.
+- Gaya scrollbar tipis yang memakai token warna design system.
+
+### Ditambahkan
+
+- Gaya teks `typo-field`: Body/M, tetapi 16px di ponsel agar iOS Safari tidak memperbesar halaman
+  saat kolom isian disentuh.
+
 ## [0.1.0] - 2026-10-04
 
 Rilis pertama.

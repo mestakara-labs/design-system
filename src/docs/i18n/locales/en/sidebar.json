@@ -1,5 +1,5 @@
 {
-  "description": "The side menu of a dashboard: logo, menu groups, user account, and a button to fold it away. 240px wide with a dark green background; the active item uses the brand color. On phones the menu opens as a Sheet.",
+  "description": "The side menu of a dashboard: logo, menu groups, user account, and a button to fold it away. 256px wide with a dark green background; the active item uses the brand color. On phones the menu opens as a Sheet.",
   "structure": "Page structure: SidebarProvider wraps Sidebar (the menu) and SidebarInset (the page content). SidebarTrigger in the header opens/closes the menu, and so does Ctrl+B (⌘B on Mac).",
   "colors": "The sidebar colors come from the --sidebar-* tokens in semantic.css. Change those tokens for another look (e.g. a light sidebar) without touching the component.",
   "hook": "useSidebar() reads and changes the menu state from any component inside SidebarProvider.",
@@ -37,6 +37,6 @@
     "collapsible": "When closed: slides off screen, folds to icons, or cannot close.",
     "isActive": "Marks the page that is open.",
     "tooltip": "Label shown on hover while the menu is folded to icons.",
-    "size": "Button height: sm 32px, md 40px, lg 48px."
+    "size": "Button height: sm 28px, md 32px, lg 48px."
   }
 }

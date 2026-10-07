@@ -7,7 +7,7 @@
     },
     "sizes": {
       "title": "Sizes",
-      "description": "Small (32px), Medium (44px, default) and Large (52px) — same as Button."
+      "description": "Small (32px), Medium (36px, default) and Large (40px) — same as Button."
     },
     "disabled": {
       "title": "Disabled",

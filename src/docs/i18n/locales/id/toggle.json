@@ -7,7 +7,7 @@
     },
     "sizes": {
       "title": "Ukuran",
-      "description": "Small (32px), Medium (44px, default), dan Large (52px) — sama seperti Button."
+      "description": "Small (32px), Medium (36px, default), dan Large (40px) — sama seperti Button."
     },
     "disabled": {
       "title": "Non-aktif",

@@ -19,7 +19,7 @@ const buttonVariants = cva(
     "cursor-pointer select-none",
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
     "disabled:pointer-events-none disabled:text-fg-disabled",
-    "[&_svg]:pointer-events-none [&_svg]:shrink-0",
+    "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
   {
     variants: {
@@ -46,13 +46,14 @@ const buttonVariants = cva(
           "bg-danger text-fg-on-brand hover:bg-danger-hover active:bg-danger-hover disabled:bg-disabled",
       },
       size: {
-        sm: "h-8 rounded-sm px-3 typo-label-s [&_svg:not([class*='size-'])]:size-4",
-        md: "h-11 rounded-md px-5 typo-label-m [&_svg:not([class*='size-'])]:size-5",
-        lg: "h-13 rounded-md px-6 typo-label-l [&_svg:not([class*='size-'])]:size-5",
+        // Sizes follow shadcn/ui: 32 / 36 / 40px high, 16px icons, Label/M text.
+        sm: "h-8 gap-1.5 rounded-sm px-3 typo-label-m",
+        md: "h-9 rounded-md px-4 typo-label-m",
+        lg: "h-10 rounded-md px-6 typo-label-m",
         // Square buttons that only contain an icon. Always add an `aria-label`.
-        "icon-sm": "size-8 rounded-sm [&_svg:not([class*='size-'])]:size-4",
-        icon: "size-11 rounded-md [&_svg:not([class*='size-'])]:size-5",
-        "icon-lg": "size-13 rounded-md [&_svg:not([class*='size-'])]:size-6",
+        "icon-sm": "size-8 rounded-sm",
+        icon: "size-9 rounded-md",
+        "icon-lg": "size-10 rounded-md",
       },
     },
     defaultVariants: {

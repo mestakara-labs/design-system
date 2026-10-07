@@ -75,7 +75,6 @@ export default function MessageScrollerDemo() {
           onChange={(event) => setDraft(event.target.value)}
           placeholder="Tulis pesan…"
           aria-label="Pesan"
-          className="h-11"
         />
         <Button type="submit" size="icon" aria-label="Kirim">
           <SendIcon />

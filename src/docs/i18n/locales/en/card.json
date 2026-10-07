@@ -17,7 +17,7 @@
   "parts": {
     "card": "The card wrapper.",
     "header": "Title and description area.",
-    "title": "Card title (Heading/H3).",
+    "title": "Card title (Label/L).",
     "description": "Supporting text under the title.",
     "action": "Top-right corner of the header, such as a badge or a small button.",
     "content": "Main content of the card.",

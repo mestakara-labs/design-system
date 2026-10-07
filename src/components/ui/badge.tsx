@@ -14,9 +14,9 @@ import * as React from "react";
 
 const badgeVariants = cva(
   [
-    "inline-flex w-fit shrink-0 items-center justify-center gap-1.5 overflow-hidden rounded-full border border-transparent px-3 py-1 typo-label-s whitespace-nowrap",
+    "inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border border-transparent px-2 py-0.5 typo-label-s whitespace-nowrap",
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
-    "[&>svg]:pointer-events-none [&>svg]:size-3.5",
+    "[&>svg]:pointer-events-none [&>svg]:size-3",
   ],
   {
     variants: {

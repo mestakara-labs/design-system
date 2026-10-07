@@ -4,7 +4,7 @@
   "examples": {
     "sizes": {
       "title": "Sizes",
-      "description": "Small (20px) and Medium (24px, default)."
+      "description": "Small (16px) and Medium (20px, default)."
     },
     "withDescription": {
       "title": "With Description",
